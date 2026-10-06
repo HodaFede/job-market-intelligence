@@ -31,8 +31,9 @@ SELECT
     ROUND(w.median, 0)                              AS salaire_median_avec,
     ROUND(wo.median, 0)                             AS salaire_median_sans,
     ROUND(w.median - wo.median, 0)                  AS prime_eur,
-    ROUND(100.0 * (w.median - wo.median) / wo.median, 1) AS prime_pct
+    ROUND(100.0 * (w.median - wo.median) / wo.median, 1) AS prime_pct,
+    CASE WHEN w.n >= 20 THEN 'Moyenne' ELSE 'Faible (10 à 19 offres)' END AS fiabilite
 FROM med w
 JOIN med wo ON wo.skill = w.skill AND wo.has_skill = 0
 JOIN skills s ON s.skill = w.skill
-WHERE w.has_skill = 1 AND w.n >= 20;
+WHERE w.has_skill = 1 AND w.n >= 10;

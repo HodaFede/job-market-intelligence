@@ -5,7 +5,7 @@ Trois sources réelles, complémentaires, plus un jeu de démonstration pour dé
 | Source | Type | Accès | Points forts | Limites |
 |---|---|---|---|---|
 | France Travail — Offres d'emploi v2 | API officielle | gratuit, inscription | volume, couverture nationale, secteur d'activité, expérience, salaire souvent renseigné | descriptions parfois courtes, peu de startups |
-| Adzuna | API agrégateur | gratuit (quota) | agrège de nombreux job boards, salaires structurés | description tronquée, salaires parfois estimés (exclus) |
+| Adzuna | API agrégateur | gratuit (quota) | agrège de nombreux job boards, salaires structurés | description tronquée à 500 caractères (compétences sous-détectées), salaires parfois estimés (exclus) |
 | Pages carrières (JSON-LD) | web scraping | liste d'URL à fournir | description complète, données publiées par l'employeur | à alimenter manuellement, dépend des sites |
 | Démo | synthétique | `python -m jmi demo` | pipeline et dashboard utilisables tout de suite | ne décrit pas le marché réel |
 

@@ -44,12 +44,12 @@
 
 | Fichier | Colonnes |
 |---|---|
-| `kpi_globaux.csv` | nb_offres, nb_entreprises, nb_villes, salaire_moyen, salaire_median, pct_offres_avec_salaire, pct_teletravail, pct_cdi, pct_offres_junior, nb_competences_moyen, date_min, date_max, jeu_de_donnees |
+| `kpi_globaux.csv` | nb_offres, nb_entreprises, nb_villes, salaire_moyen, salaire_median, pct_offres_avec_salaire, pct_teletravail, pct_cdi, pct_offres_junior, nb_competences_moyen, pct_offres_avec_competence, date_min, date_max, jeu_de_donnees |
 | `salaires_metier_seniorite.csv` | metier, seniorite, nb_offres_avec_salaire, salaire_moyen, salaire_median, salaire_q1, salaire_q3, salaire_min, salaire_max, fiabilite |
 | `villes.csv` | ville, region, pays, latitude, longitude, nb_offres, part_offres_pct, salaire_median, nb_offres_avec_salaire, pct_teletravail |
 | `secteurs.csv` | secteur, nb_offres, part_offres_pct, salaire_median, pct_teletravail, pct_cdi |
 | `competences_par_metier.csv` | metier (dont « Tous métiers »), competence, categorie_competence, type_competence, nb_offres, nb_offres_metier, part_offres_pct, rang |
-| `prime_salariale_competences.csv` | competence, categorie_competence, nb_offres_avec, nb_offres_sans, salaire_median_avec, salaire_median_sans, prime_eur, prime_pct |
+| `prime_salariale_competences.csv` | competence, categorie_competence, nb_offres_avec, nb_offres_sans, salaire_median_avec, salaire_median_sans, prime_eur, prime_pct, fiabilite |
 | `paires_competences.csv` | competence_a, competence_b, nb_offres_communes, pct_offres_a_avec_b, lift |
 | `tendance_mensuelle.csv` | mois, metier, nb_offres, salaire_moyen, nb_offres_teletravail |
 | `teletravail_metier.csv` | metier, teletravail, nb_offres, part_offres_pct |

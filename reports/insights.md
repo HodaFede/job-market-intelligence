@@ -8,6 +8,7 @@ _Généré automatiquement le 06/10/2026 par `python -m jmi run`._
 - Salaire annuel brut **médian 50 000 €** (moyen 53 190 €), calculé sur les 19 % d'offres qui affichent un salaire.
 - **3 %** des offres mentionnent du télétravail, **51 %** sont des CDI, **20 %** visent un profil junior ou stage/alternance.
 - L'Île-de-France concentre **51 %** des offres.
+- **40 %** des offres ont au moins une compétence détectée : les parts de compétences ci-dessous sont des bornes basses, car les descriptions fournies par certaines sources sont tronquées (Adzuna : 500 caractères).
 
 ## 2. Métiers
 
@@ -79,12 +80,13 @@ Stack type par métier :
 - **AI / LLM Engineer** : LLM (14 %), Python (6 %), AWS (4 %), API REST (1 %), SQL (1 %)
 - **Autre métier data** : GCP (2 %), AWS (1 %), Azure (1 %), Python (1 %)
 
-Compétences associées aux salaires médians les plus élevés (corrélation, pas causalité) :
+Compétences associées aux salaires médians les plus élevés (corrélation, pas causalité ; fiabilité indiquée selon le nombre d'offres salariées) :
 
-1. **Machine Learning** — +5 125 € vs offres sans cette compétence
-2. **SQL** — +-2 000 € vs offres sans cette compétence
-3. **ETL/ELT** — +-2 500 € vs offres sans cette compétence
-4. **KPI & reporting** — +-2 500 € vs offres sans cette compétence
+1. **dbt** — +6 500 € vs offres sans cette compétence (10 offres avec salaire, fiabilité faible)
+2. **IA générative** — +5 875 € vs offres sans cette compétence (14 offres avec salaire, fiabilité faible)
+3. **Machine Learning** — +5 125 € vs offres sans cette compétence (38 offres avec salaire, fiabilité moyenne)
+4. **Data gouvernance** — +4 500 € vs offres sans cette compétence (12 offres avec salaire, fiabilité faible)
+5. **Databricks** — +3 250 € vs offres sans cette compétence (10 offres avec salaire, fiabilité faible)
 
 Associations de compétences les plus fortes (lift) :
 
@@ -134,5 +136,6 @@ Métiers les plus ouverts au télétravail : Chef de projet / Lead Data & IA (15
 ## 6. Limites
 
 - Salaires : uniquement les offres qui les affichent (biais possible vers certains secteurs et le secteur public).
+- Texte disponible : si la source tronque les descriptions (Adzuna : 500 caractères), seules les compétences citées au début de l'annonce sont détectées ; les pourcentages sont donc des bornes basses, utiles pour comparer les compétences entre elles plutôt que pour mesurer un niveau absolu.
 - Extraction de compétences par dictionnaire : précise et explicable, mais ne détecte que ce qui est listé (le TF-IDF sert à repérer les oublis).
 - Déduplication sur intitulé + entreprise + ville : deux offres réellement distinctes et identiques sur ces trois champs sont fusionnées.

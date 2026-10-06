@@ -117,6 +117,7 @@ tests/           tests pytest + fixtures
 ## Choix et limites
 
 - NLP volontairement explicable (dictionnaire + regex + TF-IDF) : chaque chiffre peut être retracé jusqu'à la règle qui l'a produit.
+- Adzuna tronque les descriptions à 500 caractères : seules les compétences citées au début de l'annonce sont détectées (le KPI `pct_offres_avec_competence` mesure cette couverture). Les parts de compétences sont donc des bornes basses, fiables pour comparer les compétences entre elles ; la prime salariale affiche un indicateur de fiabilité.
 - Les salaires ne portent que sur les offres qui les affichent ; stages, alternances et TJM freelance sont traités à part.
 - Une offre publiée n'est pas une embauche ; la séniorité et le télétravail sont déduits du texte.
 - Collecte respectueuse : API officielles en priorité, robots.txt et délais pour le scraping, aucune donnée personnelle, descriptions non republiées.

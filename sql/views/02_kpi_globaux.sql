@@ -22,6 +22,7 @@ SELECT
     ROUND(100.0 * AVG(CASE WHEN contract_type = 'CDI' THEN 1 ELSE 0 END), 1)   AS pct_cdi,
     ROUND(100.0 * AVG(CASE WHEN seniority IN ('Junior', 'Stage / Alternance') THEN 1 ELSE 0 END), 1) AS pct_offres_junior,
     ROUND(AVG(skills_count), 1)                                       AS nb_competences_moyen,
+    ROUND(100.0 * AVG(CASE WHEN skills_count > 0 THEN 1 ELSE 0 END), 1) AS pct_offres_avec_competence,
     MIN(published_date)                                               AS date_min,
     MAX(published_date)                                               AS date_max,
     CASE WHEN MAX(is_demo) = 1 THEN 'Démonstration (synthétique)' ELSE 'Réel' END AS jeu_de_donnees

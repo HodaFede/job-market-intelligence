@@ -91,6 +91,9 @@ def build_report(exports_dir: Path, out_path: Path) -> str:
         f"- **{kpi['pct_teletravail']:.0f} %** des offres mentionnent du télétravail, "
         f"**{kpi['pct_cdi']:.0f} %** sont des CDI, **{kpi['pct_offres_junior']:.0f} %** visent un profil junior ou stage/alternance.",
         f"- L'Île-de-France concentre **{idf_share:.0f} %** des offres.",
+        *([f"- **{kpi['pct_offres_avec_competence']:.0f} %** des offres ont au moins une compétence détectée : "
+           "les parts de compétences ci-dessous sont des bornes basses, car les descriptions fournies par certaines "
+           "sources sont tronquées (Adzuna : 500 caractères)."] if "pct_offres_avec_competence" in kpi.index else []),
         "",
         "## 2. Métiers",
         "",
@@ -122,9 +125,12 @@ def build_report(exports_dir: Path, out_path: Path) -> str:
         "",
     ]
     if not premium.empty:
-        lines += ["Compétences associées aux salaires médians les plus élevés (corrélation, pas causalité) :", "",
-                  _top(premium, "competence", "prime_eur", 5,
-                       lambda v: f"+{_eur(v)} vs offres sans cette compétence"), ""]
+        top_premium = premium.nlargest(5, "prime_eur")
+        lines += ["Compétences associées aux salaires médians les plus élevés (corrélation, pas causalité ; "
+                  "fiabilité indiquée selon le nombre d'offres salariées) :", "",
+                  *[f"{i}. **{r.competence}** — +{_eur(r.prime_eur)} vs offres sans cette compétence "
+                    f"({int(r.nb_offres_avec)} offres avec salaire, fiabilité {str(r.fiabilite).split(' (')[0].lower()})"
+                    for i, r in enumerate(top_premium.itertuples(), 1)], ""]
     if not pairs.empty:
         strong = pairs[pairs["nb_offres_communes"] >= 15].nlargest(5, "lift")
         lines += ["Associations de compétences les plus fortes (lift) :", "",
@@ -174,6 +180,9 @@ def build_report(exports_dir: Path, out_path: Path) -> str:
         "## 6. Limites",
         "",
         "- Salaires : uniquement les offres qui les affichent (biais possible vers certains secteurs et le secteur public).",
+        "- Texte disponible : si la source tronque les descriptions (Adzuna : 500 caractères), seules les compétences "
+        "citées au début de l'annonce sont détectées ; les pourcentages sont donc des bornes basses, utiles pour "
+        "comparer les compétences entre elles plutôt que pour mesurer un niveau absolu.",
         "- Extraction de compétences par dictionnaire : précise et explicable, mais ne détecte que ce qui est listé "
         "(le TF-IDF sert à repérer les oublis).",
         "- Déduplication sur intitulé + entreprise + ville : deux offres réellement distinctes et identiques sur ces "

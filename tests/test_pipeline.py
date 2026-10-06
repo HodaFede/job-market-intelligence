@@ -60,6 +60,7 @@ def test_kpis_match_offers(run):
     assert kpi["salaire_median"] == pytest.approx(offers["salaire_annuel"].median(), abs=1)
     assert kpi["salaire_moyen"] == pytest.approx(offers["salaire_annuel"].mean(), abs=1)
     assert kpi["jeu_de_donnees"].startswith("Démonstration")
+    assert kpi["pct_offres_avec_competence"] == pytest.approx(100 * (offers["nb_competences"] > 0).mean(), abs=0.1)
 
 
 def test_sql_median_by_group_matches_pandas(run):
@@ -107,3 +108,11 @@ def test_real_data_takes_precedence_over_demo(tmp_path):
     offers = pd.read_csv(settings.path("exports") / "offres.csv")
     assert summary.dataset_label == "réel"
     assert set(offers["source"]) == {"france_travail"} and offers["est_demo"].eq(0).all()
+
+
+def test_prime_salariale_has_reliability_flag(run):
+    settings, _ = run
+    premium = pd.read_csv(settings.path("exports") / "prime_salariale_competences.csv")
+    assert "fiabilite" in premium.columns
+    assert (premium["nb_offres_avec"] >= 10).all()
+    assert premium["fiabilite"].isin(["Moyenne", "Faible (10 à 19 offres)"]).all()

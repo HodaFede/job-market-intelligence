@@ -26,7 +26,7 @@ Pourquoi la médiane plutôt que la moyenne : quelques offres senior très bien 
 | Métier × séniorité | nb offres avec salaire, moyenne, médiane, Q1, Q3, min, max, fiabilité | `salaires_metier_seniorite.csv` |
 | Compétences | nb offres qui citent la compétence, % des offres du métier, rang | `competences_par_metier.csv` |
 | Technologies | même vue filtrée sur `type_competence = Technologie` | `competences_par_metier.csv` |
-| Prime compétence | médiane avec vs sans la compétence, écart en € et % (≥ 20 offres avec salaire) | `prime_salariale_competences.csv` |
+| Prime compétence | médiane avec vs sans la compétence, écart en € et % (≥ 10 offres avec salaire ; fiabilité « Faible » entre 10 et 19, « Moyenne » dès 20) | `prime_salariale_competences.csv` |
 | Associations | nb offres communes, % de A qui citent B, lift | `paires_competences.csv` |
 | Séniorité | répartition par métier | `seniorite_metier.csv` |
 | Télétravail | répartition Hybride / Full remote / Sur site / Non précisé par métier | `teletravail_metier.csv` |

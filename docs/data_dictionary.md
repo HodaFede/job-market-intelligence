@@ -8,7 +8,7 @@
 | source | texte | origine | france_travail, adzuna, jsonld_scraper, demo |
 | est_demo | 0/1 | 1 = ligne synthétique du jeu de démonstration | |
 | intitule | texte | intitulé tel que publié | « Data Analyst H/F » |
-| metier | texte | famille de métier déduite de l'intitulé | Data Analyst, Data Scientist, Data Engineer, Analytics Engineer / BI, Machine Learning Engineer, AI / LLM Engineer, Consultant Data & IA, Data Manager / Gouvernance, Autre métier data |
+| metier | texte | famille de métier déduite de l'intitulé | Data Analyst, Data Scientist, Data Engineer, Analytics Engineer / BI, Machine Learning Engineer, AI / LLM Engineer, Consultant Data & IA, Data Manager / Gouvernance, Chef de projet / Lead Data & IA, Recherche / R&D IA, Autre métier data |
 | seniorite | texte | niveau déduit de l'intitulé, sinon des années d'expérience (≤ 2 Junior, 3–5 Confirmé, ≥ 6 Senior) | Stage / Alternance, Junior, Confirmé, Senior, Non précisé |
 | annees_experience | nombre | années demandées si mentionnées | 2 |
 | type_contrat | texte | | CDI, CDD, Stage, Alternance, Freelance, Intérim / temporaire, Non précisé |

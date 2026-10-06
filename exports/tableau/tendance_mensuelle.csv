@@ -1,47 +1,138 @@
 mois,metier,nb_offres,salaire_moyen,nb_offres_teletravail
-2026-04-01,AI / LLM Engineer,2,,0
-2026-04-01,Analytics Engineer / BI,5,52125.0,5
-2026-04-01,Data Analyst,11,40714.0,7
-2026-04-01,Data Engineer,9,54250.0,6
-2026-04-01,Data Scientist,4,48000.0,3
-2026-04-01,Machine Learning Engineer,3,,3
-2026-05-01,AI / LLM Engineer,6,47750.0,0
-2026-05-01,Analytics Engineer / BI,10,56500.0,9
-2026-05-01,Consultant Data & IA,8,46583.0,6
-2026-05-01,Data Analyst,23,48049.0,16
-2026-05-01,Data Engineer,25,54958.0,10
-2026-05-01,Data Manager / Gouvernance,1,,0
-2026-05-01,Data Scientist,20,54322.0,11
-2026-05-01,Machine Learning Engineer,10,53100.0,6
-2026-06-01,AI / LLM Engineer,11,65750.0,3
-2026-06-01,Analytics Engineer / BI,16,53680.0,10
-2026-06-01,Consultant Data & IA,14,52423.0,11
-2026-06-01,Data Analyst,52,48225.0,35
-2026-06-01,Data Engineer,27,56337.0,15
-2026-06-01,Data Manager / Gouvernance,7,49900.0,3
-2026-06-01,Data Scientist,42,55478.0,30
-2026-06-01,Machine Learning Engineer,13,59020.0,10
-2026-07-01,AI / LLM Engineer,14,62313.0,11
-2026-07-01,Analytics Engineer / BI,34,51261.0,22
-2026-07-01,Consultant Data & IA,21,45389.0,14
-2026-07-01,Data Analyst,88,46650.0,54
-2026-07-01,Data Engineer,50,55524.0,35
-2026-07-01,Data Manager / Gouvernance,4,43167.0,2
-2026-07-01,Data Scientist,46,53173.0,31
-2026-07-01,Machine Learning Engineer,25,62500.0,18
-2026-08-01,AI / LLM Engineer,27,58558.0,22
-2026-08-01,Analytics Engineer / BI,31,50136.0,20
-2026-08-01,Consultant Data & IA,23,48593.0,18
-2026-08-01,Data Analyst,82,42807.0,51
-2026-08-01,Data Engineer,68,52418.0,51
-2026-08-01,Data Manager / Gouvernance,3,54750.0,2
-2026-08-01,Data Scientist,70,53953.0,40
-2026-08-01,Machine Learning Engineer,34,57551.0,23
-2026-09-01,AI / LLM Engineer,9,58000.0,5
-2026-09-01,Analytics Engineer / BI,22,46889.0,16
-2026-09-01,Consultant Data & IA,20,45700.0,9
-2026-09-01,Data Analyst,85,48263.0,59
-2026-09-01,Data Engineer,47,50476.0,32
-2026-09-01,Data Manager / Gouvernance,8,54125.0,5
-2026-09-01,Data Scientist,53,53172.0,35
-2026-09-01,Machine Learning Engineer,13,55125.0,9
+2020-06-01,Consultant Data & IA,1,,0
+2021-07-01,Data Analyst,1,,0
+2022-09-01,Data Analyst,1,,0
+2023-10-01,Consultant Data & IA,1,,0
+2024-01-01,Machine Learning Engineer,1,,0
+2024-02-01,Data Analyst,1,,0
+2024-02-01,Data Engineer,1,,0
+2024-03-01,Data Analyst,2,,0
+2024-03-01,Data Engineer,6,,0
+2024-04-01,Data Analyst,4,,0
+2024-04-01,Data Engineer,3,,0
+2024-06-01,Consultant Data & IA,1,,0
+2024-07-01,Consultant Data & IA,1,,0
+2024-07-01,Data Analyst,2,,0
+2024-07-01,Data Engineer,4,46000.0,0
+2024-09-01,Data Analyst,1,,0
+2024-09-01,Data Scientist,1,,0
+2024-11-01,Data Scientist,1,,0
+2025-01-01,Consultant Data & IA,2,,0
+2025-01-01,Data Analyst,1,,0
+2025-01-01,Data Engineer,1,,0
+2025-01-01,Data Scientist,1,,0
+2025-02-01,AI / LLM Engineer,2,113750.0,0
+2025-02-01,Consultant Data & IA,3,,0
+2025-02-01,Data Analyst,2,,0
+2025-02-01,Data Engineer,2,,0
+2025-03-01,Consultant Data & IA,1,54500.0,0
+2025-03-01,Data Analyst,8,,0
+2025-03-01,Data Engineer,1,,0
+2025-04-01,AI / LLM Engineer,1,,0
+2025-04-01,Data Analyst,1,,0
+2025-05-01,Consultant Data & IA,1,,0
+2025-05-01,Recherche / R&D IA,1,,0
+2025-06-01,Machine Learning Engineer,1,70000.0,0
+2025-07-01,AI / LLM Engineer,2,,0
+2025-07-01,Autre métier data,2,,0
+2025-07-01,Consultant Data & IA,2,,0
+2025-07-01,Data Analyst,1,,0
+2025-07-01,Data Engineer,1,40000.0,0
+2025-07-01,Data Scientist,2,40000.0,0
+2025-07-01,Recherche / R&D IA,1,,0
+2025-08-01,Consultant Data & IA,1,,0
+2025-08-01,Data Scientist,2,,0
+2025-09-01,Chef de projet / Lead Data & IA,1,,0
+2025-10-01,AI / LLM Engineer,1,,0
+2025-10-01,Consultant Data & IA,1,,0
+2025-10-01,Data Scientist,3,72500.0,0
+2025-11-01,AI / LLM Engineer,9,,0
+2025-11-01,Consultant Data & IA,4,,0
+2025-11-01,Data Analyst,4,,0
+2025-11-01,Data Engineer,1,,0
+2025-11-01,Data Scientist,11,,1
+2025-12-01,AI / LLM Engineer,1,60000.0,0
+2025-12-01,Chef de projet / Lead Data & IA,1,,0
+2025-12-01,Consultant Data & IA,10,,0
+2025-12-01,Data Analyst,1,37500.0,0
+2025-12-01,Data Engineer,6,55000.0,1
+2026-01-01,AI / LLM Engineer,1,,0
+2026-01-01,Consultant Data & IA,4,,0
+2026-01-01,Data Analyst,2,,0
+2026-01-01,Data Engineer,2,45000.0,0
+2026-01-01,Data Scientist,2,,0
+2026-02-01,Consultant Data & IA,5,,0
+2026-02-01,Data Analyst,2,,0
+2026-02-01,Data Engineer,3,85100.0,0
+2026-03-01,AI / LLM Engineer,2,65000.0,0
+2026-03-01,Autre métier data,1,,0
+2026-03-01,Consultant Data & IA,1,,0
+2026-03-01,Data Analyst,4,,1
+2026-03-01,Data Engineer,3,,0
+2026-03-01,Data Scientist,5,52500.0,0
+2026-03-01,Machine Learning Engineer,2,,0
+2026-04-01,AI / LLM Engineer,1,,0
+2026-04-01,Consultant Data & IA,4,65000.0,0
+2026-04-01,Data Analyst,4,,0
+2026-04-01,Data Engineer,3,,0
+2026-04-01,Data Scientist,2,78600.0,1
+2026-04-01,Machine Learning Engineer,1,,0
+2026-05-01,Analytics Engineer / BI,4,65000.0,0
+2026-05-01,Autre métier data,2,,0
+2026-05-01,Chef de projet / Lead Data & IA,3,,0
+2026-05-01,Consultant Data & IA,4,,0
+2026-05-01,Data Analyst,12,66000.0,1
+2026-05-01,Data Engineer,5,,0
+2026-05-01,Data Scientist,7,75000.0,0
+2026-05-01,Machine Learning Engineer,1,,0
+2026-06-01,AI / LLM Engineer,1,,0
+2026-06-01,Analytics Engineer / BI,3,,0
+2026-06-01,Autre métier data,6,,0
+2026-06-01,Chef de projet / Lead Data & IA,2,,0
+2026-06-01,Consultant Data & IA,12,58000.0,0
+2026-06-01,Data Analyst,20,50833.0,0
+2026-06-01,Data Engineer,5,,1
+2026-06-01,Data Scientist,12,,0
+2026-06-01,Machine Learning Engineer,3,,0
+2026-07-01,AI / LLM Engineer,9,,0
+2026-07-01,Analytics Engineer / BI,3,,0
+2026-07-01,Autre métier data,8,,0
+2026-07-01,Chef de projet / Lead Data & IA,4,85000.0,0
+2026-07-01,Consultant Data & IA,13,72500.0,0
+2026-07-01,Data Analyst,20,53500.0,0
+2026-07-01,Data Engineer,17,70500.0,0
+2026-07-01,Data Scientist,17,,0
+2026-07-01,Machine Learning Engineer,5,101250.0,0
+2026-08-01,AI / LLM Engineer,5,,0
+2026-08-01,Analytics Engineer / BI,6,78525.0,1
+2026-08-01,Autre métier data,4,,0
+2026-08-01,Chef de projet / Lead Data & IA,3,,0
+2026-08-01,Consultant Data & IA,9,59250.0,0
+2026-08-01,Data Analyst,20,56000.0,2
+2026-08-01,Data Engineer,16,51900.0,1
+2026-08-01,Data Manager / Gouvernance,1,,0
+2026-08-01,Data Scientist,16,51250.0,0
+2026-08-01,Machine Learning Engineer,8,60000.0,1
+2026-08-01,Recherche / R&D IA,2,,0
+2026-09-01,AI / LLM Engineer,53,52222.0,1
+2026-09-01,Analytics Engineer / BI,27,53567.0,1
+2026-09-01,Autre métier data,46,45500.0,0
+2026-09-01,Chef de projet / Lead Data & IA,19,61750.0,6
+2026-09-01,Consultant Data & IA,87,48167.0,3
+2026-09-01,Data Analyst,125,47508.0,1
+2026-09-01,Data Engineer,156,49649.0,6
+2026-09-01,Data Manager / Gouvernance,6,40000.0,0
+2026-09-01,Data Scientist,112,48497.0,3
+2026-09-01,Machine Learning Engineer,22,50000.0,0
+2026-09-01,Recherche / R&D IA,2,45500.0,0
+2026-10-01,AI / LLM Engineer,20,42242.0,1
+2026-10-01,Analytics Engineer / BI,9,45750.0,0
+2026-10-01,Autre métier data,27,,0
+2026-10-01,Chef de projet / Lead Data & IA,7,46750.0,0
+2026-10-01,Consultant Data & IA,38,55417.0,1
+2026-10-01,Data Analyst,57,67700.0,0
+2026-10-01,Data Engineer,58,49500.0,2
+2026-10-01,Data Manager / Gouvernance,1,,0
+2026-10-01,Data Scientist,68,55944.0,2
+2026-10-01,Machine Learning Engineer,9,100000.0,1
+2026-10-01,Recherche / R&D IA,4,29000.0,0

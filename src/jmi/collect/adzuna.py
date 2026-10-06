@@ -12,6 +12,18 @@ log = logging.getLogger(__name__)
 SEARCH_URL = "https://api.adzuna.com/v1/api/jobs/{country}/search/{page}"
 
 
+def _location_text(location: dict[str, Any]) -> str | None:
+    """« Ville, Département, Région » : le nom affiché complété par la hiérarchie `area` d'Adzuna."""
+    raw = [location.get("display_name") or ""] + list(reversed((location.get("area") or [])[1:]))
+    seen: list[str] = []
+    for chunk in raw:
+        for part in str(chunk).split(","):
+            part = part.strip()
+            if part and part.lower() not in (x.lower() for x in seen):
+                seen.append(part)
+    return ", ".join(seen) or None
+
+
 def parse_offer(item: dict[str, Any], keyword: str | None = None) -> RawOffer:
     location = item.get("location") or {}
     company = item.get("company") or {}
@@ -24,7 +36,7 @@ def parse_offer(item: dict[str, Any], keyword: str | None = None) -> RawOffer:
         title=item.get("title") or "",
         description=item.get("description") or "",
         company=company.get("display_name"),
-        location_raw=location.get("display_name"),
+        location_raw=_location_text(location),
         published_at=item.get("created"),
         contract_raw=" ".join(filter(None, [item.get("contract_type"), item.get("contract_time")])) or None,
         salary_min_raw=None if predicted else item.get("salary_min"),

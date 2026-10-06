@@ -47,9 +47,13 @@ def _dedup_key(title: str, company: str | None, city: str) -> str:
 def clean_records(records: list[dict[str, Any]], salary_bounds: tuple[float, float] = (18000, 200000),
                   hours_per_year: int = 1607) -> pd.DataFrame:
     rows = []
+    out_of_scope = 0
     for r in records:
         title = (r.get("title") or "").strip()
         if not title:
+            continue
+        if not N.is_data_ai_title(title):
+            out_of_scope += 1
             continue
         description = r.get("description") or ""
         contract = N.contract_type(r.get("contract_raw"), title)
@@ -97,11 +101,15 @@ def clean_records(records: list[dict[str, Any]], salary_bounds: tuple[float, flo
             "_dedup": _dedup_key(title, r.get("company"), loc.city),
         })
 
+    if out_of_scope:
+        log.info("Hors périmètre data/IA (intitulé sans terme data/IA, enseignement, vente) : %s offres écartées", out_of_scope)
     df = pd.DataFrame(rows)
     if df.empty:
         return pd.DataFrame(columns=CLEAN_COLUMNS)
     before = len(df)
-    df = (df.sort_values("published_date", na_position="last")
+    # Les fichiers bruts sont lus du plus ancien au plus récent : on inverse pour que, à date égale,
+    # la ligne de la collecte la plus récente (champs les plus complets) l'emporte.
+    df = (df.iloc[::-1].sort_values("published_date", na_position="last", kind="stable")
             .drop_duplicates(subset="offer_id")
             .drop_duplicates(subset="_dedup", keep="first"))
     log.info("Déduplication : %s → %s offres", before, len(df))

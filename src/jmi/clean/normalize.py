@@ -163,13 +163,18 @@ def seniority_level(title: str | None, experience_years: float | None = None, co
 
 
 ROLE_RULES: list[tuple[str, str]] = [
-    ("AI / LLM Engineer", r"\bllm\b|ia generative|genai|generative ai|\bai engineer|ingenieur ia\b|developpeur ia\b|ingenieur nlp|prompt engineer"),
+    ("AI / LLM Engineer", r"\bllm\b|ia generative|genai|generative ai|\bai engineer\b|\bia engineer\b|ingenieur ia\b|developpeur ia\b|ingenieur nlp|prompt engineer"
+                          r"|(?:ingenieur|engineer|developpeur)[^|]{0,40}(?:intelligence artificielle|\bia\b|\bai\b)"),
     ("Machine Learning Engineer", r"machine learning engineer|\bml engineer|mlops|ml ops|ingenieur machine learning|ingenieur ml\b"),
     ("Data Scientist", r"data scien|statisticien|scientifique des donnees|machine learning|\bml\b|deep learning"),
-    ("Data Engineer", r"data engineer|ingenieur (?:de )?donnees|ingenieur data|big data|data architect|architecte (?:data|donnees)|developpeur (?:big )?data|\betl\b"),
+    ("Data Engineer", r"data engineer|ingenieur (?:de )?donnees|ingenieur data|big data|data architect|architecte (?:data|donnees)|developpeur (?:big )?data|\betl\b"
+                      r"|data[^|]{0,25}\bengineer\b"),
     ("Analytics Engineer / BI", r"analytics engineer|bi engineer|developpeur bi|ingenieur decisionnel|consultant (?:bi|decisionnel)|developpeur decisionnel"),
+    ("Recherche / R&D IA", r"chercheu|research|\bphd\b|\bthese\b|doctora|\br&d\b|\br et d\b"),
     ("Consultant Data & IA", r"consultant"),
     ("Data Manager / Gouvernance", r"data steward|data manager|gouvernance|data quality|qualite des donnees|data owner|data governance"),
+    ("Chef de projet / Lead Data & IA", r"(?:chef de projet|project manager|responsable|head of|directeur|director|lead|manager|product owner|chief|charge de mission)"
+                                         r"[^|]{0,60}(?:\bdata\b|donnees|intelligence artificielle|\bia\b|\bai\b)"),
     ("Data Analyst", r"analyst|analyste|business intelligence|\bbi\b|decisionnel|reporting|data visuali[sz]"),
 ]
 
@@ -180,6 +185,20 @@ def role_family(title: str | None) -> str:
         if re.search(pattern, t):
             return role
     return "Autre métier data"
+
+
+# Une offre est retenue si son intitulé évoque la donnée ou l'IA ; les postes d'enseignement
+# et de vente ne sont pas des métiers data même quand ils citent l'IA. Le brut reste intact.
+_SCOPE_KEYWORDS = (r"\bdata\b|donnee|intelligence artificielle|\bia\b|\bai\b|\ba\.i\b|\bml\b|machine learning|deep learning|"
+                   r"\bnlp\b|\bllm\b|\bbi\b|business intelligence|analytics|decisionnel|statisticien|mlops|big data|datascientist")
+_SCOPE_EXCLUDED = r"professeur|enseignant|formateur|teacher|commercial|business developer|account executive|\bsales\b|recruteur|recrutement"
+
+
+def is_data_ai_title(title: str | None) -> bool:
+    t = norm(title)
+    if not t or re.search(_SCOPE_EXCLUDED, t):
+        return False
+    return bool(re.search(_SCOPE_KEYWORDS, t))
 
 
 # ---------------------------------------------------------------------------
@@ -274,6 +293,49 @@ REGION_DEPTS = {
 }
 DEPT_TO_REGION = {d: region for region, depts in REGION_DEPTS.items() for d in depts.split()}
 
+# Noms de départements (forme normalisée) → code. Adzuna écrit « Ville, Département ».
+DEPT_NAMES = {
+    "ain": "01", "aisne": "02", "allier": "03", "alpes de haute provence": "04", "hautes alpes": "05",
+    "alpes maritimes": "06", "ardeche": "07", "ardennes": "08", "ariege": "09", "aube": "10", "aude": "11",
+    "aveyron": "12", "bouches du rhone": "13", "calvados": "14", "cantal": "15", "charente": "16",
+    "charente maritime": "17", "cher": "18", "correze": "19", "cote d or": "21", "cotes d armor": "22",
+    "creuse": "23", "dordogne": "24", "doubs": "25", "drome": "26", "eure": "27", "eure et loir": "28",
+    "finistere": "29", "corse du sud": "2A", "haute corse": "2B", "gard": "30", "haute garonne": "31",
+    "gers": "32", "gironde": "33", "herault": "34", "ille et vilaine": "35", "indre": "36",
+    "indre et loire": "37", "isere": "38", "jura": "39", "landes": "40", "loir et cher": "41", "loire": "42",
+    "haute loire": "43", "loire atlantique": "44", "loiret": "45", "lot": "46", "lot et garonne": "47",
+    "lozere": "48", "maine et loire": "49", "manche": "50", "marne": "51", "haute marne": "52",
+    "mayenne": "53", "meurthe et moselle": "54", "meuse": "55", "morbihan": "56", "moselle": "57",
+    "nievre": "58", "nord": "59", "oise": "60", "orne": "61", "pas de calais": "62", "puy de dome": "63",
+    "pyrenees atlantiques": "64", "hautes pyrenees": "65", "pyrenees orientales": "66", "bas rhin": "67",
+    "haut rhin": "68", "rhone": "69", "haute saone": "70", "saone et loire": "71", "sarthe": "72",
+    "savoie": "73", "haute savoie": "74", "paris": "75", "seine maritime": "76", "seine et marne": "77",
+    "yvelines": "78", "deux sevres": "79", "somme": "80", "tarn": "81", "tarn et garonne": "82", "var": "83",
+    "vaucluse": "84", "vendee": "85", "vienne": "86", "haute vienne": "87", "vosges": "88", "yonne": "89",
+    "territoire de belfort": "90", "essonne": "91", "hauts de seine": "92", "seine saint denis": "93",
+    "val de marne": "94", "val d oise": "95", "guadeloupe": "971", "martinique": "972", "guyane": "973",
+    "la reunion": "974", "mayotte": "976",
+}
+REGION_KEYS = {}
+
+
+def _admin_key(name: str) -> str:
+    return norm(name).replace("-", " ").replace("'", " ").strip()
+
+
+def region_from_admin_name(name: str | None) -> tuple[str | None, str | None]:
+    """Reconnaît un nom de département ou de région → (code département ou None, région)."""
+    if not name:
+        return None, None
+    key = _admin_key(name)
+    if key in DEPT_NAMES:
+        code = DEPT_NAMES[key]
+        return code, DEPT_TO_REGION.get(code)
+    for region in REGION_DEPTS:
+        if _admin_key(region) == key:
+            return None, region
+    return None, None
+
 
 def _city_key(name: str) -> str:
     return norm(name).replace("-", " ").replace("'", " ").replace("saint ", "st ")
@@ -300,7 +362,26 @@ def normalize_location(raw: str | None, latitude: float | None = None, longitude
     m = re.match(r"^\s*(\d{2,3}|2[AB])\s*-\s*(.+)$", text)
     if m:
         dept, text = m.group(1), m.group(2)
-    text = text.split(",")[0]
+    parts = [p.strip() for p in text.split(",") if p.strip()]
+    admin_region = None
+    # Format Adzuna : « Ville, Département » ou « Département » / « Région » seul.
+    for part in parts[1:] + (parts[:1] if len(parts) == 1 else []):
+        code, reg = region_from_admin_name(part)
+        if reg:
+            dept = dept or code
+            admin_region = reg
+            break
+    if len(parts) == 1 and admin_region and not by_key.get(_city_key(parts[0])):
+        # Le lieu n'est qu'un département ou une région : pas de ville précise.
+        return Location(UNKNOWN, dept, admin_region, latitude, longitude)
+    text = parts[0] if parts else ""
+    if admin_region and not by_key.get(_city_key(text)) and region_from_admin_name(text)[1]:
+        # Le premier élément est lui-même une région ou un département (« Ile-de-France, … »).
+        return Location(UNKNOWN, dept, admin_region, latitude, longitude)
+    if re.search(r"arrondissement|^\d{1,2}\s*(?:e|er|eme|ème)?[\s-]*$", norm(text)) and (dept == "75" or admin_region == "Île-de-France"):
+        text = "Paris"
+    # Secteurs Adzuna (« Lille-Nord », « Aix-en-Provence Sud-Ouest ») → commune.
+    text = re.sub(r"[\s-]+(?:nord|sud|est|ouest)(?:[\s-]+(?:nord|sud|est|ouest))*$", "", text, flags=re.I)
     text = re.sub(r"\(.*?\)", "", text)
     text = re.sub(r"\b(cedex|arrondissement)\b.*$", "", text, flags=re.I)
     text = re.sub(r"\s+\d{1,2}\s*(?:e|er|eme|ème)?\s*$", "", text.strip(), flags=re.I)
@@ -309,5 +390,5 @@ def normalize_location(raw: str | None, latitude: float | None = None, longitude
     if row:
         return Location(row["city"], row["dept_code"], row["region"], float(row["latitude"]), float(row["longitude"]))
     city = text.strip().title() or UNKNOWN
-    region = DEPT_TO_REGION.get(dept, dept_region.get(dept, UNKNOWN)) if dept else UNKNOWN
+    region = admin_region or (DEPT_TO_REGION.get(dept, dept_region.get(dept, UNKNOWN)) if dept else UNKNOWN)
     return Location(city, dept, region, latitude, longitude)

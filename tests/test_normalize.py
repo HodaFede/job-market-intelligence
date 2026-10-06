@@ -94,6 +94,12 @@ def test_experience_years(text, years):
     ("Data Steward", "Data Manager / Gouvernance"),
     ("Data Quality Analyst", "Data Manager / Gouvernance"),
     ("Chef de projet", "Autre métier data"),
+    ("Ingénieur intelligence artificielle F/H (CDI)", "AI / LLM Engineer"),
+    ("Lead Tech IA F/H", "Chef de projet / Lead Data & IA"),
+    ("Chef de projet intelligence artificielle / data H/F", "Chef de projet / Lead Data & IA"),
+    ("Head of Data & IA Engineering - H/F", "Chef de projet / Lead Data & IA"),
+    ("Data Analytics Backend Engineer Go / ClickHouse", "Data Engineer"),
+    ("Chercheur appliqué intelligence artificielle", "Recherche / R&D IA"),
 ])
 def test_role_family(title, role):
     assert N.role_family(title) == role
@@ -134,3 +140,28 @@ def test_contract_type(raw, title, expected):
 ])
 def test_sector(raw, company, expected):
     assert N.sector_category(raw, company) == expected
+
+
+@pytest.mark.parametrize("raw,city,region", [
+    ("Lyon, Rhône", "Lyon", "Auvergne-Rhône-Alpes"),
+    ("Nantes, Loire-Atlantique", "Nantes", "Pays de la Loire"),
+    ("Île-de-France", "Non précisé", "Île-de-France"),
+    ("Hauts-de-Seine", "Non précisé", "Île-de-France"),
+    ("Ville Inconnue, Haute-Garonne", "Ville Inconnue", "Occitanie"),
+])
+def test_location_adzuna_format_ville_departement(raw, city, region):
+    loc = N.normalize_location(raw)
+    assert (loc.city, loc.region) == (city, region)
+
+
+@pytest.mark.parametrize("title,ok", [
+    ("Data Analyst H/F", True),
+    ("Ingénieur intelligence artificielle", True),
+    ("Consultant BI", True),
+    ("Professeur d'intelligence artificielle - IA", False),
+    ("Commercial indépendant BtoB - formation & intelligence artificielle", False),
+    ("Contrôleur de gestion H/F", False),
+    ("Responsable régional des relations hospitalières", False),
+])
+def test_is_data_ai_title(title, ok):
+    assert N.is_data_ai_title(title) is ok

@@ -1,30 +1,211 @@
 ville,region,pays,latitude,longitude,nb_offres,part_offres_pct,salaire_median,nb_offres_avec_salaire,pct_teletravail
-Aix-en-Provence,Provence-Alpes-Côte d'Azur,France,43.5297,5.4474,28,2.34,47040.0,17,64.3
-Bordeaux,Nouvelle-Aquitaine,France,44.8378,-0.5792,45,3.76,47500.0,19,64.4
-Boulogne-Billancourt,Île-de-France,France,48.8397,2.2399,24,2.01,50500.0,15,66.7
-Clermont-Ferrand,Auvergne-Rhône-Alpes,France,45.7772,3.087,12,1.0,50750.0,6,91.7
-Courbevoie,Île-de-France,France,48.8973,2.2522,39,3.26,52500.0,13,46.2
-Dijon,Bourgogne-Franche-Comté,France,47.322,5.0415,13,1.09,52000.0,5,53.8
-Grenoble,Auvergne-Rhône-Alpes,France,45.1885,5.7245,22,1.84,52000.0,6,59.1
-Issy-les-Moulineaux,Île-de-France,France,48.82450000000001,2.2737,11,0.92,36750.0,4,63.6
-La Défense,Île-de-France,France,48.891799999999996,2.2362,44,3.68,55500.0,19,65.9
-Levallois-Perret,Île-de-France,France,48.895,2.2875,28,2.34,49250.0,10,64.3
-Lille,Hauts-de-France,France,50.6292,3.0573,50,4.18,47040.0,23,58.0
-Lyon,Auvergne-Rhône-Alpes,France,45.764,4.8357,103,8.61,47000.0,49,66.0
-Marseille,Provence-Alpes-Côte d'Azur,France,43.2965,5.369800000000001,24,2.01,50000.0,11,66.7
-Massy,Île-de-France,France,48.7309,2.2713,10,0.84,45500.0,6,70.0
-Montpellier,Occitanie,France,43.6108,3.8767,32,2.68,47000.0,11,56.3
-Nantes,Pays de la Loire,France,47.2184,-1.5536,46,3.85,49750.0,18,56.5
-Nice,Provence-Alpes-Côte d'Azur,France,43.71020000000001,7.262,12,1.0,54500.0,6,83.3
-Niort,Non précisé,France,,,10,0.84,48000.0,4,80.0
-Non précisé,Non précisé,France,,,24,2.01,49500.0,14,50.0
-Paris,Île-de-France,France,48.8566,2.3522,351,29.35,52250.0,158,68.4
-Puteaux,Île-de-France,France,48.8848,2.2389,38,3.18,53000.0,18,68.4
-Rennes,Bretagne,France,48.1173,-1.6778000000000002,42,3.51,46000.0,18,69.0
-Rouen,Normandie,France,49.4432,1.0999,5,0.42,35500.0,1,80.0
-Saint-Denis,Île-de-France,France,48.9362,2.3574,20,1.67,56500.0,11,80.0
-Sophia Antipolis,Provence-Alpes-Côte d'Azur,France,43.6163,7.055200000000001,20,1.67,47000.0,12,60.0
-Strasbourg,Grand Est,France,48.5734,7.752100000000001,19,1.59,47000.0,7,78.9
-Toulouse,Occitanie,France,43.604699999999994,1.4442,97,8.11,48000.0,36,62.9
-Tours,Centre-Val de Loire,France,47.394099999999995,0.6848,13,1.09,46000.0,7,76.9
-Villeurbanne,Auvergne-Rhône-Alpes,France,45.7719,4.8902,14,1.17,45250.0,6,71.4
+1Er-,Auvergne-Rhône-Alpes,France,45.76143821428571,4.841326428571429,28,1.96,47000.0,4,7.1
+4Ème-,Auvergne-Rhône-Alpes,France,45.74522,4.84192,1,0.07,47500.0,1,0.0
+Agen,Nouvelle-Aquitaine,France,44.20149,0.6121,1,0.07,,0,0.0
+Aix-en-Provence,Provence-Alpes-Côte d'Azur,France,43.5297,5.4474,9,0.63,42500.0,3,0.0
+Albi,Occitanie,France,43.92742,2.14825,1,0.07,,0,0.0
+Allauch,Provence-Alpes-Côte d'Azur,France,43.29834,5.38322,4,0.28,45000.0,1,0.0
+Amiens,Hauts-de-France,France,49.8941,2.2958,1,0.07,25000.0,1,0.0
+Athis-Mons,Île-de-France,France,48.71038,2.36477,1,0.07,,0,0.0
+Aubervilliers,Île-de-France,France,48.91482,2.38121,1,0.07,20020.0,1,0.0
+Aubière,Auvergne-Rhône-Alpes,France,45.75066,3.11145,1,0.07,,0,0.0
+Aubière,Non précisé,France,45.72869,3.09905,1,0.07,,0,0.0
+Ault,Hauts-de-France,France,50.10102,1.44761,2,0.14,,0,0.0
+Baie-Mahault,Outre-mer,France,16.27611,-61.5049,1,0.07,,0,0.0
+Balma,Occitanie,France,43.60989,1.49756,1,0.07,,0,0.0
+Bayonne,Nouvelle-Aquitaine,France,43.49344,-1.47454,2,0.14,,0,0.0
+Belfort,Bourgogne-Franche-Comté,France,47.63883,6.86222,2,0.14,,0,0.0
+Betton,Bretagne,France,48.11176,-1.68027,3,0.21,45500.0,1,0.0
+Bezons,Île-de-France,France,48.92732,2.21562,1,0.07,,0,0.0
+Bihorel,Normandie,France,49.44237,1.09849,1,0.07,,0,0.0
+Blagnac,Non précisé,France,,,1,0.07,,0,0.0
+Blagnac,Occitanie,France,,,1,0.07,,0,0.0
+Bobigny,Île-de-France,France,48.90643,2.44046,2,0.14,35000.0,1,0.0
+Bois-Guillaume,Normandie,France,49.4689,1.1148,1,0.07,,0,0.0
+Bordeaux,Nouvelle-Aquitaine,France,44.8378,-0.5792,10,0.7,45500.0,5,0.0
+Boulogne-Billancourt,Île-de-France,France,48.8397,2.2399,3,0.21,44500.0,1,0.0
+Bourg-Lès-Valence,Auvergne-Rhône-Alpes,France,44.997555,4.97481,2,0.14,,0,0.0
+Brest,Bretagne,France,48.3904,-4.4861,4,0.28,40000.0,1,0.0
+Brest-L'Hermitage-Gouesnou,Bretagne,France,48.3906,-4.4869,3,0.21,67500.0,1,33.3
+Bron,Auvergne-Rhône-Alpes,France,45.73345,4.90872,1,0.07,,0,0.0
+Bustanico,Corse,France,42.32745,9.22086,1,0.07,,0,0.0
+Bègles,Nouvelle-Aquitaine,France,44.80749,-0.54883,1,0.07,50000.0,1,0.0
+Cadenet,Provence-Alpes-Côte d'Azur,France,43.73803,5.46363,1,0.07,,0,0.0
+Caluire-Et-Cuire,Auvergne-Rhône-Alpes,France,45.76853,4.85052,3,0.21,,0,33.3
+Carquefou,Pays de la Loire,France,47.26721,-1.44026,1,0.07,,0,0.0
+Castelnau-Le-Lez,Occitanie,France,43.63317,3.89566,1,0.07,,0,0.0
+Castries,Occitanie,France,43.65688,3.96995,1,0.07,,0,0.0
+Cesson-Sévigné,Bretagne,France,48.11842,-1.60461,1,0.07,52500.0,1,0.0
+Chaponnay,Auvergne-Rhône-Alpes,France,45.62867,4.94062,1,0.07,,0,0.0
+Charles-De-Gaulles Aéroport,Île-de-France,France,49.00403,2.51524,2,0.14,,0,0.0
+Chartres-De-Bretagne,Bretagne,France,48.02471,-1.74717,1,0.07,,0,0.0
+Chatou,Île-de-France,France,48.87956,2.14647,1,0.07,,0,0.0
+Chessy,Île-de-France,France,48.88762,2.77236,2,0.14,,0,0.0
+Cholet 1Er Canton,Pays de la Loire,France,47.05795,-0.87912,1,0.07,53000.0,1,0.0
+Châteauneuf-Les-Martigues,Provence-Alpes-Côte d'Azur,France,43.41605,5.21409,1,0.07,36500.0,1,0.0
+Châtellerault,Nouvelle-Aquitaine,France,46.806219999999996,0.56316,2,0.14,,0,0.0
+Châtillon,Île-de-France,France,48.79986,2.28574,1,0.07,,0,0.0
+Clamart,Île-de-France,France,48.7991,2.26247,1,0.07,,0,0.0
+Clichy,Île-de-France,France,48.9027,2.30408,2,0.14,,0,0.0
+Colmar,Grand Est,France,48.08453,7.32176,1,0.07,50000.0,1,0.0
+Colombes,Île-de-France,France,48.92303,2.255,3,0.21,,0,66.7
+Courbevoie,Île-de-France,France,48.8973,2.2522,6,0.42,30000.0,1,0.0
+Couëron,Pays de la Loire,France,47.21442,-1.72534,1,0.07,,0,0.0
+Crolles,Auvergne-Rhône-Alpes,France,45.28615,5.88565,2,0.14,42000.0,1,0.0
+Créteil,Île-de-France,France,48.7904,2.4556,2,0.14,,0,0.0
+Cysoing,Hauts-de-France,France,50.59517,3.25855,1,0.07,,0,0.0
+Dagneux,Auvergne-Rhône-Alpes,France,45.85073333333333,5.190606666666667,3,0.21,,0,0.0
+Daoulas,Bretagne,France,48.40056,-4.22822,1,0.07,48000.0,1,0.0
+Douai,Hauts-de-France,France,50.36754,3.08249,1,0.07,,0,0.0
+Entzheim,Grand Est,France,48.52333,7.639215,2,0.14,,0,0.0
+Evry,Île-de-France,France,48.6103675,2.4212125,4,0.28,,0,0.0
+Fontenay-Sous-Bois,Île-de-France,France,48.85121,2.47435,1,0.07,,0,0.0
+Gentilly,Île-de-France,France,48.81493,2.34892,1,0.07,,0,0.0
+Gif-Sur-Yvette,Île-de-France,France,48.705377500000004,2.1366199999999997,4,0.28,,0,0.0
+Grandvilliers,Hauts-de-France,France,49.64722,1.84482,1,0.07,,0,0.0
+Grasse,Provence-Alpes-Côte d'Azur,France,,,1,0.07,,0,0.0
+Grenoble,Auvergne-Rhône-Alpes,France,45.18849999999999,5.7245,13,0.91,45000.0,3,0.0
+Guilherand-Granges,Auvergne-Rhône-Alpes,France,44.94004,4.89275,1,0.07,,0,0.0
+Guipavas,Bretagne,France,48.40675,-4.38882,1,0.07,37500.0,1,0.0
+Hyères,Provence-Alpes-Côte d'Azur,France,43.11987,6.12858,1,0.07,,0,0.0
+Ile-De-France,Non précisé,France,48.811332,2.351634,15,1.05,51000.0,6,0.0
+Indre-Et-Loire,Non précisé,France,47.204523,0.624623,3,0.21,41750.0,2,0.0
+Issy-les-Moulineaux,Île-de-France,France,48.8245,2.2737,18,1.26,55000.0,2,0.0
+Ivry-sur-Seine,Île-de-France,France,48.8157,2.3849,2,0.14,,0,0.0
+Joinville-Le-Pont,Île-de-France,France,48.82187,2.47389,1,0.07,,0,0.0
+L'Haÿ-Les-Roses,Île-de-France,France,,,1,0.07,,0,0.0
+La Courneuve,Île-de-France,France,48.93607,2.36488,2,0.14,,0,0.0
+La Défense,Île-de-France,France,48.8918,2.2362,20,1.4,87500.0,1,0.0
+La Garenne-Colombes,Île-de-France,France,48.90986,2.24639,2,0.14,38500.0,1,0.0
+La-Madeleine,Hauts-de-France,France,50.63718000000001,3.06302,11,0.77,53000.0,2,18.2
+Labastide-Murat,Occitanie,France,44.65975,1.51931,1,0.07,,0,0.0
+Labège;,Occitanie,France,43.53,43.53,1,0.07,,0,0.0
+Lacq,Nouvelle-Aquitaine,France,43.45614,-0.68188,1,0.07,,0,0.0
+Lamballe,Bretagne,France,48.54083,-2.43332,1,0.07,57500.0,1,0.0
+Laxou,Grand Est,France,48.67083,6.14795,1,0.07,33000.0,1,0.0
+Le Bar-Sur-Loup,Provence-Alpes-Côte d'Azur,France,43.64066,7.00862,3,0.21,,0,0.0
+Le Kremlin-Bicêtre,Île-de-France,France,48.81213,2.35681,1,0.07,,0,0.0
+Le Louroux-Béconnais,Pays de la Loire,France,47.51012,-0.98051,2,0.14,,0,0.0
+Le Montet,Auvergne-Rhône-Alpes,France,46.4749,3.13432,3,0.21,,0,0.0
+Le Plessis-Robinson,Île-de-France,France,48.78101,2.26326,2,0.14,,0,0.0
+Le-Relecq-Kerhuon,Bretagne,France,48.41644066666667,-4.398298,3,0.21,,0,0.0
+Le-Rheu,Bretagne,France,48.05231,-1.79019,1,0.07,,0,0.0
+Levallois-Perret,Île-de-France,France,48.89500000000001,2.2875,27,1.89,50000.0,5,0.0
+Lille,Hauts-de-France,France,50.6292,3.0573,18,1.26,41250.0,12,11.1
+Lillers,Hauts-de-France,France,50.64351,2.54628,1,0.07,39000.0,1,0.0
+Limonest,Auvergne-Rhône-Alpes,France,45.83135333333334,4.775968333333333,6,0.42,65000.0,1,0.0
+Lognes,Île-de-France,France,48.83701,2.63009,1,0.07,,0,0.0
+Loiret,Non précisé,France,48.019247,2.324043,2,0.14,44250.0,2,0.0
+Lormont,Nouvelle-Aquitaine,France,44.95299,-0.53454,1,0.07,40000.0,1,100.0
+Ludres,Grand Est,France,48.62292,6.16107,1,0.07,,0,0.0
+Lunel,Occitanie,France,43.67574,4.13805,1,0.07,,0,0.0
+Lyon,Auvergne-Rhône-Alpes,France,45.764,4.8357,26,1.82,47500.0,13,3.8
+Magny-Les-Hameaux,Île-de-France,France,48.7241,2.08762,1,0.07,42000.0,1,0.0
+Malakoff,Île-de-France,France,48.81432,2.2879,2,0.14,,0,0.0
+Marcoussis,Île-de-France,France,48.59267,2.18793,2,0.14,,0,0.0
+Marcq-En-Baroeul,Hauts-de-France,France,50.66554,3.10447,1,0.07,,0,0.0
+Marcy-L'Étoile,Auvergne-Rhône-Alpes,France,45.78103,4.70561,1,0.07,,0,0.0
+Marly-La-Ville,Île-de-France,France,49.03249,2.47159,1,0.07,,0,0.0
+Marseille,Provence-Alpes-Côte d'Azur,France,43.2965,5.3698,5,0.35,46500.0,4,0.0
+Massy,Île-de-France,France,48.7309,2.2713,6,0.42,113750.0,2,0.0
+Meudon,Île-de-France,France,48.78677,2.22843,1,0.07,,0,0.0
+Montfort-L'Amaury,Île-de-France,France,48.8143,1.89957,1,0.07,,0,0.0
+Montigny-Le-Bretonneux,Île-de-France,France,48.76963,2.03409,4,0.28,,0,0.0
+Montpellier,Occitanie,France,43.6108,3.8767,2,0.14,,0,0.0
+Montpellier 2E Canton,Occitanie,France,43.63552,3.86085,1,0.07,,0,0.0
+Montreuil,Île-de-France,France,48.8638,2.4485,2,0.14,,0,0.0
+Montrouge,Île-de-France,France,48.81846,2.31993,8,0.56,,0,0.0
+Mougins,Provence-Alpes-Côte d'Azur,France,43.60009,6.99622,1,0.07,,0,0.0
+Mouy,Hauts-de-France,France,49.3823,2.38552,1,0.07,,0,0.0
+Mérignac,Nouvelle-Aquitaine,France,44.8386,-0.6436,1,0.07,,0,0.0
+Nanterre,Île-de-France,France,48.8924,2.2071,5,0.35,48000.0,3,0.0
+Nantes,Pays de la Loire,France,47.21840000000001,-1.5536,14,0.98,39000.0,3,7.1
+Nantes 10E Canton,Pays de la Loire,France,47.2072,-1.50412,2,0.14,,0,0.0
+Neuilly-Sur-Marne,Île-de-France,France,48.85727,2.53138,1,0.07,,0,0.0
+Neuilly-sur-Seine,Île-de-France,France,48.8846,2.2697,14,0.98,46500.0,3,0.0
+Nice,Provence-Alpes-Côte d'Azur,France,43.7102,7.261999999999999,5,0.35,,0,0.0
+Nice 13E Canton,Provence-Alpes-Côte d'Azur,France,43.70341,7.2662,4,0.28,,0,0.0
+Niort,Nouvelle-Aquitaine,France,46.32386,-0.45758,2,0.14,,0,0.0
+Nogent-Sur-Seine,Grand Est,France,48.41591,3.43919,1,0.07,,0,0.0
+Noisy-Le-Grand,Île-de-France,France,48.84777,2.55281,2,0.14,,0,0.0
+Non précisé,Auvergne-Rhône-Alpes,France,45.69480944117647,5.002041558823529,34,2.39,50000.0,54,2.9
+Non précisé,Bretagne,France,48.20187,-1.727553,14,0.98,50000.0,54,0.0
+Non précisé,Grand Est,France,48.455270363636366,7.534603454545455,11,0.77,50000.0,54,0.0
+Non précisé,Hauts-de-France,France,50.447027,3.171878,15,1.05,50000.0,54,0.0
+Non précisé,Non précisé,France,,,203,14.25,50000.0,54,4.9
+Non précisé,Normandie,France,49.629473,0.78306,1,0.07,50000.0,54,0.0
+Non précisé,Nouvelle-Aquitaine,France,45.32355578947369,-0.4087871578947368,19,1.33,50000.0,54,5.3
+Non précisé,Occitanie,France,43.447094449999994,1.4434143000000001,20,1.4,50000.0,54,0.0
+Non précisé,Pays de la Loire,France,47.43249454166667,-1.4319425416666667,24,1.68,50000.0,54,4.2
+Non précisé,Provence-Alpes-Côte d'Azur,France,43.552143875,5.3453518749999995,8,0.56,50000.0,54,12.5
+Non précisé,Île-de-France,France,48.82880917647059,2.266326588235294,40,2.81,50000.0,54,0.0
+Orchies,Hauts-de-France,France,50.49143,3.28712,1,0.07,,0,0.0
+Ornans,Bourgogne-Franche-Comté,France,47.06509,6.21616,1,0.07,46000.0,1,0.0
+Palaiseau,Île-de-France,France,48.71894,2.23356,3,0.21,,0,0.0
+Pantin,Île-de-France,France,48.89312,2.4128,3,0.21,,0,0.0
+Paris,Île-de-France,France,48.8566,2.3522000000000003,439,30.81,55000.0,86,1.8
+Pau,Nouvelle-Aquitaine,France,43.26711,-0.313865,2,0.14,,0,0.0
+Pessac,Nouvelle-Aquitaine,France,44.8,-0.61667,2,0.14,42500.0,2,0.0
+Pont-Rousseau,Pays de la Loire,France,47.21684,-1.5567400000000002,3,0.21,,0,0.0
+Puteaux,Île-de-France,France,48.8848,2.2389,10,0.7,57500.0,4,0.0
+Rangueuil,Occitanie,France,43.60436,1.44295,8,0.56,84600.0,4,0.0
+Reims 1Er Canton,Grand Est,France,49.2566,4.03309,1,0.07,,0,0.0
+Rennes,Bretagne,France,48.1173,-1.6778,7,0.49,37500.0,1,0.0
+Rillieux-La-Pape,Auvergne-Rhône-Alpes,France,45.82068,4.89686,1,0.07,,0,0.0
+Rohrbach-Lès-Bitche,Grand Est,France,48.94756,7.29857,2,0.14,,0,0.0
+Roubaix,Hauts-de-France,France,50.683095,3.16075,2,0.14,,0,0.0
+Rouen,Normandie,France,49.4432,1.0999,1,0.07,,0,0.0
+Rueil-Malmaison,Île-de-France,France,48.8778,2.1803,1,0.07,,0,0.0
+Réau,Île-de-France,France,48.6266,2.66468,1,0.07,42000.0,1,0.0
+Saclay,Île-de-France,France,48.7311,2.169,3,0.21,,0,0.0
+Saint-Benoît,Outre-mer,France,-21.25,55.41667,1,0.07,40000.0,1,0.0
+Saint-Cloud,Île-de-France,France,48.837722,2.2409493333333335,15,1.05,40000.0,1,6.7
+Saint-Denis,Île-de-France,France,48.9362,2.3574,2,0.14,,0,0.0
+Saint-Denis-De-L'Hôtel,Centre-Val de Loire,France,47.868654,2.132708,1,0.07,,0,0.0
+Saint-Donat,Auvergne-Rhône-Alpes,France,45.46408,2.76955,2,0.14,,0,0.0
+Saint-Germain-Les-Arpajon,Île-de-France,France,48.59043,2.21698,1,0.07,,0,0.0
+Saint-Herblain,Pays de la Loire,France,47.21442,-1.63888,2,0.14,,0,0.0
+Saint-Jean-De-Védas,Occitanie,France,43.56443,3.9544,1,0.07,,0,0.0
+Saint-Lô,Normandie,France,49.1156,-1.09008,1,0.07,,0,0.0
+Saint-Malo,Bretagne,France,48.64818,-2.02609,1,0.07,,0,0.0
+Saint-Mandé,Île-de-France,France,48.82589,2.40689,2,0.14,,0,0.0
+Saint-Martin-D'Hères,Auvergne-Rhône-Alpes,France,45.16453,5.76823,1,0.07,,0,0.0
+Saint-Martin-De-Seignanx,Nouvelle-Aquitaine,France,43.5415,-1.46263,1,0.07,35000.0,1,0.0
+Saint-Ouen,Île-de-France,France,48.90609,2.33183,3,0.21,,0,0.0
+Saint-Priest,Auvergne-Rhône-Alpes,France,45.69416,4.93505,1,0.07,,0,0.0
+Saint-Quentin-En-Yvelines,Île-de-France,France,48.771729666666666,2.0701566666666666,3,0.21,,0,0.0
+Sainte-Luce-Sur-Loire,Pays de la Loire,France,47.2968,-1.49226,1,0.07,,0,0.0
+Sannois,Île-de-France,France,48.94425,2.25096,1,0.07,,0,0.0
+Schweighouse-Sur-Moder,Grand Est,France,48.79219,7.67502,1,0.07,,0,0.0
+Sedan,Grand Est,France,49.70102,4.94448,1,0.07,,0,0.0
+Sens,Bourgogne-Franche-Comté,France,48.2556,3.26798,1,0.07,,0,0.0
+Sorigny,Centre-Val de Loire,France,47.243371,0.689935,1,0.07,,0,100.0
+Strasbourg,Grand Est,France,48.5734,7.7521,7,0.49,45000.0,3,28.6
+Suresnes,Île-de-France,France,48.87014,2.2221,4,0.28,53750.0,4,0.0
+Sèvres,Île-de-France,France,48.82395,2.21039,6,0.42,42500.0,1,0.0
+Talence,Nouvelle-Aquitaine,France,44.83737,-0.57614,1,0.07,,0,0.0
+Tarnos,Nouvelle-Aquitaine,France,43.54114,-1.462815,2,0.14,35000.0,1,0.0
+Taulé,Bretagne,France,48.57697,-3.82755,1,0.07,37500.0,1,0.0
+Thionville,Grand Est,France,49.35708,6.16845,1,0.07,,0,0.0
+Thuir,Occitanie,France,42.52433,2.83397,1,0.07,,0,0.0
+Toulon,Provence-Alpes-Côte d'Azur,France,43.1242,5.928,1,0.07,,0,0.0
+Toulouse,Occitanie,France,43.6047,1.4442,9,0.63,37500.0,4,0.0
+Toulouse 14E Canton,Occitanie,France,43.6681,1.37892,1,0.07,42500.0,1,0.0
+Tours,Centre-Val de Loire,France,47.3941,0.6848,2,0.14,,0,0.0
+Troyes 2E Canton,Grand Est,France,48.40746,3.95208,1,0.07,,0,0.0
+Uzès,Occitanie,France,44.11373,4.52313,2,0.14,,0,0.0
+Vaucouleurs,Grand Est,France,48.59401,5.55475,1,0.07,65000.0,1,0.0
+Vaux-Le-Pénil,Île-de-France,France,48.56316,2.73609,1,0.07,,0,0.0
+Vendargues,Occitanie,France,43.72899,4.02102,2,0.14,,0,0.0
+Versailles,Île-de-France,France,48.8049,2.1204,2,0.14,,0,0.0
+Villebon-Sur-Yvette,Île-de-France,France,48.71894,2.23356,1,0.07,,0,0.0
+Villefranche-Sur-Saône,Auvergne-Rhône-Alpes,France,45.98987,4.71875,1,0.07,,0,0.0
+Villejuif,Île-de-France,France,48.79507,2.36653,1,0.07,,0,0.0
+Villeneuve-D'Ascq,Hauts-de-France,France,50.62073,3.1315,5,0.35,,0,0.0
+Villeneuve-Le-Roi,Île-de-France,France,48.74298,2.40132,1,0.07,47500.0,1,0.0
+Villeurbanne,Auvergne-Rhône-Alpes,France,45.771899999999995,4.8902,3,0.21,40000.0,1,0.0
+Vitry-Sur-Seine,Île-de-France,France,48.78944,2.38932,1,0.07,,0,0.0
+Voiron,Auvergne-Rhône-Alpes,France,45.27732,5.65092,2,0.14,,0,0.0
+Vélizy-Villacoublay,Île-de-France,France,48.78283,2.19001,3,0.21,,0,0.0
+Vézénobres,Occitanie,France,44.0527,4.14104,1,0.07,37500.0,1,0.0
+Évry-Courcouronnes,Île-de-France,France,48.629,2.441,1,0.07,,0,0.0

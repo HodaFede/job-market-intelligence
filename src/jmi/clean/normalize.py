@@ -1,0 +1,313 @@
+"""Fonctions de normalisation, toutes pures et testées unitairement (tests/test_normalize.py)."""
+from __future__ import annotations
+
+import csv
+import re
+import unicodedata
+from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
+
+from jmi.config import resource
+
+UNKNOWN = "Non précisé"
+
+
+def strip_accents(text: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
+
+
+def norm(text: str | None) -> str:
+    """Minuscules, sans accents, espaces insécables remplacés, espaces compactés."""
+    if not text:
+        return ""
+    text = str(text).replace(" ", " ").replace("\xa0", " ").replace("’", "'")
+    return re.sub(r"\s+", " ", strip_accents(text).lower()).strip()
+
+
+# ---------------------------------------------------------------------------
+# Salaire
+# ---------------------------------------------------------------------------
+@dataclass
+class Salary:
+    annual_min: float | None = None
+    annual_max: float | None = None
+    daily_rate: float | None = None  # TJM freelance, analysé à part
+    period: str | None = None        # year / month / hour / day
+
+    @property
+    def annual_mid(self) -> float | None:
+        vals = [v for v in (self.annual_min, self.annual_max) if v is not None]
+        return sum(vals) / len(vals) if vals else None
+
+
+_PERIOD_PATTERNS = [
+    ("day", r"par jour|/ ?jour|/ ?j\b|\btjm\b|journalier|daily|per day"),
+    ("hour", r"horaire|/ ?h\b|de l'heure|par heure|hourly|per hour"),
+    ("month", r"mensuel|par mois|/ ?mois|monthly|per month"),
+    ("year", r"annuel|/ ?an\b|par an\b|brut/an|\bk ?€|\d ?k\b|yearly|per year|annual"),
+]
+_UNIT_ALIASES = {"year": "year", "annual": "year", "yearly": "year", "month": "month", "monthly": "month",
+                 "hour": "hour", "hourly": "hour", "day": "day", "daily": "day", "week": "week"}
+_NUMBER = re.compile(r"(?<![\d.,])(\d{1,3}(?:[ .]\d{3})+|\d+(?:[.,]\d+)?)(?![\d.,])\s*(k\b)?", re.I)
+
+
+def _to_annual(value: float, period: str, hours_per_year: int) -> float:
+    return {"year": value, "month": value * 12, "hour": value * hours_per_year, "week": value * 52}[period]
+
+
+def _detect_period(text: str) -> str | None:
+    for period, pattern in _PERIOD_PATTERNS:
+        if re.search(pattern, text):
+            return period
+    return None
+
+
+def parse_salary(text: str | None = None, min_raw: float | None = None, max_raw: float | None = None,
+                 unit_raw: str | None = None, hours_per_year: int = 1607) -> Salary:
+    """Convertit un salaire brut (texte libre ou champs structurés) en salaire annuel brut.
+
+    Exemples gérés : "Annuel de 42000.0 Euros à 48000.0 Euros sur 12.0 mois", "45K€ - 55K€",
+    "Entre 40 000 et 50 000 € brut/an", "Mensuel de 3500 Euros", "550 € par jour" (TJM).
+    """
+    # 1) Champs structurés (Adzuna, JSON-LD)
+    if min_raw is not None or max_raw is not None:
+        period = _UNIT_ALIASES.get(norm(unit_raw), None) if unit_raw else None
+        values = [float(v) for v in (min_raw, max_raw) if v is not None]
+        if period is None:
+            period = _guess_period(max(values))
+        lo, hi = min(values), max(values)
+        if period == "day":
+            return Salary(daily_rate=(lo + hi) / 2, period="day")
+        return Salary(_to_annual(lo, period, hours_per_year), _to_annual(hi, period, hours_per_year), period=period)
+
+    # 2) Texte libre
+    t = norm(text)
+    if not t:
+        return Salary()
+    t = re.sub(r"sur \d+(?:[.,]\d+)? ?mois", " ", t)          # "sur 12.0 mois" n'est pas un montant
+    t = re.sub(r"\d+(?:[.,]\d+)? ?(?:h|heures?) ?(?:/|par) ?semaine", " ", t)
+    period = _detect_period(t)
+
+    values: list[float] = []
+    has_k = []
+    for num, k in _NUMBER.findall(t):
+        clean = num.replace(" ", "")
+        clean = clean.replace(".", "") if re.fullmatch(r"\d{1,3}(?:\.\d{3})+", clean) else clean.replace(",", ".")
+        values.append(float(clean))
+        has_k.append(bool(k))
+    if not values:
+        return Salary()
+    if any(has_k) or (period == "year" and max(values) < 1000):
+        values = [v * 1000 if v < 1000 else v for v in values]
+    if period is None:
+        period = _guess_period(max(values))
+    lo, hi = min(values), max(values)
+    if period == "day":
+        return Salary(daily_rate=(lo + hi) / 2, period="day")
+    return Salary(_to_annual(lo, period, hours_per_year), _to_annual(hi, period, hours_per_year), period=period)
+
+
+def _guess_period(value: float) -> str:
+    if value >= 15000:
+        return "year"
+    if value >= 1000:
+        return "month"
+    if value >= 150:
+        return "day"
+    return "hour"
+
+
+# ---------------------------------------------------------------------------
+# Expérience, séniorité, rôle
+# ---------------------------------------------------------------------------
+def parse_experience_years(text: str | None) -> float | None:
+    t = norm(text)
+    if not t:
+        return None
+    if re.search(r"debutant|jeune diplome|sans experience|graduate|entry level", t):
+        return 0.0
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:an\(s\)|ans?\b|years?)", t)
+    if m:
+        return float(m.group(1).replace(",", "."))
+    m = re.search(r"(\d+)\s*mois", t)
+    if m:
+        return round(int(m.group(1)) / 12, 1)
+    return None
+
+
+SENIORITY_ORDER = ["Stage / Alternance", "Junior", "Confirmé", "Senior", UNKNOWN]
+
+
+def seniority_level(title: str | None, experience_years: float | None = None, contract: str | None = None,
+                    description: str | None = None) -> str:
+    t = norm(title)
+    if re.search(r"\bstage\b|stagiaire|intern(ship)?\b|alternan|apprenti", t) or contract in ("Stage", "Alternance"):
+        return "Stage / Alternance"
+    if re.search(r"\bsenior\b|\bsr\b|\blead\b|principal|\bexpert\b|head of|\bstaff\b|tech lead", t):
+        return "Senior"
+    if re.search(r"\bjunior\b|\bjr\b|debutant|jeune diplome|graduate", t):
+        return "Junior"
+    if re.search(r"confirme|experimente|medior|intermediate", t):
+        return "Confirmé"
+    years = experience_years
+    if years is None and description:
+        years = parse_experience_years(description)
+    if years is None:
+        return UNKNOWN
+    if years <= 2:
+        return "Junior"
+    if years <= 5:
+        return "Confirmé"
+    return "Senior"
+
+
+ROLE_RULES: list[tuple[str, str]] = [
+    ("AI / LLM Engineer", r"\bllm\b|ia generative|genai|generative ai|\bai engineer|ingenieur ia\b|developpeur ia\b|ingenieur nlp|prompt engineer"),
+    ("Machine Learning Engineer", r"machine learning engineer|\bml engineer|mlops|ml ops|ingenieur machine learning|ingenieur ml\b"),
+    ("Data Scientist", r"data scien|statisticien|scientifique des donnees|machine learning|\bml\b|deep learning"),
+    ("Data Engineer", r"data engineer|ingenieur (?:de )?donnees|ingenieur data|big data|data architect|architecte (?:data|donnees)|developpeur (?:big )?data|\betl\b"),
+    ("Analytics Engineer / BI", r"analytics engineer|bi engineer|developpeur bi|ingenieur decisionnel|consultant (?:bi|decisionnel)|developpeur decisionnel"),
+    ("Consultant Data & IA", r"consultant"),
+    ("Data Manager / Gouvernance", r"data steward|data manager|gouvernance|data quality|qualite des donnees|data owner|data governance"),
+    ("Data Analyst", r"analyst|analyste|business intelligence|\bbi\b|decisionnel|reporting|data visuali[sz]"),
+]
+
+
+def role_family(title: str | None) -> str:
+    t = norm(title)
+    for role, pattern in ROLE_RULES:
+        if re.search(pattern, t):
+            return role
+    return "Autre métier data"
+
+
+# ---------------------------------------------------------------------------
+# Télétravail, contrat, secteur
+# ---------------------------------------------------------------------------
+def remote_policy(*texts: str | None) -> str:
+    t = norm(" ".join(x for x in texts if x))
+    if not t:
+        return UNKNOWN
+    if re.search(r"full ?remote|100 ?% (?:en )?(?:teletravail|remote)|teletravail (?:total|complet|integral)|"
+                 r"remote first|entierement a distance|telecommute", t):
+        return "Full remote"
+    if re.search(r"pas de teletravail|sans teletravail|aucun teletravail|100 ?% (?:sur site|presentiel)|"
+                 r"teletravail non (?:possible|autorise)|no remote|on[- ]site only", t):
+        return "Sur site"
+    if re.search(r"teletravail|hybride|hybrid|remote|travail a distance", t):
+        return "Hybride"
+    return UNKNOWN
+
+
+def contract_type(raw: str | None, title: str | None = None) -> str:
+    t = norm(raw)
+    ti = norm(title)
+    if re.search(r"alternan|apprenti|contrat pro", t) or re.search(r"alternan|apprenti", ti):
+        return "Alternance"
+    if re.search(r"\bstage\b|intern", t) or re.search(r"\bstage\b|stagiaire|intern(ship)?\b", ti):
+        return "Stage"
+    if re.search(r"freelance|independant|portage|contractor|\blib\b|liberal|\bmission\b", t):
+        return "Freelance"
+    if re.search(r"interim|\bmis\b|travail temporaire|temporary|\bsai\b|saisonnier", t):
+        return "Intérim / temporaire"
+    if re.search(r"\bcdd\b|duree determinee|\bcontract\b", t):
+        return "CDD"
+    if re.search(r"\bcdi\b|duree indeterminee|permanent|full_time|full time", t):
+        return "CDI"
+    return UNKNOWN
+
+
+SECTOR_RULES: list[tuple[str, str]] = [
+    ("Recrutement / Intérim", r"interim|recrutement|travail temporaire|agence d'emploi|recruitment|staffing"),
+    ("Banque / Assurance / Finance", r"banque|bancaire|assurance|financ|credit|mutuelle|accounting|bourse|fintech"),
+    ("Énergie / Utilities", r"energie|electricite|\bgaz\b|petrol|nucleaire|energy|eau et assainissement"),
+    ("Santé / Pharma", r"pharma|sante|hospital|hopital|medical|medtech|healthcare|biotech"),
+    ("Industrie / Aéronautique", r"industrie|manufactur|aeronaut|automobile|chimi|fabrication|btp|construction|metallurg|engineering"),
+    ("Retail / E-commerce", r"commerce|retail|grande distribution|e-commerce|grande consommation|luxe|\bmode\b|sales jobs"),
+    ("Télécoms / Médias", r"telecom|media|edition de journaux|audiovisuel|publicite|marketing"),
+    ("Transport / Logistique", r"transport|logisti|ferroviaire|aerien|maritime"),
+    ("Secteur public / Éducation", r"administration|public|collectivite|enseignement|education|universit|recherche"),
+    ("Tech / Éditeur de logiciels", r"edition de logiciel|saas|software|startup|scale-up|internet|plateforme|jeux video"),
+    ("Conseil / ESN", r"conseil|consult|\besn\b|ssii|informatique|programmation|it jobs|systemes et logiciels|traitement de donnees|hebergement"),
+]
+
+
+def sector_category(sector_raw: str | None, company: str | None = None) -> str:
+    for text in (sector_raw, company):
+        t = norm(text)
+        if not t:
+            continue
+        for label, pattern in SECTOR_RULES:
+            if re.search(pattern, t):
+                return label
+    return "Autre / Non précisé"
+
+
+# ---------------------------------------------------------------------------
+# Localisation
+# ---------------------------------------------------------------------------
+@dataclass
+class Location:
+    city: str = UNKNOWN
+    department_code: str | None = None
+    region: str = UNKNOWN
+    latitude: float | None = None
+    longitude: float | None = None
+
+
+REGION_DEPTS = {
+    "Île-de-France": "75 77 78 91 92 93 94 95",
+    "Auvergne-Rhône-Alpes": "01 03 07 15 26 38 42 43 63 69 73 74",
+    "Bourgogne-Franche-Comté": "21 25 39 58 70 71 89 90",
+    "Bretagne": "22 29 35 56",
+    "Centre-Val de Loire": "18 28 36 37 41 45",
+    "Corse": "2A 2B",
+    "Grand Est": "08 10 51 52 54 55 57 67 68 88",
+    "Hauts-de-France": "02 59 60 62 80",
+    "Normandie": "14 27 50 61 76",
+    "Nouvelle-Aquitaine": "16 17 19 23 24 33 40 47 64 79 86 87",
+    "Occitanie": "09 11 12 30 31 32 34 46 48 65 66 81 82",
+    "Pays de la Loire": "44 49 53 72 85",
+    "Provence-Alpes-Côte d'Azur": "04 05 06 13 83 84",
+    "Outre-mer": "971 972 973 974 976",
+}
+DEPT_TO_REGION = {d: region for region, depts in REGION_DEPTS.items() for d in depts.split()}
+
+
+def _city_key(name: str) -> str:
+    return norm(name).replace("-", " ").replace("'", " ").replace("saint ", "st ")
+
+
+@lru_cache(maxsize=1)
+def _city_table(path: str | None = None) -> tuple[dict[str, dict], dict[str, str]]:
+    table_path = Path(path) if path else resource("config/cities_fr.csv")
+    by_key: dict[str, dict] = {}
+    dept_region: dict[str, str] = {}
+    with open(table_path, encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            by_key[_city_key(row["city"])] = row
+            dept_region.setdefault(row["dept_code"], row["region"])
+    return by_key, dept_region
+
+
+def normalize_location(raw: str | None, latitude: float | None = None, longitude: float | None = None) -> Location:
+    by_key, dept_region = _city_table()
+    if not raw or norm(raw) in ("france", "france entiere", "teletravail", "remote"):
+        return Location(latitude=None, longitude=None)
+    text = str(raw).strip()
+    dept = None
+    m = re.match(r"^\s*(\d{2,3}|2[AB])\s*-\s*(.+)$", text)
+    if m:
+        dept, text = m.group(1), m.group(2)
+    text = text.split(",")[0]
+    text = re.sub(r"\(.*?\)", "", text)
+    text = re.sub(r"\b(cedex|arrondissement)\b.*$", "", text, flags=re.I)
+    text = re.sub(r"\s+\d{1,2}\s*(?:e|er|eme|ème)?\s*$", "", text.strip(), flags=re.I)
+    key = _city_key(text)
+    row = by_key.get(key)
+    if row:
+        return Location(row["city"], row["dept_code"], row["region"], float(row["latitude"]), float(row["longitude"]))
+    city = text.strip().title() or UNKNOWN
+    region = DEPT_TO_REGION.get(dept, dept_region.get(dept, UNKNOWN)) if dept else UNKNOWN
+    return Location(city, dept, region, latitude, longitude)

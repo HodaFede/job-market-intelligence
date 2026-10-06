@@ -1,0 +1,31 @@
+{
+  "resultats": [
+    {
+      "id": "198XKQP",
+      "intitule": "Data Analyst H/F",
+      "description": "Au sein de la direction financière, vous construirez des tableaux de bord sous Tableau. Maîtrise de SQL et Python. Télétravail 2 jours par semaine.",
+      "dateCreation": "2026-09-12T10:21:33.000Z",
+      "lieuTravail": {"libelle": "92 - PUTEAUX", "latitude": 48.884, "longitude": 2.238, "codePostal": "92800"},
+      "entreprise": {"nom": "ENTREPRISE EXEMPLE"},
+      "typeContrat": "CDI",
+      "typeContratLibelle": "Contrat à durée indéterminée",
+      "experienceLibelle": "2 An(s)",
+      "salaire": {"libelle": "Annuel de 40000.0 Euros à 46000.0 Euros sur 12.0 mois"},
+      "secteurActiviteLibelle": "Production et distribution d'électricité",
+      "competences": [{"libelle": "Analyser des données statistiques"}, {"libelle": "Power BI"}],
+      "origineOffre": {"urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/198XKQP"}
+    },
+    {
+      "id": "198XKZZ",
+      "intitule": "Alternance - Data Scientist",
+      "description": "Projet de machine learning (scikit-learn), séries temporelles.",
+      "dateCreation": "2026-09-10T08:00:00.000Z",
+      "lieuTravail": {"libelle": "69 - LYON 03"},
+      "entreprise": {},
+      "typeContrat": "CDD",
+      "typeContratLibelle": "Contrat à durée déterminée - 24 Mois",
+      "experienceLibelle": "Débutant accepté",
+      "salaire": {"libelle": "Mensuel de 1200.0 Euros sur 12.0 mois"}
+    }
+  ]
+}

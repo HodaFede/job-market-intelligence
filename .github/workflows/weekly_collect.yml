@@ -1,0 +1,72 @@
+# Collecte automatique deux fois par semaine (lundi et jeudi, 6h UTC) + déclenchement manuel.
+# Prérequis : secrets du dépôt FRANCE_TRAVAIL_CLIENT_ID, FRANCE_TRAVAIL_CLIENT_SECRET,
+# ADZUNA_APP_ID, ADZUNA_APP_KEY (Settings › Secrets and variables › Actions).
+#
+# Les fichiers bruts ne sont pas versionnés : ils sont conservés d'une exécution à l'autre
+# dans le cache GitHub Actions (purgé après 7 jours sans accès, d'où les deux passages par semaine).
+# Seuls les exports Tableau et le rapport sont commités.
+name: weekly-collect
+
+on:
+  schedule:
+    - cron: "0 6 * * 1,4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Installer les dépendances
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Restaurer l'historique brut
+        uses: actions/cache/restore@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - name: Collecte
+        env:
+          FRANCE_TRAVAIL_CLIENT_ID: ${{ secrets.FRANCE_TRAVAIL_CLIENT_ID }}
+          FRANCE_TRAVAIL_CLIENT_SECRET: ${{ secrets.FRANCE_TRAVAIL_CLIENT_SECRET }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python -m jmi collect
+
+      - name: Sauvegarder l'historique brut
+        uses: actions/cache/save@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+
+      - name: Pipeline (données réelles uniquement)
+        run: |
+          if ! find data/raw -name "*.jsonl" -not -path "*/demo/*" | grep -q .; then
+            echo "Aucune donnée réelle collectée : vérifier les secrets. Arrêt sans modifier le dépôt."
+            exit 1
+          fi
+          python -m jmi run --data-mode real
+
+      - name: Commiter les exports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/tableau reports/insights.md
+          git diff --cached --quiet && echo "Rien de nouveau." && exit 0
+          git commit -m "data: collecte automatique du $(date +%Y-%m-%d)"
+          git push

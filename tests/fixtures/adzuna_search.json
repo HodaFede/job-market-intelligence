@@ -1,0 +1,29 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": "4711",
+      "title": "Senior Data Engineer (Spark / Airflow)",
+      "description": "Pipelines Spark et Airflow sur AWS, full remote possible...",
+      "created": "2026-09-20T09:00:00Z",
+      "location": {"display_name": "Lyon, Rhône", "area": ["France", "Auvergne-Rhône-Alpes", "Rhône", "Lyon"]},
+      "company": {"display_name": "Exemple Tech"},
+      "salary_min": 60000, "salary_max": 70000, "salary_is_predicted": "0",
+      "contract_type": "permanent", "contract_time": "full_time",
+      "category": {"label": "IT Jobs"},
+      "redirect_url": "https://www.adzuna.fr/details/4711",
+      "latitude": 45.76, "longitude": 4.83
+    },
+    {
+      "id": "4712",
+      "title": "Data Analyst",
+      "description": "Excel, SQL",
+      "created": "2026-09-21T09:00:00Z",
+      "location": {"display_name": "Paris"},
+      "company": {"display_name": "Exemple Retail"},
+      "salary_min": 38123.45, "salary_max": 38123.45, "salary_is_predicted": "1",
+      "category": {"label": "Retail Jobs"},
+      "redirect_url": "https://www.adzuna.fr/details/4712"
+    }
+  ]
+}

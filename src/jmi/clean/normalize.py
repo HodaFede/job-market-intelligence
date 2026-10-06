@@ -371,6 +371,12 @@ def normalize_location(raw: str | None, latitude: float | None = None, longitude
             dept = dept or code
             admin_region = reg
             break
+    if not admin_region and parts:
+        # Région en tête de chaîne (« Ile-de-France, France ») : seuls les noms de région sont acceptés ici,
+        # pour ne pas confondre une commune et un département homonymes (Vienne, Nord…).
+        code, reg = region_from_admin_name(parts[0])
+        if reg and code is None:
+            admin_region = reg
     if len(parts) == 1 and admin_region and not by_key.get(_city_key(parts[0])):
         # Le lieu n'est qu'un département ou une région : pas de ville précise.
         return Location(UNKNOWN, dept, admin_region, latitude, longitude)
@@ -378,8 +384,10 @@ def normalize_location(raw: str | None, latitude: float | None = None, longitude
     if admin_region and not by_key.get(_city_key(text)) and region_from_admin_name(text)[1]:
         # Le premier élément est lui-même une région ou un département (« Ile-de-France, … »).
         return Location(UNKNOWN, dept, admin_region, latitude, longitude)
-    if re.search(r"arrondissement|^\d{1,2}\s*(?:e|er|eme|ème)?[\s-]*$", norm(text)) and (dept == "75" or admin_region == "Île-de-France"):
-        text = "Paris"
+    if re.match(r"^\d{1,2}\s*(?:e|er|eme|ème)?[\s-]*(?:arrondissement|$)", norm(text)):
+        # « 1er-Arrondissement, Lyon » → la commune est l'élément suivant (ni département ni région).
+        text = next((q for q in parts[1:] if by_key.get(_city_key(q)) or not region_from_admin_name(q)[1]), text)
+    text = re.sub(r"\s+\d{1,2}\s*(?:e|er|eme|ème)?\s*canton.*$", "", text, flags=re.I)  # « Reims 1er Canton »
     # Secteurs Adzuna (« Lille-Nord », « Aix-en-Provence Sud-Ouest ») → commune.
     text = re.sub(r"[\s-]+(?:nord|sud|est|ouest)(?:[\s-]+(?:nord|sud|est|ouest))*$", "", text, flags=re.I)
     text = re.sub(r"\(.*?\)", "", text)

@@ -4,10 +4,10 @@ _Généré automatiquement le 06/10/2026 par `python -m jmi run`._
 
 ## 1. Vue d'ensemble
 
-- **1425 offres** uniques, **682 entreprises**, **197 villes**, du 2020-06-06 au 2026-10-06.
+- **1425 offres** uniques, **682 entreprises**, **190 villes**, du 2020-06-06 au 2026-10-06.
 - Salaire annuel brut **médian 50 000 €** (moyen 53 190 €), calculé sur les 19 % d'offres qui affichent un salaire.
 - **3 %** des offres mentionnent du télétravail, **51 %** sont des CDI, **20 %** visent un profil junior ou stage/alternance.
-- L'Île-de-France concentre **50 %** des offres.
+- L'Île-de-France concentre **51 %** des offres.
 
 ## 2. Métiers
 
@@ -98,10 +98,10 @@ Associations de compétences les plus fortes (lift) :
 Villes qui recrutent le plus :
 
 1. **Paris** — 439 offres
-2. **1Er-** — 28 offres
+2. **Lyon** — 55 offres
 3. **Levallois-Perret** — 27 offres
-4. **Lyon** — 26 offres
-5. **La Défense** — 20 offres
+4. **La Défense** — 20 offres
+5. **Issy-les-Moulineaux** — 18 offres
 
 Secteurs qui recrutent le plus :
 
@@ -125,7 +125,7 @@ Métiers les plus ouverts au télétravail : Chef de projet / Lead Data & IA (15
 **Pour un recruteur ou un manager data**
 
 - Seules 19 % des offres affichent un salaire : publier une fourchette est un levier de différenciation.
-- Salaire médian Île-de-France 55 000 € contre 45 500 € en régions, où 4 % des offres proposent du télétravail : recruter en régions avec télétravail élargit le vivier à coût salarial moindre.
+- Salaire médian Île-de-France 54 750 € contre 45 500 € en régions, où 4 % des offres proposent du télétravail : recruter en régions avec télétravail élargit le vivier à coût salarial moindre.
 
 **Pour un organisme de formation**
 

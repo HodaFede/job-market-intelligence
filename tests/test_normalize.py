@@ -165,3 +165,22 @@ def test_location_adzuna_format_ville_departement(raw, city, region):
 ])
 def test_is_data_ai_title(title, ok):
     assert N.is_data_ai_title(title) is ok
+
+
+@pytest.mark.parametrize("raw,city,region", [
+    ("1er-Arrondissement, Lyon, Rhône, Auvergne-Rhône-Alpes", "Lyon", "Auvergne-Rhône-Alpes"),
+    ("1er Arrondissement, Paris", "Paris", "Île-de-France"),
+    ("Reims 1er Canton, Reims, Marne, Grand-Est", "Reims", "Grand Est"),
+])
+def test_location_arrondissements_et_cantons(raw, city, region):
+    loc = N.normalize_location(raw)
+    assert (loc.city, loc.region) == (city, region)
+
+
+@pytest.mark.parametrize("raw,city,region", [
+    ("Ile-de-France, France", "Non précisé", "Île-de-France"),
+    ("Lyon, France", "Lyon", "Auvergne-Rhône-Alpes"),
+])
+def test_location_region_en_tete(raw, city, region):
+    loc = N.normalize_location(raw)
+    assert (loc.city, loc.region) == (city, region)

@@ -1,0 +1,47 @@
+type_contrat,metier,nb_offres,tjm_moyen
+Alternance,AI / LLM Engineer,5,
+Alternance,Analytics Engineer / BI,14,
+Alternance,Consultant Data & IA,5,
+Alternance,Data Analyst,28,
+Alternance,Data Engineer,15,
+Alternance,Data Manager / Gouvernance,1,
+Alternance,Data Scientist,16,
+Alternance,Machine Learning Engineer,8,
+CDD,AI / LLM Engineer,7,
+CDD,Analytics Engineer / BI,7,
+CDD,Consultant Data & IA,6,
+CDD,Data Analyst,20,
+CDD,Data Engineer,23,
+CDD,Data Manager / Gouvernance,2,
+CDD,Data Scientist,26,
+CDD,Machine Learning Engineer,9,
+CDI,AI / LLM Engineer,47,
+CDI,Analytics Engineer / BI,84,
+CDI,Consultant Data & IA,58,
+CDI,Data Analyst,250,
+CDI,Data Engineer,151,
+CDI,Data Manager / Gouvernance,18,
+CDI,Data Scientist,159,
+CDI,Machine Learning Engineer,66,
+Freelance,AI / LLM Engineer,2,690.0
+Freelance,Analytics Engineer / BI,8,586.0
+Freelance,Consultant Data & IA,7,510.0
+Freelance,Data Analyst,24,554.0
+Freelance,Data Engineer,17,571.0
+Freelance,Data Manager / Gouvernance,2,700.0
+Freelance,Data Scientist,14,574.0
+Freelance,Machine Learning Engineer,9,604.0
+Intérim / temporaire,AI / LLM Engineer,4,
+Intérim / temporaire,Analytics Engineer / BI,3,
+Intérim / temporaire,Consultant Data & IA,6,
+Intérim / temporaire,Data Analyst,13,
+Intérim / temporaire,Data Engineer,9,
+Intérim / temporaire,Data Scientist,11,
+Intérim / temporaire,Machine Learning Engineer,3,
+Stage,AI / LLM Engineer,4,
+Stage,Analytics Engineer / BI,2,
+Stage,Consultant Data & IA,4,
+Stage,Data Analyst,6,
+Stage,Data Engineer,11,
+Stage,Data Scientist,9,
+Stage,Machine Learning Engineer,3,

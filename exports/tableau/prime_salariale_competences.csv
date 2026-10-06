@@ -1,0 +1,47 @@
+competence,categorie_competence,nb_offres_avec,nb_offres_sans,salaire_median_avec,salaire_median_sans,prime_eur,prime_pct
+API REST,MLOps & DevOps,35,495,55500.0,49500.0,6000.0,12.1
+AWS,Cloud,102,428,51500.0,49000.0,2500.0,5.1
+Agile/Scrum,Méthodes & gouvernance,94,436,48250.0,50500.0,-2250.0,-4.5
+Airflow,Data engineering,52,478,51000.0,49500.0,1500.0,3.0
+Anglais,Soft skills,204,326,50000.0,49500.0,500.0,1.0
+Autonomie,Soft skills,51,479,44500.0,50040.0,-5540.0,-11.1
+Azure,Cloud,79,451,52500.0,49000.0,3500.0,7.1
+BigQuery,Bases de données,32,498,47000.0,50020.0,-3020.0,-6.0
+CI/CD,MLOps & DevOps,49,481,55500.0,49000.0,6500.0,13.3
+Communication,Soft skills,181,349,48000.0,51500.0,-3500.0,-6.8
+Databricks,Data engineering,23,507,56500.0,49500.0,7000.0,14.1
+Deep Learning,ML & IA,69,461,57000.0,48960.0,8040.0,16.4
+Docker,MLOps & DevOps,98,432,53250.0,48980.0,4270.0,8.7
+ETL/ELT,Data engineering,195,335,51500.0,49000.0,2500.0,5.1
+Esprit d'analyse,Soft skills,88,442,45000.0,50500.0,-5500.0,-10.9
+Excel,BI & Dataviz,100,430,45000.0,51000.0,-6000.0,-11.8
+GCP,Cloud,58,472,53000.0,49000.0,4000.0,8.2
+Gestion de projet,Soft skills,23,507,48000.0,50000.0,-2000.0,-4.0
+Git,MLOps & DevOps,182,348,51750.0,48250.0,3500.0,7.3
+IA générative,IA générative,52,478,50750.0,49750.0,1000.0,2.0
+KPI & reporting,Méthodes & gouvernance,222,308,48980.0,50500.0,-1520.0,-3.0
+Kafka,Data engineering,40,490,51250.0,49500.0,1750.0,3.5
+Kubernetes,MLOps & DevOps,42,488,52750.0,49000.0,3750.0,7.7
+LLM,IA générative,67,463,53500.0,49000.0,4500.0,9.2
+Linux,MLOps & DevOps,46,484,53500.0,49500.0,4000.0,8.1
+Looker,BI & Dataviz,25,505,44040.0,50040.0,-6000.0,-12.0
+MLflow,MLOps & DevOps,23,507,51500.0,50000.0,1500.0,3.0
+Machine Learning,ML & IA,161,369,51500.0,49500.0,2000.0,4.0
+Modélisation de données,Méthodes & gouvernance,71,459,50000.0,50000.0,0.0,0.0
+NLP,ML & IA,65,465,53500.0,49500.0,4000.0,8.1
+Pandas/NumPy,Data engineering,84,446,49770.0,50000.0,-230.0,-0.5
+PostgreSQL,Bases de données,22,508,51770.0,49750.0,2020.0,4.1
+Power BI,BI & Dataviz,127,403,48000.0,50500.0,-2500.0,-5.0
+PyTorch,ML & IA,51,479,54500.0,49500.0,5000.0,10.1
+Python,Langages,389,141,50500.0,47040.0,3460.0,7.4
+R,Langages,33,497,47000.0,50000.0,-3000.0,-6.0
+Relation client,Soft skills,48,482,48480.0,50270.0,-1790.0,-3.6
+SQL,Langages,381,149,48500.0,52500.0,-4000.0,-7.6
+Scikit-learn,ML & IA,48,482,50500.0,49750.0,750.0,1.5
+Snowflake,Bases de données,52,478,49230.0,50000.0,-770.0,-1.5
+Spark,Data engineering,86,444,51000.0,49500.0,1500.0,3.0
+Statistiques,ML & IA,117,413,49000.0,50000.0,-1000.0,-2.0
+Séries temporelles,ML & IA,27,503,55500.0,49500.0,6000.0,12.1
+Tableau,BI & Dataviz,104,426,46500.0,50500.0,-4000.0,-7.9
+TensorFlow,ML & IA,31,499,51500.0,49500.0,2000.0,4.0
+dbt,Data engineering,64,466,50250.0,49750.0,500.0,1.0

@@ -1,0 +1,47 @@
+mois,metier,nb_offres,salaire_moyen,nb_offres_teletravail
+2026-04-01,AI / LLM Engineer,2,,0
+2026-04-01,Analytics Engineer / BI,5,52125.0,5
+2026-04-01,Data Analyst,11,40714.0,7
+2026-04-01,Data Engineer,9,54250.0,6
+2026-04-01,Data Scientist,4,48000.0,3
+2026-04-01,Machine Learning Engineer,3,,3
+2026-05-01,AI / LLM Engineer,6,47750.0,0
+2026-05-01,Analytics Engineer / BI,10,56500.0,9
+2026-05-01,Consultant Data & IA,8,46583.0,6
+2026-05-01,Data Analyst,23,48049.0,16
+2026-05-01,Data Engineer,25,54958.0,10
+2026-05-01,Data Manager / Gouvernance,1,,0
+2026-05-01,Data Scientist,20,54322.0,11
+2026-05-01,Machine Learning Engineer,10,53100.0,6
+2026-06-01,AI / LLM Engineer,11,65750.0,3
+2026-06-01,Analytics Engineer / BI,16,53680.0,10
+2026-06-01,Consultant Data & IA,14,52423.0,11
+2026-06-01,Data Analyst,52,48225.0,35
+2026-06-01,Data Engineer,27,56337.0,15
+2026-06-01,Data Manager / Gouvernance,7,49900.0,3
+2026-06-01,Data Scientist,42,55478.0,30
+2026-06-01,Machine Learning Engineer,13,59020.0,10
+2026-07-01,AI / LLM Engineer,14,62313.0,11
+2026-07-01,Analytics Engineer / BI,34,51261.0,22
+2026-07-01,Consultant Data & IA,21,45389.0,14
+2026-07-01,Data Analyst,88,46650.0,54
+2026-07-01,Data Engineer,50,55524.0,35
+2026-07-01,Data Manager / Gouvernance,4,43167.0,2
+2026-07-01,Data Scientist,46,53173.0,31
+2026-07-01,Machine Learning Engineer,25,62500.0,18
+2026-08-01,AI / LLM Engineer,27,58558.0,22
+2026-08-01,Analytics Engineer / BI,31,50136.0,20
+2026-08-01,Consultant Data & IA,23,48593.0,18
+2026-08-01,Data Analyst,82,42807.0,51
+2026-08-01,Data Engineer,68,52418.0,51
+2026-08-01,Data Manager / Gouvernance,3,54750.0,2
+2026-08-01,Data Scientist,70,53953.0,40
+2026-08-01,Machine Learning Engineer,34,57551.0,23
+2026-09-01,AI / LLM Engineer,9,58000.0,5
+2026-09-01,Analytics Engineer / BI,22,46889.0,16
+2026-09-01,Consultant Data & IA,20,45700.0,9
+2026-09-01,Data Analyst,85,48263.0,59
+2026-09-01,Data Engineer,47,50476.0,32
+2026-09-01,Data Manager / Gouvernance,8,54125.0,5
+2026-09-01,Data Scientist,53,53172.0,35
+2026-09-01,Machine Learning Engineer,13,55125.0,9

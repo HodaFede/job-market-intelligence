@@ -51,3 +51,12 @@ def test_internship_and_outlier_salaries_are_excluded():
 
 def test_rows_without_title_are_dropped():
     assert clean_records([_rec(title="")]).empty
+
+
+def test_old_offers_are_excluded_by_max_age():
+    records = [_rec(source_id="new", published_at="2026-09-01"),
+               _rec(source_id="old", title="Data Scientist", published_at="2024-01-15"),
+               _rec(source_id="nodate", title="Data Engineer", published_at=None)]
+    kept = clean_records(records, max_age_days=365)
+    assert set(kept.source_id) == {"new", "nodate"}
+    assert len(clean_records(records)) == 3

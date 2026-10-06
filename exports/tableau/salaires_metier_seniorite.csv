@@ -1,6 +1,6 @@
 metier,seniorite,nb_offres_avec_salaire,salaire_moyen,salaire_median,salaire_q1,salaire_q3,salaire_min,salaire_max,fiabilite
 AI / LLM Engineer,Confirmé,1,50000.0,50000.0,50000.0,50000.0,50000.0,50000.0,Faible (< 10 offres)
-AI / LLM Engineer,Non précisé,16,56951.0,51875.0,40000.0,60000.0,25000.0,117000.0,Moyenne
+AI / LLM Engineer,Non précisé,14,48836.0,50000.0,40000.0,55000.0,25000.0,67500.0,Moyenne
 AI / LLM Engineer,Senior,1,72500.0,72500.0,72500.0,72500.0,72500.0,72500.0,Faible (< 10 offres)
 Analytics Engineer / BI,Confirmé,5,46700.0,42500.0,42000.0,51500.0,40000.0,57500.0,Faible (< 10 offres)
 Analytics Engineer / BI,Non précisé,11,54414.0,52500.0,51000.0,56000.0,45000.0,89550.0,Moyenne
@@ -11,20 +11,20 @@ Chef de projet / Lead Data & IA,Senior,6,68833.0,67750.0,60000.0,85000.0,47500.0
 Consultant Data & IA,Confirmé,4,55000.0,55000.0,55000.0,55000.0,55000.0,55000.0,Faible (< 10 offres)
 Consultant Data & IA,Junior,2,53500.0,53500.0,43000.0,64000.0,43000.0,64000.0,Faible (< 10 offres)
 Consultant Data & IA,Non précisé,21,50643.0,47500.0,45000.0,55000.0,30000.0,72500.0,Moyenne
-Consultant Data & IA,Senior,3,59167.0,58000.0,58000.0,65000.0,54500.0,65000.0,Faible (< 10 offres)
+Consultant Data & IA,Senior,2,61500.0,61500.0,58000.0,65000.0,58000.0,65000.0,Faible (< 10 offres)
 Data Analyst,Confirmé,2,50250.0,50250.0,45500.0,55000.0,45500.0,55000.0,Faible (< 10 offres)
 Data Analyst,Junior,3,50000.0,45000.0,45000.0,65000.0,40000.0,65000.0,Faible (< 10 offres)
 Data Analyst,Non précisé,27,49719.0,45000.0,40000.0,50000.0,32000.0,109200.0,Moyenne
 Data Analyst,Senior,10,58550.0,53750.0,48000.0,60000.0,45500.0,100000.0,Moyenne
-Data Engineer,Confirmé,9,57833.0,48000.0,47500.0,54500.0,44000.0,120000.0,Faible (< 10 offres)
+Data Engineer,Confirmé,7,61214.0,54000.0,47500.0,57500.0,47500.0,120000.0,Faible (< 10 offres)
 Data Engineer,Junior,3,52167.0,45000.0,45000.0,75000.0,36500.0,75000.0,Faible (< 10 offres)
-Data Engineer,Non précisé,55,48611.0,47500.0,41500.0,55000.0,30000.0,116000.0,Bonne
+Data Engineer,Non précisé,54,48770.0,47500.0,41500.0,55000.0,30000.0,116000.0,Bonne
 Data Engineer,Senior,17,53589.0,55000.0,50000.0,58500.0,18000.0,100000.0,Moyenne
 Data Manager / Gouvernance,Non précisé,1,40000.0,40000.0,40000.0,40000.0,40000.0,40000.0,Faible (< 10 offres)
 Data Scientist,Confirmé,4,42125.0,42000.0,42000.0,42000.0,42000.0,42500.0,Faible (< 10 offres)
 Data Scientist,Junior,1,42500.0,42500.0,42500.0,42500.0,42500.0,42500.0,Faible (< 10 offres)
-Data Scientist,Non précisé,37,50389.0,45000.0,41000.0,51000.0,35000.0,140400.0,Bonne
-Data Scientist,Senior,11,61691.0,52500.0,45500.0,78600.0,42500.0,100000.0,Moyenne
-Machine Learning Engineer,Non précisé,4,71875.0,68750.0,67500.0,70000.0,50000.0,100000.0,Faible (< 10 offres)
+Data Scientist,Non précisé,35,49840.0,45000.0,41000.0,51000.0,35000.0,140400.0,Bonne
+Data Scientist,Senior,10,61360.0,49500.0,45500.0,78600.0,42500.0,100000.0,Moyenne
+Machine Learning Engineer,Non précisé,3,72500.0,67500.0,67500.0,100000.0,50000.0,100000.0,Faible (< 10 offres)
 Machine Learning Engineer,Senior,3,98333.0,100000.0,100000.0,135000.0,60000.0,135000.0,Faible (< 10 offres)
 Recherche / R&D IA,Non précisé,3,40000.0,45500.0,45500.0,45500.0,29000.0,45500.0,Faible (< 10 offres)

@@ -1,24 +1,24 @@
 metier,competence,categorie_competence,type_competence,nb_offres,nb_offres_metier,part_offres_pct,rang
-AI / LLM Engineer,Machine Learning,ML & IA,Compétence / méthode,26,108,24.1,1
-AI / LLM Engineer,IA générative,IA générative,Compétence / méthode,18,108,16.7,2
-AI / LLM Engineer,LLM,IA générative,Technologie,15,108,13.9,3
-AI / LLM Engineer,NLP,ML & IA,Compétence / méthode,7,108,6.5,4
-AI / LLM Engineer,Python,Langages,Technologie,7,108,6.5,4
-AI / LLM Engineer,AWS,Cloud,Technologie,4,108,3.7,6
-AI / LLM Engineer,RAG,IA générative,Compétence / méthode,4,108,3.7,6
-AI / LLM Engineer,Computer Vision,ML & IA,Compétence / méthode,2,108,1.9,8
-AI / LLM Engineer,Deep Learning,ML & IA,Compétence / méthode,2,108,1.9,8
-AI / LLM Engineer,Travail en équipe,Soft skills,Compétence / méthode,2,108,1.9,8
-AI / LLM Engineer,API REST,MLOps & DevOps,Technologie,1,108,0.9,11
-AI / LLM Engineer,Autonomie,Soft skills,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,CI/CD,MLOps & DevOps,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,ETL/ELT,Data engineering,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,RGPD,Méthodes & gouvernance,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,Relation client,Soft skills,Compétence / méthode,1,108,0.9,11
-AI / LLM Engineer,SQL,Langages,Technologie,1,108,0.9,11
-AI / LLM Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,108,0.9,11
+AI / LLM Engineer,Machine Learning,ML & IA,Compétence / méthode,26,103,25.2,1
+AI / LLM Engineer,IA générative,IA générative,Compétence / méthode,18,103,17.5,2
+AI / LLM Engineer,LLM,IA générative,Technologie,15,103,14.6,3
+AI / LLM Engineer,NLP,ML & IA,Compétence / méthode,7,103,6.8,4
+AI / LLM Engineer,Python,Langages,Technologie,7,103,6.8,4
+AI / LLM Engineer,AWS,Cloud,Technologie,4,103,3.9,6
+AI / LLM Engineer,RAG,IA générative,Compétence / méthode,4,103,3.9,6
+AI / LLM Engineer,Computer Vision,ML & IA,Compétence / méthode,2,103,1.9,8
+AI / LLM Engineer,Deep Learning,ML & IA,Compétence / méthode,2,103,1.9,8
+AI / LLM Engineer,Travail en équipe,Soft skills,Compétence / méthode,2,103,1.9,8
+AI / LLM Engineer,API REST,MLOps & DevOps,Technologie,1,103,1.0,11
+AI / LLM Engineer,Autonomie,Soft skills,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,CI/CD,MLOps & DevOps,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,ETL/ELT,Data engineering,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,RGPD,Méthodes & gouvernance,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,Relation client,Soft skills,Compétence / méthode,1,103,1.0,11
+AI / LLM Engineer,SQL,Langages,Technologie,1,103,1.0,11
+AI / LLM Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,103,1.0,11
 Analytics Engineer / BI,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,9,52,17.3,1
 Analytics Engineer / BI,Power BI,BI & Dataviz,Technologie,6,52,11.5,2
 Analytics Engineer / BI,ETL/ELT,Data engineering,Compétence / méthode,5,52,9.6,3
@@ -38,233 +38,228 @@ Analytics Engineer / BI,Gestion de projet,Soft skills,Compétence / méthode,1,5
 Analytics Engineer / BI,Git,MLOps & DevOps,Technologie,1,52,1.9,13
 Analytics Engineer / BI,IA générative,IA générative,Compétence / méthode,1,52,1.9,13
 Analytics Engineer / BI,Looker,BI & Dataviz,Technologie,1,52,1.9,13
-Autre métier data,Gestion de projet,Soft skills,Compétence / méthode,7,96,7.3,1
-Autre métier data,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,5,96,5.2,2
-Autre métier data,Travail en équipe,Soft skills,Compétence / méthode,5,96,5.2,2
-Autre métier data,Autonomie,Soft skills,Compétence / méthode,3,96,3.1,4
-Autre métier data,Communication,Soft skills,Compétence / méthode,3,96,3.1,4
-Autre métier data,IA générative,IA générative,Compétence / méthode,3,96,3.1,4
-Autre métier data,Machine Learning,ML & IA,Compétence / méthode,3,96,3.1,4
-Autre métier data,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,3,96,3.1,4
-Autre métier data,Deep Learning,ML & IA,Compétence / méthode,2,96,2.1,9
-Autre métier data,GCP,Cloud,Technologie,2,96,2.1,9
-Autre métier data,RGPD,Méthodes & gouvernance,Compétence / méthode,2,96,2.1,9
-Autre métier data,AWS,Cloud,Technologie,1,96,1.0,12
-Autre métier data,Azure,Cloud,Technologie,1,96,1.0,12
-Autre métier data,Computer Vision,ML & IA,Compétence / méthode,1,96,1.0,12
-Autre métier data,ETL/ELT,Data engineering,Compétence / méthode,1,96,1.0,12
-Autre métier data,Esprit d'analyse,Soft skills,Compétence / méthode,1,96,1.0,12
-Autre métier data,Python,Langages,Technologie,1,96,1.0,12
-Autre métier data,Relation client,Soft skills,Compétence / méthode,1,96,1.0,12
-Chef de projet / Lead Data & IA,Machine Learning,ML & IA,Compétence / méthode,6,40,15.0,1
-Chef de projet / Lead Data & IA,Python,Langages,Technologie,3,40,7.5,2
-Chef de projet / Lead Data & IA,IA générative,IA générative,Compétence / méthode,2,40,5.0,3
-Chef de projet / Lead Data & IA,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,2,40,5.0,3
-Chef de projet / Lead Data & IA,LLM,IA générative,Technologie,2,40,5.0,3
-Chef de projet / Lead Data & IA,Azure,Cloud,Technologie,1,40,2.5,6
-Chef de projet / Lead Data & IA,Databricks,Data engineering,Technologie,1,40,2.5,6
-Chef de projet / Lead Data & IA,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,1,40,2.5,6
-Chef de projet / Lead Data & IA,Power BI,BI & Dataviz,Technologie,1,40,2.5,6
-Chef de projet / Lead Data & IA,RGPD,Méthodes & gouvernance,Compétence / méthode,1,40,2.5,6
-Chef de projet / Lead Data & IA,SQL,Langages,Technologie,1,40,2.5,6
-Consultant Data & IA,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,18,206,8.7,1
-Consultant Data & IA,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,17,206,8.3,2
-Consultant Data & IA,Power BI,BI & Dataviz,Technologie,8,206,3.9,3
-Consultant Data & IA,SQL,Langages,Technologie,7,206,3.4,4
-Consultant Data & IA,Azure,Cloud,Technologie,6,206,2.9,5
-Consultant Data & IA,ETL/ELT,Data engineering,Compétence / méthode,4,206,1.9,6
-Consultant Data & IA,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,4,206,1.9,6
-Consultant Data & IA,Relation client,Soft skills,Compétence / méthode,4,206,1.9,6
-Consultant Data & IA,Tableau,BI & Dataviz,Technologie,4,206,1.9,6
-Consultant Data & IA,Anglais,Soft skills,Compétence / méthode,3,206,1.5,10
-Consultant Data & IA,Autonomie,Soft skills,Compétence / méthode,3,206,1.5,10
-Consultant Data & IA,Gestion de projet,Soft skills,Compétence / méthode,3,206,1.5,10
-Consultant Data & IA,IA générative,IA générative,Compétence / méthode,3,206,1.5,10
-Consultant Data & IA,Excel,BI & Dataviz,Technologie,2,206,1.0,14
-Consultant Data & IA,Git,MLOps & DevOps,Technologie,2,206,1.0,14
-Consultant Data & IA,Snowflake,Bases de données,Technologie,2,206,1.0,14
-Consultant Data & IA,Talend,Data engineering,Technologie,2,206,1.0,14
-Consultant Data & IA,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,1,206,0.5,18
-Consultant Data & IA,CI/CD,MLOps & DevOps,Compétence / méthode,1,206,0.5,18
-Consultant Data & IA,Qlik,BI & Dataviz,Technologie,1,206,0.5,18
-Consultant Data & IA,SQL Server,Bases de données,Technologie,1,206,0.5,18
-Consultant Data & IA,Spark,Data engineering,Technologie,1,206,0.5,18
-Consultant Data & IA,Travail en équipe,Soft skills,Compétence / méthode,1,206,0.5,18
-Data Analyst,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,44,296,14.9,1
-Data Analyst,Power BI,BI & Dataviz,Technologie,19,296,6.4,2
-Data Analyst,Tableau,BI & Dataviz,Technologie,10,296,3.4,3
-Data Analyst,SQL,Langages,Technologie,9,296,3.0,4
-Data Analyst,Machine Learning,ML & IA,Compétence / méthode,8,296,2.7,5
-Data Analyst,Statistiques,ML & IA,Compétence / méthode,6,296,2.0,6
-Data Analyst,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,5,296,1.7,7
-Data Analyst,Python,Langages,Technologie,4,296,1.4,8
-Data Analyst,Travail en équipe,Soft skills,Compétence / méthode,4,296,1.4,8
-Data Analyst,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,3,296,1.0,10
-Data Analyst,Looker,BI & Dataviz,Technologie,3,296,1.0,10
-Data Analyst,Anglais,Soft skills,Compétence / méthode,2,296,0.7,12
-Data Analyst,Autonomie,Soft skills,Compétence / méthode,2,296,0.7,12
-Data Analyst,Azure,Cloud,Technologie,2,296,0.7,12
-Data Analyst,BigQuery,Bases de données,Technologie,2,296,0.7,12
-Data Analyst,Communication,Soft skills,Compétence / méthode,2,296,0.7,12
-Data Analyst,GCP,Cloud,Technologie,2,296,0.7,12
-Data Analyst,Gestion de projet,Soft skills,Compétence / méthode,2,296,0.7,12
-Data Analyst,Relation client,Soft skills,Compétence / méthode,2,296,0.7,12
-Data Analyst,SAS,Langages,Technologie,2,296,0.7,12
-Data Analyst,Snowflake,Bases de données,Technologie,2,296,0.7,12
-Data Analyst,dbt,Data engineering,Technologie,2,296,0.7,12
-Data Analyst,Databricks,Data engineering,Technologie,1,296,0.3,23
-Data Analyst,ETL/ELT,Data engineering,Compétence / méthode,1,296,0.3,23
-Data Analyst,Excel,BI & Dataviz,Technologie,1,296,0.3,23
-Data Analyst,Oracle,Bases de données,Technologie,1,296,0.3,23
-Data Analyst,Qlik,BI & Dataviz,Technologie,1,296,0.3,23
-Data Analyst,R,Langages,Technologie,1,296,0.3,23
-Data Analyst,SQL Server,Bases de données,Technologie,1,296,0.3,23
-Data Analyst,Spark,Data engineering,Technologie,1,296,0.3,23
-Data Analyst,Talend,Data engineering,Technologie,1,296,0.3,23
-Data Engineer,ETL/ELT,Data engineering,Compétence / méthode,52,294,17.7,1
-Data Engineer,SQL,Langages,Technologie,24,294,8.2,2
-Data Engineer,Databricks,Data engineering,Technologie,22,294,7.5,3
-Data Engineer,Python,Langages,Technologie,20,294,6.8,4
-Data Engineer,GCP,Cloud,Technologie,19,294,6.5,5
-Data Engineer,dbt,Data engineering,Technologie,16,294,5.4,6
-Data Engineer,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,15,294,5.1,7
-Data Engineer,Snowflake,Bases de données,Technologie,13,294,4.4,8
-Data Engineer,Spark,Data engineering,Technologie,13,294,4.4,8
-Data Engineer,Power BI,BI & Dataviz,Technologie,11,294,3.7,10
-Data Engineer,Azure,Cloud,Technologie,10,294,3.4,11
-Data Engineer,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,9,294,3.1,12
-Data Engineer,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,8,294,2.7,13
-Data Engineer,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,8,294,2.7,13
-Data Engineer,AWS,Cloud,Technologie,7,294,2.4,15
-Data Engineer,Autonomie,Soft skills,Compétence / méthode,7,294,2.4,15
-Data Engineer,Scala,Langages,Technologie,7,294,2.4,15
-Data Engineer,CI/CD,MLOps & DevOps,Compétence / méthode,6,294,2.0,18
-Data Engineer,Gestion de projet,Soft skills,Compétence / méthode,6,294,2.0,18
-Data Engineer,BigQuery,Bases de données,Technologie,5,294,1.7,20
-Data Engineer,IA générative,IA générative,Compétence / méthode,5,294,1.7,20
-Data Engineer,Machine Learning,ML & IA,Compétence / méthode,5,294,1.7,20
-Data Engineer,Tableau,BI & Dataviz,Technologie,5,294,1.7,20
-Data Engineer,API REST,MLOps & DevOps,Technologie,3,294,1.0,24
-Data Engineer,Airflow,Data engineering,Technologie,3,294,1.0,24
-Data Engineer,Java,Langages,Technologie,3,294,1.0,24
-Data Engineer,Statistiques,ML & IA,Compétence / méthode,3,294,1.0,24
-Data Engineer,Travail en équipe,Soft skills,Compétence / méthode,3,294,1.0,24
-Data Engineer,Anglais,Soft skills,Compétence / méthode,2,294,0.7,29
-Data Engineer,LLM,IA générative,Technologie,2,294,0.7,29
-Data Engineer,SQL Server,Bases de données,Technologie,2,294,0.7,29
-Data Engineer,Talend,Data engineering,Technologie,2,294,0.7,29
-Data Engineer,Computer Vision,ML & IA,Compétence / méthode,1,294,0.3,33
-Data Engineer,Docker,MLOps & DevOps,Technologie,1,294,0.3,33
-Data Engineer,Git,MLOps & DevOps,Technologie,1,294,0.3,33
-Data Engineer,MySQL,Bases de données,Technologie,1,294,0.3,33
-Data Engineer,Oracle,Bases de données,Technologie,1,294,0.3,33
-Data Engineer,PostgreSQL,Bases de données,Technologie,1,294,0.3,33
-Data Engineer,R,Langages,Technologie,1,294,0.3,33
-Data Engineer,RAG,IA générative,Compétence / méthode,1,294,0.3,33
-Data Engineer,Relation client,Soft skills,Compétence / méthode,1,294,0.3,33
-Data Engineer,SAS,Langages,Technologie,1,294,0.3,33
-Data Engineer,Streamlit/Dash,BI & Dataviz,Technologie,1,294,0.3,33
-Data Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,294,0.3,33
+Autre métier data,Gestion de projet,Soft skills,Compétence / méthode,7,94,7.4,1
+Autre métier data,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,5,94,5.3,2
+Autre métier data,Travail en équipe,Soft skills,Compétence / méthode,5,94,5.3,2
+Autre métier data,Autonomie,Soft skills,Compétence / méthode,3,94,3.2,4
+Autre métier data,Communication,Soft skills,Compétence / méthode,3,94,3.2,4
+Autre métier data,IA générative,IA générative,Compétence / méthode,3,94,3.2,4
+Autre métier data,Machine Learning,ML & IA,Compétence / méthode,3,94,3.2,4
+Autre métier data,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,3,94,3.2,4
+Autre métier data,Deep Learning,ML & IA,Compétence / méthode,2,94,2.1,9
+Autre métier data,GCP,Cloud,Technologie,2,94,2.1,9
+Autre métier data,RGPD,Méthodes & gouvernance,Compétence / méthode,2,94,2.1,9
+Autre métier data,AWS,Cloud,Technologie,1,94,1.1,12
+Autre métier data,Azure,Cloud,Technologie,1,94,1.1,12
+Autre métier data,Computer Vision,ML & IA,Compétence / méthode,1,94,1.1,12
+Autre métier data,ETL/ELT,Data engineering,Compétence / méthode,1,94,1.1,12
+Autre métier data,Esprit d'analyse,Soft skills,Compétence / méthode,1,94,1.1,12
+Autre métier data,Python,Langages,Technologie,1,94,1.1,12
+Autre métier data,Relation client,Soft skills,Compétence / méthode,1,94,1.1,12
+Chef de projet / Lead Data & IA,Machine Learning,ML & IA,Compétence / méthode,6,39,15.4,1
+Chef de projet / Lead Data & IA,Python,Langages,Technologie,3,39,7.7,2
+Chef de projet / Lead Data & IA,IA générative,IA générative,Compétence / méthode,2,39,5.1,3
+Chef de projet / Lead Data & IA,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,2,39,5.1,3
+Chef de projet / Lead Data & IA,LLM,IA générative,Technologie,2,39,5.1,3
+Chef de projet / Lead Data & IA,Azure,Cloud,Technologie,1,39,2.6,6
+Chef de projet / Lead Data & IA,Databricks,Data engineering,Technologie,1,39,2.6,6
+Chef de projet / Lead Data & IA,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,1,39,2.6,6
+Chef de projet / Lead Data & IA,Power BI,BI & Dataviz,Technologie,1,39,2.6,6
+Chef de projet / Lead Data & IA,RGPD,Méthodes & gouvernance,Compétence / méthode,1,39,2.6,6
+Chef de projet / Lead Data & IA,SQL,Langages,Technologie,1,39,2.6,6
+Consultant Data & IA,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,18,192,9.4,1
+Consultant Data & IA,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,15,192,7.8,2
+Consultant Data & IA,Power BI,BI & Dataviz,Technologie,8,192,4.2,3
+Consultant Data & IA,SQL,Langages,Technologie,7,192,3.6,4
+Consultant Data & IA,Azure,Cloud,Technologie,6,192,3.1,5
+Consultant Data & IA,ETL/ELT,Data engineering,Compétence / méthode,4,192,2.1,6
+Consultant Data & IA,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,4,192,2.1,6
+Consultant Data & IA,Relation client,Soft skills,Compétence / méthode,4,192,2.1,6
+Consultant Data & IA,Tableau,BI & Dataviz,Technologie,4,192,2.1,6
+Consultant Data & IA,Anglais,Soft skills,Compétence / méthode,3,192,1.6,10
+Consultant Data & IA,Autonomie,Soft skills,Compétence / méthode,3,192,1.6,10
+Consultant Data & IA,Gestion de projet,Soft skills,Compétence / méthode,3,192,1.6,10
+Consultant Data & IA,IA générative,IA générative,Compétence / méthode,3,192,1.6,10
+Consultant Data & IA,Excel,BI & Dataviz,Technologie,2,192,1.0,14
+Consultant Data & IA,Git,MLOps & DevOps,Technologie,2,192,1.0,14
+Consultant Data & IA,Snowflake,Bases de données,Technologie,2,192,1.0,14
+Consultant Data & IA,Talend,Data engineering,Technologie,2,192,1.0,14
+Consultant Data & IA,CI/CD,MLOps & DevOps,Compétence / méthode,1,192,0.5,18
+Consultant Data & IA,Qlik,BI & Dataviz,Technologie,1,192,0.5,18
+Consultant Data & IA,SQL Server,Bases de données,Technologie,1,192,0.5,18
+Consultant Data & IA,Spark,Data engineering,Technologie,1,192,0.5,18
+Consultant Data & IA,Travail en équipe,Soft skills,Compétence / méthode,1,192,0.5,18
+Data Analyst,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,36,271,13.3,1
+Data Analyst,Power BI,BI & Dataviz,Technologie,19,271,7.0,2
+Data Analyst,Tableau,BI & Dataviz,Technologie,10,271,3.7,3
+Data Analyst,SQL,Langages,Technologie,9,271,3.3,4
+Data Analyst,Machine Learning,ML & IA,Compétence / méthode,8,271,3.0,5
+Data Analyst,Statistiques,ML & IA,Compétence / méthode,6,271,2.2,6
+Data Analyst,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,5,271,1.8,7
+Data Analyst,Python,Langages,Technologie,4,271,1.5,8
+Data Analyst,Travail en équipe,Soft skills,Compétence / méthode,4,271,1.5,8
+Data Analyst,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,3,271,1.1,10
+Data Analyst,Looker,BI & Dataviz,Technologie,3,271,1.1,10
+Data Analyst,Anglais,Soft skills,Compétence / méthode,2,271,0.7,12
+Data Analyst,Autonomie,Soft skills,Compétence / méthode,2,271,0.7,12
+Data Analyst,Azure,Cloud,Technologie,2,271,0.7,12
+Data Analyst,BigQuery,Bases de données,Technologie,2,271,0.7,12
+Data Analyst,Communication,Soft skills,Compétence / méthode,2,271,0.7,12
+Data Analyst,GCP,Cloud,Technologie,2,271,0.7,12
+Data Analyst,Gestion de projet,Soft skills,Compétence / méthode,2,271,0.7,12
+Data Analyst,Relation client,Soft skills,Compétence / méthode,2,271,0.7,12
+Data Analyst,SAS,Langages,Technologie,2,271,0.7,12
+Data Analyst,Snowflake,Bases de données,Technologie,2,271,0.7,12
+Data Analyst,dbt,Data engineering,Technologie,2,271,0.7,12
+Data Analyst,Databricks,Data engineering,Technologie,1,271,0.4,23
+Data Analyst,ETL/ELT,Data engineering,Compétence / méthode,1,271,0.4,23
+Data Analyst,Excel,BI & Dataviz,Technologie,1,271,0.4,23
+Data Analyst,Oracle,Bases de données,Technologie,1,271,0.4,23
+Data Analyst,Qlik,BI & Dataviz,Technologie,1,271,0.4,23
+Data Analyst,R,Langages,Technologie,1,271,0.4,23
+Data Analyst,SQL Server,Bases de données,Technologie,1,271,0.4,23
+Data Analyst,Spark,Data engineering,Technologie,1,271,0.4,23
+Data Engineer,ETL/ELT,Data engineering,Compétence / méthode,52,275,18.9,1
+Data Engineer,SQL,Langages,Technologie,22,275,8.0,2
+Data Engineer,Databricks,Data engineering,Technologie,18,275,6.5,3
+Data Engineer,Python,Langages,Technologie,18,275,6.5,3
+Data Engineer,GCP,Cloud,Technologie,15,275,5.5,5
+Data Engineer,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,15,275,5.5,5
+Data Engineer,Spark,Data engineering,Technologie,12,275,4.4,7
+Data Engineer,dbt,Data engineering,Technologie,12,275,4.4,7
+Data Engineer,Azure,Cloud,Technologie,10,275,3.6,9
+Data Engineer,Power BI,BI & Dataviz,Technologie,10,275,3.6,9
+Data Engineer,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,9,275,3.3,11
+Data Engineer,Snowflake,Bases de données,Technologie,9,275,3.3,11
+Data Engineer,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,8,275,2.9,13
+Data Engineer,Autonomie,Soft skills,Compétence / méthode,7,275,2.5,14
+Data Engineer,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,7,275,2.5,14
+Data Engineer,Scala,Langages,Technologie,7,275,2.5,14
+Data Engineer,CI/CD,MLOps & DevOps,Compétence / méthode,6,275,2.2,17
+Data Engineer,Gestion de projet,Soft skills,Compétence / méthode,6,275,2.2,17
+Data Engineer,Machine Learning,ML & IA,Compétence / méthode,5,275,1.8,19
+Data Engineer,AWS,Cloud,Technologie,4,275,1.5,20
+Data Engineer,IA générative,IA générative,Compétence / méthode,4,275,1.5,20
+Data Engineer,Tableau,BI & Dataviz,Technologie,4,275,1.5,20
+Data Engineer,BigQuery,Bases de données,Technologie,3,275,1.1,23
+Data Engineer,Java,Langages,Technologie,3,275,1.1,23
+Data Engineer,Statistiques,ML & IA,Compétence / méthode,3,275,1.1,23
+Data Engineer,Travail en équipe,Soft skills,Compétence / méthode,3,275,1.1,23
+Data Engineer,API REST,MLOps & DevOps,Technologie,2,275,0.7,27
+Data Engineer,Airflow,Data engineering,Technologie,2,275,0.7,27
+Data Engineer,Anglais,Soft skills,Compétence / méthode,2,275,0.7,27
+Data Engineer,LLM,IA générative,Technologie,2,275,0.7,27
+Data Engineer,SQL Server,Bases de données,Technologie,2,275,0.7,27
+Data Engineer,Talend,Data engineering,Technologie,2,275,0.7,27
+Data Engineer,Computer Vision,ML & IA,Compétence / méthode,1,275,0.4,33
+Data Engineer,Docker,MLOps & DevOps,Technologie,1,275,0.4,33
+Data Engineer,Git,MLOps & DevOps,Technologie,1,275,0.4,33
+Data Engineer,MySQL,Bases de données,Technologie,1,275,0.4,33
+Data Engineer,Oracle,Bases de données,Technologie,1,275,0.4,33
+Data Engineer,PostgreSQL,Bases de données,Technologie,1,275,0.4,33
+Data Engineer,R,Langages,Technologie,1,275,0.4,33
+Data Engineer,RAG,IA générative,Compétence / méthode,1,275,0.4,33
+Data Engineer,Relation client,Soft skills,Compétence / méthode,1,275,0.4,33
+Data Engineer,SAS,Langages,Technologie,1,275,0.4,33
+Data Engineer,Streamlit/Dash,BI & Dataviz,Technologie,1,275,0.4,33
+Data Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,275,0.4,33
 Data Manager / Gouvernance,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,3,8,37.5,1
 Data Manager / Gouvernance,Communication,Soft skills,Compétence / méthode,1,8,12.5,2
 Data Manager / Gouvernance,Databricks,Data engineering,Technologie,1,8,12.5,2
 Data Manager / Gouvernance,SAS,Langages,Technologie,1,8,12.5,2
-Data Scientist,Machine Learning,ML & IA,Compétence / méthode,40,262,15.3,1
-Data Scientist,Statistiques,ML & IA,Compétence / méthode,11,262,4.2,2
-Data Scientist,Deep Learning,ML & IA,Compétence / méthode,10,262,3.8,3
-Data Scientist,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,7,262,2.7,4
-Data Scientist,IA générative,IA générative,Compétence / méthode,6,262,2.3,5
-Data Scientist,Python,Langages,Technologie,6,262,2.3,5
-Data Scientist,Gestion de projet,Soft skills,Compétence / méthode,5,262,1.9,7
-Data Scientist,LLM,IA générative,Technologie,5,262,1.9,7
-Data Scientist,NLP,ML & IA,Compétence / méthode,5,262,1.9,7
-Data Scientist,Autonomie,Soft skills,Compétence / méthode,4,262,1.5,10
-Data Scientist,GCP,Cloud,Technologie,4,262,1.5,10
-Data Scientist,Séries temporelles,ML & IA,Compétence / méthode,4,262,1.5,10
-Data Scientist,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,3,262,1.1,13
-Data Scientist,Relation client,Soft skills,Compétence / méthode,3,262,1.1,13
-Data Scientist,SQL,Langages,Technologie,3,262,1.1,13
-Data Scientist,dbt,Data engineering,Technologie,3,262,1.1,13
-Data Scientist,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,2,262,0.8,17
-Data Scientist,Power BI,BI & Dataviz,Technologie,2,262,0.8,17
-Data Scientist,RAG,IA générative,Compétence / méthode,2,262,0.8,17
-Data Scientist,Airflow,Data engineering,Technologie,1,262,0.4,20
-Data Scientist,Anglais,Soft skills,Compétence / méthode,1,262,0.4,20
-Data Scientist,Azure,Cloud,Technologie,1,262,0.4,20
-Data Scientist,BigQuery,Bases de données,Technologie,1,262,0.4,20
-Data Scientist,Communication,Soft skills,Compétence / méthode,1,262,0.4,20
-Data Scientist,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,1,262,0.4,20
-Data Scientist,ETL/ELT,Data engineering,Compétence / méthode,1,262,0.4,20
-Data Scientist,Hadoop,Data engineering,Technologie,1,262,0.4,20
-Data Scientist,Kubernetes,MLOps & DevOps,Technologie,1,262,0.4,20
-Data Scientist,MLflow,MLOps & DevOps,Technologie,1,262,0.4,20
-Data Scientist,R,Langages,Technologie,1,262,0.4,20
-Data Scientist,Snowflake,Bases de données,Technologie,1,262,0.4,20
-Data Scientist,Spark,Data engineering,Technologie,1,262,0.4,20
-Data Scientist,Travail en équipe,Soft skills,Compétence / méthode,1,262,0.4,20
-Machine Learning Engineer,Machine Learning,ML & IA,Compétence / méthode,51,53,96.2,1
-Machine Learning Engineer,LLM,IA générative,Technologie,3,53,5.7,2
-Machine Learning Engineer,Python,Langages,Technologie,3,53,5.7,2
-Machine Learning Engineer,Deep Learning,ML & IA,Compétence / méthode,2,53,3.8,4
-Machine Learning Engineer,Git,MLOps & DevOps,Technologie,2,53,3.8,4
-Machine Learning Engineer,Hugging Face,IA générative,Technologie,2,53,3.8,4
-Machine Learning Engineer,IA générative,IA générative,Compétence / méthode,2,53,3.8,4
-Machine Learning Engineer,PostgreSQL,Bases de données,Technologie,1,53,1.9,8
-Machine Learning Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,53,1.9,8
-Recherche / R&D IA,Autonomie,Soft skills,Compétence / méthode,1,10,10.0,1
-Tous métiers,Machine Learning,ML & IA,Compétence / méthode,139,1425,9.8,1
-Tous métiers,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,101,1425,7.1,2
-Tous métiers,ETL/ELT,Data engineering,Compétence / méthode,65,1425,4.6,3
-Tous métiers,Power BI,BI & Dataviz,Technologie,47,1425,3.3,4
-Tous métiers,SQL,Langages,Technologie,47,1425,3.3,4
-Tous métiers,Python,Langages,Technologie,44,1425,3.1,6
-Tous métiers,IA générative,IA générative,Compétence / méthode,40,1425,2.8,7
-Tous métiers,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,35,1425,2.5,8
-Tous métiers,GCP,Cloud,Technologie,30,1425,2.1,9
-Tous métiers,Databricks,Data engineering,Technologie,28,1425,2.0,10
-Tous métiers,LLM,IA générative,Technologie,27,1425,1.9,11
-Tous métiers,Gestion de projet,Soft skills,Compétence / méthode,24,1425,1.7,12
-Tous métiers,dbt,Data engineering,Technologie,24,1425,1.7,12
-Tous métiers,Autonomie,Soft skills,Compétence / méthode,22,1425,1.5,14
-Tous métiers,Azure,Cloud,Technologie,21,1425,1.5,15
-Tous métiers,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,20,1425,1.4,16
-Tous métiers,Snowflake,Bases de données,Technologie,20,1425,1.4,16
-Tous métiers,Statistiques,ML & IA,Compétence / méthode,20,1425,1.4,16
-Tous métiers,Tableau,BI & Dataviz,Technologie,19,1425,1.3,19
-Tous métiers,Spark,Data engineering,Technologie,18,1425,1.3,20
-Tous métiers,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,16,1425,1.1,21
-Tous métiers,Deep Learning,ML & IA,Compétence / méthode,16,1425,1.1,21
-Tous métiers,Travail en équipe,Soft skills,Compétence / méthode,16,1425,1.1,21
-Tous métiers,AWS,Cloud,Technologie,14,1425,1.0,24
-Tous métiers,NLP,ML & IA,Compétence / méthode,12,1425,0.8,25
-Tous métiers,Relation client,Soft skills,Compétence / méthode,12,1425,0.8,25
-Tous métiers,BigQuery,Bases de données,Technologie,9,1425,0.6,27
-Tous métiers,Anglais,Soft skills,Compétence / méthode,8,1425,0.6,28
-Tous métiers,CI/CD,MLOps & DevOps,Compétence / méthode,8,1425,0.6,28
-Tous métiers,Communication,Soft skills,Compétence / méthode,7,1425,0.5,30
-Tous métiers,RAG,IA générative,Compétence / méthode,7,1425,0.5,30
-Tous métiers,Scala,Langages,Technologie,7,1425,0.5,30
-Tous métiers,Séries temporelles,ML & IA,Compétence / méthode,7,1425,0.5,30
-Tous métiers,Git,MLOps & DevOps,Technologie,6,1425,0.4,34
-Tous métiers,SQL Server,Bases de données,Technologie,6,1425,0.4,34
-Tous métiers,Talend,Data engineering,Technologie,5,1425,0.4,36
-Tous métiers,API REST,MLOps & DevOps,Technologie,4,1425,0.3,37
-Tous métiers,Airflow,Data engineering,Technologie,4,1425,0.3,37
-Tous métiers,Computer Vision,ML & IA,Compétence / méthode,4,1425,0.3,37
-Tous métiers,Excel,BI & Dataviz,Technologie,4,1425,0.3,37
-Tous métiers,Looker,BI & Dataviz,Technologie,4,1425,0.3,37
-Tous métiers,RGPD,Méthodes & gouvernance,Compétence / méthode,4,1425,0.3,37
-Tous métiers,SAS,Langages,Technologie,4,1425,0.3,37
-Tous métiers,Java,Langages,Technologie,3,1425,0.2,44
-Tous métiers,R,Langages,Technologie,3,1425,0.2,44
-Tous métiers,Hugging Face,IA générative,Technologie,2,1425,0.1,46
-Tous métiers,Oracle,Bases de données,Technologie,2,1425,0.1,46
-Tous métiers,PostgreSQL,Bases de données,Technologie,2,1425,0.1,46
-Tous métiers,Qlik,BI & Dataviz,Technologie,2,1425,0.1,46
-Tous métiers,Docker,MLOps & DevOps,Technologie,1,1425,0.1,50
-Tous métiers,Esprit d'analyse,Soft skills,Compétence / méthode,1,1425,0.1,50
-Tous métiers,Hadoop,Data engineering,Technologie,1,1425,0.1,50
-Tous métiers,Kubernetes,MLOps & DevOps,Technologie,1,1425,0.1,50
-Tous métiers,MLflow,MLOps & DevOps,Technologie,1,1425,0.1,50
-Tous métiers,MySQL,Bases de données,Technologie,1,1425,0.1,50
-Tous métiers,Streamlit/Dash,BI & Dataviz,Technologie,1,1425,0.1,50
+Data Scientist,Machine Learning,ML & IA,Compétence / méthode,36,253,14.2,1
+Data Scientist,Deep Learning,ML & IA,Compétence / méthode,10,253,4.0,2
+Data Scientist,Statistiques,ML & IA,Compétence / méthode,10,253,4.0,2
+Data Scientist,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,7,253,2.8,4
+Data Scientist,Python,Langages,Technologie,6,253,2.4,5
+Data Scientist,Gestion de projet,Soft skills,Compétence / méthode,5,253,2.0,6
+Data Scientist,LLM,IA générative,Technologie,5,253,2.0,6
+Data Scientist,NLP,ML & IA,Compétence / méthode,5,253,2.0,6
+Data Scientist,Autonomie,Soft skills,Compétence / méthode,4,253,1.6,9
+Data Scientist,IA générative,IA générative,Compétence / méthode,4,253,1.6,9
+Data Scientist,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,3,253,1.2,11
+Data Scientist,GCP,Cloud,Technologie,3,253,1.2,11
+Data Scientist,Relation client,Soft skills,Compétence / méthode,3,253,1.2,11
+Data Scientist,SQL,Langages,Technologie,3,253,1.2,11
+Data Scientist,Séries temporelles,ML & IA,Compétence / méthode,3,253,1.2,11
+Data Scientist,dbt,Data engineering,Technologie,3,253,1.2,11
+Data Scientist,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,2,253,0.8,17
+Data Scientist,Power BI,BI & Dataviz,Technologie,2,253,0.8,17
+Data Scientist,RAG,IA générative,Compétence / méthode,2,253,0.8,17
+Data Scientist,Airflow,Data engineering,Technologie,1,253,0.4,20
+Data Scientist,Anglais,Soft skills,Compétence / méthode,1,253,0.4,20
+Data Scientist,Azure,Cloud,Technologie,1,253,0.4,20
+Data Scientist,BigQuery,Bases de données,Technologie,1,253,0.4,20
+Data Scientist,Communication,Soft skills,Compétence / méthode,1,253,0.4,20
+Data Scientist,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,1,253,0.4,20
+Data Scientist,ETL/ELT,Data engineering,Compétence / méthode,1,253,0.4,20
+Data Scientist,Kubernetes,MLOps & DevOps,Technologie,1,253,0.4,20
+Data Scientist,MLflow,MLOps & DevOps,Technologie,1,253,0.4,20
+Data Scientist,R,Langages,Technologie,1,253,0.4,20
+Data Scientist,Snowflake,Bases de données,Technologie,1,253,0.4,20
+Data Scientist,Travail en équipe,Soft skills,Compétence / méthode,1,253,0.4,20
+Machine Learning Engineer,Machine Learning,ML & IA,Compétence / méthode,49,51,96.1,1
+Machine Learning Engineer,LLM,IA générative,Technologie,3,51,5.9,2
+Machine Learning Engineer,Python,Langages,Technologie,3,51,5.9,2
+Machine Learning Engineer,Deep Learning,ML & IA,Compétence / méthode,2,51,3.9,4
+Machine Learning Engineer,Git,MLOps & DevOps,Technologie,2,51,3.9,4
+Machine Learning Engineer,Hugging Face,IA générative,Technologie,2,51,3.9,4
+Machine Learning Engineer,IA générative,IA générative,Compétence / méthode,2,51,3.9,4
+Machine Learning Engineer,PostgreSQL,Bases de données,Technologie,1,51,2.0,8
+Machine Learning Engineer,Séries temporelles,ML & IA,Compétence / méthode,1,51,2.0,8
+Recherche / R&D IA,Autonomie,Soft skills,Compétence / méthode,1,8,12.5,1
+Tous métiers,Machine Learning,ML & IA,Compétence / méthode,133,1346,9.9,1
+Tous métiers,KPI & reporting,Méthodes & gouvernance,Compétence / méthode,93,1346,6.9,2
+Tous métiers,ETL/ELT,Data engineering,Compétence / méthode,65,1346,4.8,3
+Tous métiers,Power BI,BI & Dataviz,Technologie,46,1346,3.4,4
+Tous métiers,SQL,Langages,Technologie,45,1346,3.3,5
+Tous métiers,Python,Langages,Technologie,42,1346,3.1,6
+Tous métiers,IA générative,IA générative,Compétence / méthode,37,1346,2.7,7
+Tous métiers,Data gouvernance,Méthodes & gouvernance,Compétence / méthode,32,1346,2.4,8
+Tous métiers,LLM,IA générative,Technologie,27,1346,2.0,9
+Tous métiers,GCP,Cloud,Technologie,25,1346,1.9,10
+Tous métiers,Databricks,Data engineering,Technologie,24,1346,1.8,11
+Tous métiers,Gestion de projet,Soft skills,Compétence / méthode,24,1346,1.8,11
+Tous métiers,Autonomie,Soft skills,Compétence / méthode,22,1346,1.6,13
+Tous métiers,Azure,Cloud,Technologie,21,1346,1.6,14
+Tous métiers,Modélisation de données,Méthodes & gouvernance,Compétence / méthode,20,1346,1.5,15
+Tous métiers,dbt,Data engineering,Technologie,20,1346,1.5,15
+Tous métiers,Statistiques,ML & IA,Compétence / méthode,19,1346,1.4,17
+Tous métiers,Tableau,BI & Dataviz,Technologie,18,1346,1.3,18
+Tous métiers,Deep Learning,ML & IA,Compétence / méthode,16,1346,1.2,19
+Tous métiers,Snowflake,Bases de données,Technologie,16,1346,1.2,19
+Tous métiers,Spark,Data engineering,Technologie,16,1346,1.2,19
+Tous métiers,Travail en équipe,Soft skills,Compétence / méthode,16,1346,1.2,19
+Tous métiers,Agile/Scrum,Méthodes & gouvernance,Compétence / méthode,15,1346,1.1,23
+Tous métiers,NLP,ML & IA,Compétence / méthode,12,1346,0.9,24
+Tous métiers,Relation client,Soft skills,Compétence / méthode,12,1346,0.9,24
+Tous métiers,AWS,Cloud,Technologie,11,1346,0.8,26
+Tous métiers,Anglais,Soft skills,Compétence / méthode,8,1346,0.6,27
+Tous métiers,CI/CD,MLOps & DevOps,Compétence / méthode,8,1346,0.6,27
+Tous métiers,BigQuery,Bases de données,Technologie,7,1346,0.5,29
+Tous métiers,Communication,Soft skills,Compétence / méthode,7,1346,0.5,29
+Tous métiers,RAG,IA générative,Compétence / méthode,7,1346,0.5,29
+Tous métiers,Scala,Langages,Technologie,7,1346,0.5,29
+Tous métiers,Git,MLOps & DevOps,Technologie,6,1346,0.4,33
+Tous métiers,SQL Server,Bases de données,Technologie,6,1346,0.4,33
+Tous métiers,Séries temporelles,ML & IA,Compétence / méthode,6,1346,0.4,33
+Tous métiers,Computer Vision,ML & IA,Compétence / méthode,4,1346,0.3,36
+Tous métiers,Excel,BI & Dataviz,Technologie,4,1346,0.3,36
+Tous métiers,Looker,BI & Dataviz,Technologie,4,1346,0.3,36
+Tous métiers,RGPD,Méthodes & gouvernance,Compétence / méthode,4,1346,0.3,36
+Tous métiers,SAS,Langages,Technologie,4,1346,0.3,36
+Tous métiers,Talend,Data engineering,Technologie,4,1346,0.3,36
+Tous métiers,API REST,MLOps & DevOps,Technologie,3,1346,0.2,42
+Tous métiers,Airflow,Data engineering,Technologie,3,1346,0.2,42
+Tous métiers,Java,Langages,Technologie,3,1346,0.2,42
+Tous métiers,R,Langages,Technologie,3,1346,0.2,42
+Tous métiers,Hugging Face,IA générative,Technologie,2,1346,0.1,46
+Tous métiers,Oracle,Bases de données,Technologie,2,1346,0.1,46
+Tous métiers,PostgreSQL,Bases de données,Technologie,2,1346,0.1,46
+Tous métiers,Qlik,BI & Dataviz,Technologie,2,1346,0.1,46
+Tous métiers,Docker,MLOps & DevOps,Technologie,1,1346,0.1,50
+Tous métiers,Esprit d'analyse,Soft skills,Compétence / méthode,1,1346,0.1,50
+Tous métiers,Kubernetes,MLOps & DevOps,Technologie,1,1346,0.1,50
+Tous métiers,MLflow,MLOps & DevOps,Technologie,1,1346,0.1,50
+Tous métiers,MySQL,Bases de données,Technologie,1,1346,0.1,50
+Tous métiers,Streamlit/Dash,BI & Dataviz,Technologie,1,1346,0.1,50

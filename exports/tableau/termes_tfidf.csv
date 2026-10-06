@@ -1,276 +1,276 @@
 metier,terme,score_tfidf,rang
-AI / LLM Engineer,ia,0.04574,1
-AI / LLM Engineer,solutions,0.04127,2
-AI / LLM Engineer,intelligence artificielle,0.03347,3
-AI / LLM Engineer,description,0.02879,4
-AI / LLM Engineer,rennes,0.02755,5
-AI / LLM Engineer,grenoble,0.02615,6
-AI / LLM Engineer,innovation,0.02602,7
-AI / LLM Engineer,ingenieur,0.02473,8
-AI / LLM Engineer,accompagne,0.02214,9
-AI / LLM Engineer,idf,0.02205,10
-AI / LLM Engineer,sophia antipolis,0.02166,11
-AI / LLM Engineer,encadres experts,0.02094,12
-AI / LLM Engineer,menons champs,0.02094,13
-AI / LLM Engineer,rennes sophia,0.02094,14
-AI / LLM Engineer,experimentation larges,0.02094,15
-AI / LLM Engineer,technologiques originales,0.02094,16
-AI / LLM Engineer,developpes,0.02094,17
-AI / LLM Engineer,alten labs,0.02094,18
-AI / LLM Engineer,enjeux fournissant,0.02094,19
-AI / LLM Engineer,originales disruptives,0.02094,20
-AI / LLM Engineer,tentent repondre,0.02094,21
-AI / LLM Engineer,experts alten,0.02094,22
-AI / LLM Engineer,larges multi-sectoriels,0.02094,23
-AI / LLM Engineer,champs experimentation,0.02094,24
-AI / LLM Engineer,fournissant solutions,0.02072,25
-Analytics Engineer / BI,analytics engineer,0.06871,1
-Analytics Engineer / BI,bi,0.04066,2
-Analytics Engineer / BI,engineering,0.02467,3
-Analytics Engineer / BI,donnee,0.02143,4
-Analytics Engineer / BI,finance,0.01974,5
-Analytics Engineer / BI,modelisation,0.01962,6
-Analytics Engineer / BI,experts,0.01893,7
-Analytics Engineer / BI,cadre,0.01839,8
-Analytics Engineer / BI,france,0.0183,9
-Analytics Engineer / BI,teams,0.01804,10
-Analytics Engineer / BI,transformation,0.01781,11
-Analytics Engineer / BI,plusieurs,0.01777,12
-Analytics Engineer / BI,passionne,0.01746,13
-Analytics Engineer / BI,engineers,0.01675,14
-Analytics Engineer / BI,factorii,0.01641,15
-Analytics Engineer / BI,accompagner,0.01604,16
-Analytics Engineer / BI,secteur,0.01572,17
-Analytics Engineer / BI,business,0.01559,18
-Analytics Engineer / BI,stack,0.01536,19
-Analytics Engineer / BI,people,0.0149,20
-Analytics Engineer / BI,croissance,0.01489,21
-Analytics Engineer / BI,platform,0.01485,22
+AI / LLM Engineer,ia,0.04519,1
+AI / LLM Engineer,solutions,0.04055,2
+AI / LLM Engineer,intelligence artificielle,0.03193,3
+AI / LLM Engineer,rennes,0.02881,4
+AI / LLM Engineer,description,0.0282,5
+AI / LLM Engineer,grenoble,0.02735,6
+AI / LLM Engineer,innovation,0.02727,7
+AI / LLM Engineer,accompagne,0.02342,8
+AI / LLM Engineer,idf,0.02311,9
+AI / LLM Engineer,sophia antipolis,0.02267,10
+AI / LLM Engineer,champs experimentation,0.02193,11
+AI / LLM Engineer,originales disruptives,0.02193,12
+AI / LLM Engineer,experts alten,0.02193,13
+AI / LLM Engineer,experimentation larges,0.02193,14
+AI / LLM Engineer,alten labs,0.02193,15
+AI / LLM Engineer,rennes sophia,0.02193,16
+AI / LLM Engineer,menons champs,0.02193,17
+AI / LLM Engineer,enjeux fournissant,0.02193,18
+AI / LLM Engineer,developpes,0.02193,19
+AI / LLM Engineer,larges multi-sectoriels,0.02193,20
+AI / LLM Engineer,technologiques originales,0.02193,21
+AI / LLM Engineer,encadres experts,0.02193,22
+AI / LLM Engineer,tentent repondre,0.02193,23
+AI / LLM Engineer,fournissant solutions,0.02169,24
+AI / LLM Engineer,solutions technologiques,0.02126,25
+Analytics Engineer / BI,analytics engineer,0.0684,1
+Analytics Engineer / BI,bi,0.04043,2
+Analytics Engineer / BI,engineering,0.02473,3
+Analytics Engineer / BI,donnee,0.02154,4
+Analytics Engineer / BI,finance,0.02012,5
+Analytics Engineer / BI,modelisation,0.01969,6
+Analytics Engineer / BI,experts,0.01904,7
+Analytics Engineer / BI,france,0.0184,8
+Analytics Engineer / BI,teams,0.01838,9
+Analytics Engineer / BI,cadre,0.01829,10
+Analytics Engineer / BI,transformation,0.01791,11
+Analytics Engineer / BI,plusieurs,0.01774,12
+Analytics Engineer / BI,passionne,0.01751,13
+Analytics Engineer / BI,engineers,0.01672,14
+Analytics Engineer / BI,factorii,0.01655,15
+Analytics Engineer / BI,accompagner,0.01642,16
+Analytics Engineer / BI,business,0.01582,17
+Analytics Engineer / BI,secteur,0.0157,18
+Analytics Engineer / BI,stack,0.01564,19
+Analytics Engineer / BI,croissance,0.01497,20
+Analytics Engineer / BI,people,0.01488,21
+Analytics Engineer / BI,platform,0.01486,22
 Analytics Engineer / BI,international,0.01476,23
-Analytics Engineer / BI,pilotage,0.01434,24
-Analytics Engineer / BI,place,0.01353,25
-Autre métier data,intelligence artificielle,0.03366,1
-Autre métier data,monde,0.0221,2
-Autre métier data,defense,0.02119,3
-Autre métier data,entite rattachement,0.01902,4
-Autre métier data,tant,0.01865,5
-Autre métier data,solutions,0.01863,6
-Autre métier data,informations generales,0.0186,7
-Autre métier data,cea,0.01856,8
-Autre métier data,generales entite,0.01813,9
-Autre métier data,description,0.01794,10
-Autre métier data,ia,0.01723,11
-Autre métier data,charge,0.01661,12
-Autre métier data,developpement,0.01641,13
-Autre métier data,appui,0.01579,14
-Autre métier data,innovation,0.01567,15
-Autre métier data,gestion,0.01544,16
-Autre métier data,environnement,0.01527,17
-Autre métier data,service,0.01518,18
-Autre métier data,job description,0.01449,19
-Autre métier data,direction,0.01444,20
-Autre métier data,cyber,0.01382,21
-Autre métier data,activites,0.01381,22
-Autre métier data,domaines,0.01354,23
-Autre métier data,international,0.01313,24
-Autre métier data,militaires,0.01311,25
-Chef de projet / Lead Data & IA,ratp,0.04146,1
-Chef de projet / Lead Data & IA,ia,0.04115,2
-Chef de projet / Lead Data & IA,intelligence artificielle,0.03745,3
-Chef de projet / Lead Data & IA,digital,0.02931,4
-Chef de projet / Lead Data & IA,tech,0.02863,5
-Chef de projet / Lead Data & IA,ibm,0.02692,6
-Chef de projet / Lead Data & IA,chaque,0.02605,7
-Chef de projet / Lead Data & IA,monde,0.02471,8
-Chef de projet / Lead Data & IA,ibm consulting,0.02362,9
-Chef de projet / Lead Data & IA,dsi,0.02236,10
-Chef de projet / Lead Data & IA,reseau,0.02198,11
-Chef de projet / Lead Data & IA,entreprises,0.0218,12
-Chef de projet / Lead Data & IA,strategie,0.02109,13
-Chef de projet / Lead Data & IA,analytics,0.0204,14
-Chef de projet / Lead Data & IA,chef,0.02036,15
-Chef de projet / Lead Data & IA,appuie,0.01844,16
-Chef de projet / Lead Data & IA,usages,0.01831,17
-Chef de projet / Lead Data & IA,machine learning,0.0178,18
-Chef de projet / Lead Data & IA,assistant,0.01758,19
-Chef de projet / Lead Data & IA,introduction,0.01725,20
-Chef de projet / Lead Data & IA,impact,0.01671,21
-Chef de projet / Lead Data & IA,digital workplace,0.01647,22
-Chef de projet / Lead Data & IA,microsoft,0.01576,23
-Chef de projet / Lead Data & IA,veritable,0.0153,24
-Chef de projet / Lead Data & IA,envie,0.01471,25
-Consultant Data & IA,consultant,0.04206,1
-Consultant Data & IA,conseil,0.0332,2
-Consultant Data & IA,transformation,0.02788,3
-Consultant Data & IA,ia,0.02468,4
-Consultant Data & IA,tant,0.02238,5
-Consultant Data & IA,cabinet,0.02113,6
-Consultant Data & IA,description,0.02107,7
-Consultant Data & IA,strategie,0.02042,8
-Consultant Data & IA,entreprises,0.01997,9
-Consultant Data & IA,expertise,0.01981,10
-Consultant Data & IA,transformations,0.01885,11
-Consultant Data & IA,accompagner,0.01872,12
-Consultant Data & IA,cadre,0.01837,13
-Consultant Data & IA,gouvernance,0.01763,14
-Consultant Data & IA,technologique,0.01735,15
-Consultant Data & IA,strategiques,0.01724,16
-Consultant Data & IA,consultants,0.01659,17
-Consultant Data & IA,cabinet conseil,0.01641,18
-Consultant Data & IA,management,0.01557,19
-Consultant Data & IA,accompagne,0.01551,20
-Consultant Data & IA,enjeux,0.01495,21
-Consultant Data & IA,developpement,0.01482,22
-Consultant Data & IA,marketing,0.01409,23
-Consultant Data & IA,solutions,0.01409,24
-Consultant Data & IA,business,0.01382,25
-Data Analyst,analyst,0.04329,1
-Data Analyst,business,0.02304,2
-Data Analyst,analyse,0.01877,3
-Data Analyst,business intelligence,0.0166,4
-Data Analyst,france,0.01636,5
-Data Analyst,description,0.01517,6
-Data Analyst,bi,0.01479,7
-Data Analyst,services,0.01473,8
-Data Analyst,developpement,0.01432,9
-Data Analyst,cadre,0.01329,10
-Data Analyst,pilotage,0.01315,11
-Data Analyst,accompagner,0.01275,12
-Data Analyst,solutions,0.01253,13
-Data Analyst,analyser,0.0125,14
-Data Analyst,collaborateurs,0.01233,15
-Data Analyst,performance,0.01228,16
-Data Analyst,indicateurs,0.01181,17
-Data Analyst,informations,0.01179,18
-Data Analyst,transformation,0.01144,19
-Data Analyst,besoins,0.01115,20
-Data Analyst,analyses,0.01108,21
-Data Analyst,marketing,0.01099,22
-Data Analyst,rattache,0.01095,23
-Data Analyst,tant analyst,0.01083,24
-Data Analyst,charge,0.01081,25
-Data Engineer,engineer,0.04702,1
-Data Engineer,pipelines,0.02849,2
-Data Engineer,description,0.02317,3
-Data Engineer,solutions,0.02253,4
-Data Engineer,concevoir,0.01992,5
-Data Engineer,developpement,0.01986,6
-Data Engineer,developper,0.01911,7
-Data Engineer,cloud,0.01796,8
-Data Engineer,contexte,0.01763,9
-Data Engineer,transformation,0.01737,10
-Data Engineer,cadre,0.01608,11
-Data Engineer,tech,0.01366,12
-Data Engineer,tant,0.01359,13
-Data Engineer,plateforme,0.01307,14
-Data Engineer,qualite,0.01283,15
-Data Engineer,maintenir,0.01277,16
-Data Engineer,technique,0.01271,17
-Data Engineer,architecture,0.0127,18
-Data Engineer,france,0.01237,19
-Data Engineer,services,0.01203,20
-Data Engineer,expertise,0.012,21
-Data Engineer,flux,0.01186,22
-Data Engineer,robustes,0.0116,23
-Data Engineer,entreprises,0.01138,24
-Data Engineer,environnement,0.0112,25
-Data Manager / Gouvernance,techniques,0.06015,1
-Data Manager / Gouvernance,requetes,0.05706,2
-Data Manager / Gouvernance,digitalisation processus,0.05167,3
-Data Manager / Gouvernance,fonctionnement,0.05082,4
-Data Manager / Gouvernance,etablissement,0.04803,5
-Data Manager / Gouvernance,qualite,0.04561,6
-Data Manager / Gouvernance,premiere,0.04548,7
-Data Manager / Gouvernance,fiabilite,0.04487,8
-Data Manager / Gouvernance,quality,0.04461,9
-Data Manager / Gouvernance,amelioration,0.04361,10
-Data Manager / Gouvernance,rh,0.04235,11
-Data Manager / Gouvernance,french,0.04133,12
-Data Manager / Gouvernance,analyse,0.04075,13
-Data Manager / Gouvernance,soins,0.0397,14
-Data Manager / Gouvernance,maitrise,0.03791,15
-Data Manager / Gouvernance,decathlon,0.03757,16
-Data Manager / Gouvernance,premier plan,0.03657,17
-Data Manager / Gouvernance,valorisation,0.03579,18
-Data Manager / Gouvernance,usages,0.0357,19
-Data Manager / Gouvernance,analyser,0.03449,20
-Data Manager / Gouvernance,prend,0.03131,21
-Data Manager / Gouvernance,integrite,0.03131,22
-Data Manager / Gouvernance,communication,0.03131,23
-Data Manager / Gouvernance,plateforme,0.03107,24
-Data Manager / Gouvernance,bi,0.03094,25
-Data Scientist,scientist,0.04712,1
-Data Scientist,science,0.02494,2
-Data Scientist,ia,0.01828,3
-Data Scientist,france,0.01619,4
-Data Scientist,developpement,0.01582,5
-Data Scientist,service,0.01577,6
-Data Scientist,solutions,0.01576,7
-Data Scientist,learning,0.01566,8
-Data Scientist,modeles,0.01469,9
-Data Scientist,analyse,0.0145,10
-Data Scientist,developper,0.0135,11
-Data Scientist,machine learning,0.01349,12
-Data Scientist,direction,0.01349,13
-Data Scientist,collaborateurs,0.01348,14
-Data Scientist,description,0.01204,15
-Data Scientist,innovation,0.01178,16
-Data Scientist,transformation,0.01125,17
-Data Scientist,contexte,0.0112,18
-Data Scientist,digital,0.01119,19
-Data Scientist,paris,0.01118,20
-Data Scientist,cadre,0.01118,21
-Data Scientist,h/f,0.0111,22
-Data Scientist,banque,0.01107,23
-Data Scientist,impact,0.011,24
-Data Scientist,tant,0.01072,25
-Machine Learning Engineer,machine learning,0.06304,1
-Machine Learning Engineer,learning engineer,0.04471,2
-Machine Learning Engineer,ml,0.0325,3
-Machine Learning Engineer,platform,0.03064,4
-Machine Learning Engineer,building,0.03058,5
-Machine Learning Engineer,systems,0.02995,6
-Machine Learning Engineer,build,0.02933,7
-Machine Learning Engineer,team,0.02917,8
-Machine Learning Engineer,company,0.02841,9
-Machine Learning Engineer,looking,0.02772,10
-Machine Learning Engineer,models,0.02664,11
-Machine Learning Engineer,work,0.02504,12
-Machine Learning Engineer,solutions,0.02263,13
-Machine Learning Engineer,millions,0.02224,14
-Machine Learning Engineer,technology,0.02222,15
-Machine Learning Engineer,modeles,0.02147,16
-Machine Learning Engineer,mlops,0.0214,17
-Machine Learning Engineer,people,0.02052,18
-Machine Learning Engineer,working,0.01952,19
-Machine Learning Engineer,ll,0.01945,20
-Machine Learning Engineer,based,0.01761,21
-Machine Learning Engineer,defense,0.01741,22
-Machine Learning Engineer,time,0.01737,23
-Machine Learning Engineer,live,0.01733,24
-Machine Learning Engineer,legal,0.01725,25
-Recherche / R&D IA,intelligence artificielle,0.08804,1
-Recherche / R&D IA,sogitec,0.07643,2
-Recherche / R&D IA,orientations,0.0759,3
-Recherche / R&D IA,orientations scientifiques,0.06677,4
-Recherche / R&D IA,programmes,0.06421,5
-Recherche / R&D IA,simulation,0.06118,6
-Recherche / R&D IA,travaux,0.05915,7
-Recherche / R&D IA,partir,0.05073,8
-Recherche / R&D IA,piloter,0.04955,9
-Recherche / R&D IA,consistera developper,0.04878,10
-Recherche / R&D IA,scientifique,0.04647,11
-Recherche / R&D IA,avions armes,0.04514,12
-Recherche / R&D IA,modeliser simuler,0.04514,13
-Recherche / R&D IA,forces presence,0.04514,14
-Recherche / R&D IA,entites virtuelles,0.04514,15
-Recherche / R&D IA,armes helicopteres,0.04514,16
-Recherche / R&D IA,artificielle entites,0.04514,17
-Recherche / R&D IA,partir techniques,0.04514,18
-Recherche / R&D IA,activites simulation,0.04514,19
-Recherche / R&D IA,simuler comportement,0.04514,20
-Recherche / R&D IA,presence partir,0.04514,21
-Recherche / R&D IA,virtuelles simulateur,0.04514,22
-Recherche / R&D IA,simulation avions,0.04514,23
-Recherche / R&D IA,simulateurs,0.04514,24
-Recherche / R&D IA,controle intelligence,0.04514,25
+Analytics Engineer / BI,pilotage,0.0144,24
+Analytics Engineer / BI,sales,0.01394,25
+Autre métier data,intelligence artificielle,0.03488,1
+Autre métier data,monde,0.02278,2
+Autre métier data,defense,0.01983,3
+Autre métier data,tant,0.01941,4
+Autre métier data,description,0.01848,5
+Autre métier data,solutions,0.01788,6
+Autre métier data,ia,0.0178,7
+Autre métier data,entite rattachement,0.01733,8
+Autre métier data,charge,0.01706,9
+Autre métier data,informations generales,0.01705,10
+Autre métier data,developpement,0.01685,11
+Autre métier data,generales entite,0.01644,12
+Autre métier data,innovation,0.01606,13
+Autre métier data,appui,0.01604,14
+Autre métier data,gestion,0.01572,15
+Autre métier data,environnement,0.01545,16
+Autre métier data,cea,0.01481,17
+Autre métier data,direction,0.01478,18
+Autre métier data,job description,0.01472,19
+Autre métier data,cyber,0.0141,20
+Autre métier data,activites,0.01401,21
+Autre métier data,international,0.01342,22
+Autre métier data,contribuer,0.01336,23
+Autre métier data,militaires,0.01332,24
+Autre métier data,region,0.01304,25
+Chef de projet / Lead Data & IA,ia,0.04266,1
+Chef de projet / Lead Data & IA,ratp,0.04205,2
+Chef de projet / Lead Data & IA,intelligence artificielle,0.0361,3
+Chef de projet / Lead Data & IA,digital,0.03058,4
+Chef de projet / Lead Data & IA,tech,0.02967,5
+Chef de projet / Lead Data & IA,ibm,0.02755,6
+Chef de projet / Lead Data & IA,ibm consulting,0.02417,7
+Chef de projet / Lead Data & IA,dsi,0.0227,8
+Chef de projet / Lead Data & IA,strategie,0.02263,9
+Chef de projet / Lead Data & IA,entreprises,0.02238,10
+Chef de projet / Lead Data & IA,reseau,0.02236,11
+Chef de projet / Lead Data & IA,monde,0.02215,12
+Chef de projet / Lead Data & IA,analytics,0.02096,13
+Chef de projet / Lead Data & IA,chef,0.02083,14
+Chef de projet / Lead Data & IA,appuie,0.01881,15
+Chef de projet / Lead Data & IA,chaque,0.01877,16
+Chef de projet / Lead Data & IA,usages,0.01849,17
+Chef de projet / Lead Data & IA,machine learning,0.01828,18
+Chef de projet / Lead Data & IA,assistant,0.0179,19
+Chef de projet / Lead Data & IA,introduction,0.01764,20
+Chef de projet / Lead Data & IA,impact,0.01724,21
+Chef de projet / Lead Data & IA,digital workplace,0.01721,22
+Chef de projet / Lead Data & IA,microsoft,0.01603,23
+Chef de projet / Lead Data & IA,veritable,0.01558,24
+Chef de projet / Lead Data & IA,envie,0.01532,25
+Consultant Data & IA,consultant,0.04438,1
+Consultant Data & IA,conseil,0.03338,2
+Consultant Data & IA,transformation,0.02845,3
+Consultant Data & IA,ia,0.02567,4
+Consultant Data & IA,tant,0.02396,5
+Consultant Data & IA,description,0.02234,6
+Consultant Data & IA,expertise,0.02084,7
+Consultant Data & IA,entreprises,0.02028,8
+Consultant Data & IA,cabinet,0.01986,9
+Consultant Data & IA,strategie,0.01985,10
+Consultant Data & IA,accompagner,0.01973,11
+Consultant Data & IA,cadre,0.01965,12
+Consultant Data & IA,transformations,0.01902,13
+Consultant Data & IA,technologique,0.01898,14
+Consultant Data & IA,gouvernance,0.01767,15
+Consultant Data & IA,consultants,0.01757,16
+Consultant Data & IA,strategiques,0.01723,17
+Consultant Data & IA,accompagne,0.01614,18
+Consultant Data & IA,management,0.01535,19
+Consultant Data & IA,enjeux,0.0151,20
+Consultant Data & IA,developpement,0.0151,21
+Consultant Data & IA,cabinet conseil,0.01461,22
+Consultant Data & IA,solutions,0.01416,23
+Consultant Data & IA,cadrage,0.01399,24
+Consultant Data & IA,business,0.01381,25
+Data Analyst,analyst,0.04247,1
+Data Analyst,business,0.02456,2
+Data Analyst,analyse,0.01893,3
+Data Analyst,business intelligence,0.01753,4
+Data Analyst,france,0.01653,5
+Data Analyst,bi,0.01604,6
+Data Analyst,services,0.01528,7
+Data Analyst,developpement,0.01518,8
+Data Analyst,description,0.01448,9
+Data Analyst,cadre,0.0142,10
+Data Analyst,analyser,0.01351,11
+Data Analyst,performance,0.01342,12
+Data Analyst,pilotage,0.01322,13
+Data Analyst,solutions,0.01272,14
+Data Analyst,collaborateurs,0.01268,15
+Data Analyst,informations,0.0125,16
+Data Analyst,besoins,0.01233,17
+Data Analyst,transformation,0.01216,18
+Data Analyst,analyses,0.01208,19
+Data Analyst,charge,0.0119,20
+Data Analyst,rattache,0.01143,21
+Data Analyst,indicateurs,0.01113,22
+Data Analyst,accompagner,0.01105,23
+Data Analyst,qualite,0.01098,24
+Data Analyst,marketing,0.01086,25
+Data Engineer,engineer,0.04772,1
+Data Engineer,pipelines,0.02912,2
+Data Engineer,solutions,0.02362,3
+Data Engineer,description,0.02288,4
+Data Engineer,concevoir,0.02091,5
+Data Engineer,developpement,0.02009,6
+Data Engineer,developper,0.01995,7
+Data Engineer,contexte,0.01882,8
+Data Engineer,transformation,0.0173,9
+Data Engineer,cloud,0.01718,10
+Data Engineer,cadre,0.0161,11
+Data Engineer,plateforme,0.01402,12
+Data Engineer,tant,0.0139,13
+Data Engineer,technique,0.01361,14
+Data Engineer,maintenir,0.01354,15
+Data Engineer,qualite,0.01321,16
+Data Engineer,tech,0.01306,17
+Data Engineer,architecture,0.01245,18
+Data Engineer,france,0.01244,19
+Data Engineer,entreprises,0.01225,20
+Data Engineer,services,0.01218,21
+Data Engineer,flux,0.01217,22
+Data Engineer,robustes,0.01197,23
+Data Engineer,expertise,0.01196,24
+Data Engineer,environnement,0.01188,25
+Data Manager / Gouvernance,techniques,0.06026,1
+Data Manager / Gouvernance,requetes,0.05689,2
+Data Manager / Gouvernance,fonctionnement,0.05161,3
+Data Manager / Gouvernance,digitalisation processus,0.05132,4
+Data Manager / Gouvernance,etablissement,0.04869,5
+Data Manager / Gouvernance,premiere,0.04578,6
+Data Manager / Gouvernance,qualite,0.04521,7
+Data Manager / Gouvernance,quality,0.04475,8
+Data Manager / Gouvernance,fiabilite,0.0446,9
+Data Manager / Gouvernance,rh,0.04368,10
+Data Manager / Gouvernance,amelioration,0.04366,11
+Data Manager / Gouvernance,analyse,0.0411,12
+Data Manager / Gouvernance,french,0.04105,13
+Data Manager / Gouvernance,soins,0.03929,14
+Data Manager / Gouvernance,maitrise,0.03865,15
+Data Manager / Gouvernance,decathlon,0.03717,16
+Data Manager / Gouvernance,premier plan,0.0368,17
+Data Manager / Gouvernance,valorisation,0.03574,18
+Data Manager / Gouvernance,usages,0.03531,19
+Data Manager / Gouvernance,analyser,0.03429,20
+Data Manager / Gouvernance,prend,0.03125,21
+Data Manager / Gouvernance,communication,0.03125,22
+Data Manager / Gouvernance,integrite,0.03125,23
+Data Manager / Gouvernance,plateforme,0.03094,24
+Data Manager / Gouvernance,dynamique,0.03085,25
+Data Scientist,scientist,0.04766,1
+Data Scientist,science,0.02507,2
+Data Scientist,ia,0.01693,3
+Data Scientist,france,0.01657,4
+Data Scientist,service,0.01646,5
+Data Scientist,developpement,0.01619,6
+Data Scientist,solutions,0.01564,7
+Data Scientist,learning,0.01534,8
+Data Scientist,analyse,0.01521,9
+Data Scientist,modeles,0.01519,10
+Data Scientist,collaborateurs,0.01403,11
+Data Scientist,direction,0.01377,12
+Data Scientist,developper,0.01354,13
+Data Scientist,machine learning,0.01308,14
+Data Scientist,description,0.01263,15
+Data Scientist,digital,0.01196,16
+Data Scientist,transformation,0.01189,17
+Data Scientist,innovation,0.01177,18
+Data Scientist,cadre,0.01164,19
+Data Scientist,banque,0.01149,20
+Data Scientist,contexte,0.01119,21
+Data Scientist,paris,0.01114,22
+Data Scientist,h/f,0.01107,23
+Data Scientist,systemes,0.01106,24
+Data Scientist,services,0.01083,25
+Machine Learning Engineer,learning,0.06766,1
+Machine Learning Engineer,machine learning,0.06066,2
+Machine Learning Engineer,learning engineer,0.04264,3
+Machine Learning Engineer,platform,0.03185,4
+Machine Learning Engineer,building,0.03164,5
+Machine Learning Engineer,systems,0.03094,6
+Machine Learning Engineer,team,0.0305,7
+Machine Learning Engineer,build,0.03047,8
+Machine Learning Engineer,company,0.02961,9
+Machine Learning Engineer,looking,0.02873,10
+Machine Learning Engineer,ml,0.0287,11
+Machine Learning Engineer,models,0.0277,12
+Machine Learning Engineer,work,0.02611,13
+Machine Learning Engineer,technology,0.02343,14
+Machine Learning Engineer,millions,0.02294,15
+Machine Learning Engineer,mlops,0.02262,16
+Machine Learning Engineer,modeles,0.02241,17
+Machine Learning Engineer,solutions,0.02217,18
+Machine Learning Engineer,people,0.02127,19
+Machine Learning Engineer,ll,0.0202,20
+Machine Learning Engineer,working,0.02015,21
+Machine Learning Engineer,defense,0.01846,22
+Machine Learning Engineer,based,0.01818,23
+Machine Learning Engineer,time,0.01802,24
+Machine Learning Engineer,legal,0.01789,25
+Recherche / R&D IA,intelligence artificielle,0.11151,1
+Recherche / R&D IA,sogitec,0.09533,2
+Recherche / R&D IA,orientations scientifiques,0.08548,3
+Recherche / R&D IA,programmes,0.08498,4
+Recherche / R&D IA,simulation,0.07971,5
+Recherche / R&D IA,travaux,0.07684,6
+Recherche / R&D IA,piloter,0.0666,7
+Recherche / R&D IA,partir,0.06301,8
+Recherche / R&D IA,consistera developper,0.06068,9
+Recherche / R&D IA,piloter programmes,0.05696,10
+Recherche / R&D IA,modeliser simuler,0.0563,11
+Recherche / R&D IA,simulateur vol,0.0563,12
+Recherche / R&D IA,simulation avions,0.0563,13
+Recherche / R&D IA,entites virtuelles,0.0563,14
+Recherche / R&D IA,simuler comportement,0.0563,15
+Recherche / R&D IA,controle intelligence,0.0563,16
+Recherche / R&D IA,avions armes,0.0563,17
+Recherche / R&D IA,simulateurs,0.0563,18
+Recherche / R&D IA,virtuelles simulateur,0.0563,19
+Recherche / R&D IA,capacite modeliser,0.0563,20
+Recherche / R&D IA,comportement forces,0.0563,21
+Recherche / R&D IA,sogitec renforcer,0.0563,22
+Recherche / R&D IA,presence partir,0.0563,23
+Recherche / R&D IA,vol atteindre,0.0563,24
+Recherche / R&D IA,armes helicopteres,0.0563,25

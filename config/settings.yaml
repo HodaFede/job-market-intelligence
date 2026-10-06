@@ -48,6 +48,8 @@ clean:
   salary_max_plausible: 200000
   # Heures annuelles légales (35h) pour convertir un taux horaire.
   hours_per_year: 1607
+  # Ancienneté maximale des offres (jours avant l'offre la plus récente) ; null = pas de limite.
+  max_age_days: 365
 
 nlp:
   skills_dictionary: config/skills_dictionary.yaml

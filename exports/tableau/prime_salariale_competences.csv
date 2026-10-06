@@ -1,12 +1,9 @@
 competence,categorie_competence,nb_offres_avec,nb_offres_sans,salaire_median_avec,salaire_median_sans,prime_eur,prime_pct,fiabilite
-Autonomie,Soft skills,10,265,46250.0,50000.0,-3750.0,-7.5,Faible (10 à 19 offres)
-Data gouvernance,Méthodes & gouvernance,12,263,53500.0,49000.0,4500.0,9.2,Faible (10 à 19 offres)
-Databricks,Data engineering,10,265,51750.0,48500.0,3250.0,6.7,Faible (10 à 19 offres)
-ETL/ELT,Data engineering,27,248,47500.0,50000.0,-2500.0,-5.0,Moyenne
-IA générative,IA générative,14,261,54375.0,48500.0,5875.0,12.1,Faible (10 à 19 offres)
-KPI & reporting,Méthodes & gouvernance,26,249,47500.0,50000.0,-2500.0,-5.0,Moyenne
-Machine Learning,ML & IA,38,237,53125.0,48000.0,5125.0,10.7,Moyenne
-Power BI,BI & Dataviz,10,265,46250.0,50000.0,-3750.0,-7.5,Faible (10 à 19 offres)
-Python,Langages,11,264,50000.0,49500.0,500.0,1.0,Faible (10 à 19 offres)
-SQL,Langages,21,254,48000.0,50000.0,-2000.0,-4.0,Moyenne
-dbt,Data engineering,10,265,55000.0,48500.0,6500.0,13.4,Faible (10 à 19 offres)
+Autonomie,Soft skills,10,255,46250.0,50000.0,-3750.0,-7.5,Faible (10 à 19 offres)
+Data gouvernance,Méthodes & gouvernance,11,254,55000.0,48500.0,6500.0,13.4,Faible (10 à 19 offres)
+ETL/ELT,Data engineering,27,238,47500.0,50000.0,-2500.0,-5.0,Moyenne
+IA générative,IA générative,11,254,53750.0,48500.0,5250.0,10.8,Faible (10 à 19 offres)
+KPI & reporting,Méthodes & gouvernance,26,239,47500.0,50000.0,-2500.0,-5.0,Moyenne
+Machine Learning,ML & IA,35,230,50000.0,48000.0,2000.0,4.2,Moyenne
+Power BI,BI & Dataviz,10,255,46250.0,50000.0,-3750.0,-7.5,Faible (10 à 19 offres)
+SQL,Langages,19,246,48000.0,49500.0,-1500.0,-3.0,Faible (10 à 19 offres)

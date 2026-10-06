@@ -1,50 +1,46 @@
 competence_a,competence_b,nb_offres_communes,pct_offres_a_avec_b,lift
-AWS,Databricks,6,42.9,21.81
-Autonomie,KPI & reporting,7,31.8,4.49
-Azure,Databricks,6,28.6,14.54
-Azure,ETL/ELT,5,23.8,5.22
-Azure,Power BI,7,33.3,10.11
-Azure,SQL,8,38.1,11.55
-BigQuery,GCP,7,77.8,36.94
-CI/CD,ETL/ELT,7,87.5,19.18
-Data gouvernance,Python,5,14.3,4.63
-Data gouvernance,SQL,6,17.1,5.2
-Databricks,ETL/ELT,8,28.6,6.26
-Databricks,Python,6,21.4,6.94
-Databricks,Spark,6,21.4,16.96
-Databricks,dbt,7,25.0,14.84
-Deep Learning,Machine Learning,13,81.3,8.33
-ETL/ELT,KPI & reporting,7,10.8,1.52
-ETL/ELT,SQL,10,15.4,4.66
-ETL/ELT,Scala,5,7.7,15.66
-ETL/ELT,Snowflake,5,7.7,5.48
-ETL/ELT,Spark,5,7.7,6.09
-GCP,Power BI,5,16.7,5.05
-GCP,Python,6,20.0,6.48
-GCP,dbt,8,26.7,15.83
-IA générative,LLM,5,12.5,6.6
-IA générative,Machine Learning,14,35.0,3.59
-IA générative,Python,6,15.0,4.86
-IA générative,RAG,5,12.5,25.45
-KPI & reporting,Power BI,23,22.8,6.9
-KPI & reporting,SQL,15,14.9,4.5
-KPI & reporting,Tableau,12,11.9,8.91
-KPI & reporting,dbt,5,5.0,2.94
-LLM,Machine Learning,15,55.6,5.7
-LLM,Python,5,18.5,6.0
-Machine Learning,NLP,5,3.6,4.27
-Machine Learning,Python,9,6.5,2.1
-Modélisation de données,Power BI,7,35.0,10.61
-Modélisation de données,SQL,5,25.0,7.58
-Power BI,SQL,13,27.7,8.39
-Power BI,Tableau,7,14.9,11.17
-Power BI,dbt,5,10.6,6.32
-Python,SQL,17,38.6,11.71
-Python,Spark,7,15.9,12.59
-Python,dbt,5,11.4,6.75
-SQL,SQL Server,6,12.8,30.32
-SQL,Spark,6,12.8,10.11
-SQL,Tableau,5,10.6,7.98
-SQL,dbt,8,17.0,10.11
-Scala,Spark,6,85.7,67.86
-Snowflake,dbt,11,55.0,32.66
+Autonomie,KPI & reporting,7,31.8,4.61
+Azure,Databricks,6,28.6,16.02
+Azure,ETL/ELT,5,23.8,4.93
+Azure,Power BI,7,33.3,9.75
+Azure,SQL,8,38.1,11.39
+BigQuery,GCP,6,85.7,46.15
+CI/CD,ETL/ELT,7,87.5,18.12
+Data gouvernance,SQL,5,15.6,4.67
+Databricks,ETL/ELT,8,33.3,6.9
+Databricks,Python,5,20.8,6.68
+Databricks,Spark,6,25.0,21.03
+Deep Learning,Machine Learning,13,81.3,8.22
+ETL/ELT,KPI & reporting,7,10.8,1.56
+ETL/ELT,SQL,10,15.4,4.6
+ETL/ELT,Scala,5,7.7,14.79
+ETL/ELT,Snowflake,5,7.7,6.47
+ETL/ELT,Spark,5,7.7,6.47
+GCP,Power BI,5,20.0,5.85
+GCP,Python,5,20.0,6.41
+GCP,dbt,5,20.0,13.46
+IA générative,LLM,5,13.5,6.74
+IA générative,Machine Learning,12,32.4,3.28
+IA générative,Python,5,13.5,4.33
+IA générative,RAG,5,13.5,25.98
+KPI & reporting,Power BI,23,24.7,7.24
+KPI & reporting,SQL,15,16.1,4.82
+KPI & reporting,Tableau,12,12.9,9.65
+KPI & reporting,dbt,5,5.4,3.62
+LLM,Machine Learning,15,55.6,5.62
+LLM,Python,5,18.5,5.93
+Machine Learning,NLP,5,3.8,4.22
+Machine Learning,Python,9,6.8,2.17
+Modélisation de données,Power BI,7,35.0,10.24
+Modélisation de données,SQL,5,25.0,7.48
+Power BI,SQL,13,28.3,8.45
+Power BI,Tableau,6,13.0,9.75
+Power BI,dbt,5,10.9,7.32
+Python,SQL,15,35.7,10.68
+Python,Spark,6,14.3,12.02
+SQL,SQL Server,6,13.3,29.91
+SQL,Spark,5,11.1,9.35
+SQL,Tableau,5,11.1,8.31
+SQL,dbt,7,15.6,10.47
+Scala,Spark,6,85.7,72.11
+Snowflake,dbt,7,43.8,29.44

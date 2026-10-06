@@ -31,7 +31,7 @@ Pourquoi la médiane plutôt que la moyenne : quelques offres senior très bien 
 | Séniorité | répartition par métier | `seniorite_metier.csv` |
 | Télétravail | répartition Hybride / Full remote / Sur site / Non précisé par métier | `teletravail_metier.csv` |
 | Contrats | répartition par type, TJM moyen des freelances | `contrats.csv` |
-| Tendance | offres publiées par mois et par métier | `tendance_mensuelle.csv` |
+| Tendance | offres publiées par mois et par métier. À lire comme l'âge des annonces encore en ligne au moment de la collecte, pas comme une série d'embauches : l'historique se construit au fil des collectes hebdomadaires | `tendance_mensuelle.csv` |
 
 ## Règles de calcul à connaître
 

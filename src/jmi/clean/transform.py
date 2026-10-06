@@ -45,7 +45,7 @@ def _dedup_key(title: str, company: str | None, city: str) -> str:
 
 
 def clean_records(records: list[dict[str, Any]], salary_bounds: tuple[float, float] = (18000, 200000),
-                  hours_per_year: int = 1607) -> pd.DataFrame:
+                  hours_per_year: int = 1607, max_age_days: int | None = None) -> pd.DataFrame:
     rows = []
     out_of_scope = 0
     for r in records:
@@ -106,6 +106,13 @@ def clean_records(records: list[dict[str, Any]], salary_bounds: tuple[float, flo
     df = pd.DataFrame(rows)
     if df.empty:
         return pd.DataFrame(columns=CLEAN_COLUMNS)
+    if max_age_days:
+        # Annonces restées en ligne depuis longtemps : on garde la fenêtre récente (date de référence = offre la plus récente).
+        dates = pd.to_datetime(df["published_date"], errors="coerce")
+        stale = dates < dates.max() - pd.Timedelta(days=max_age_days)
+        if stale.any():
+            log.info("Offres publiées il y a plus de %s jours écartées : %s", max_age_days, int(stale.sum()))
+            df = df[~stale]
     before = len(df)
     # Les fichiers bruts sont lus du plus ancien au plus récent : on inverse pour que, à date égale,
     # la ligne de la collecte la plus récente (champs les plus complets) l'emporte.

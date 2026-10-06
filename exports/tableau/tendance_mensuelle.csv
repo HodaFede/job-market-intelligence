@@ -1,51 +1,7 @@
 mois,metier,nb_offres,salaire_moyen,nb_offres_teletravail
-2020-06-01,Consultant Data & IA,1,,0
-2021-07-01,Data Analyst,1,,0
-2022-09-01,Data Analyst,1,,0
-2023-10-01,Consultant Data & IA,1,,0
-2024-01-01,Machine Learning Engineer,1,,0
-2024-02-01,Data Analyst,1,,0
-2024-02-01,Data Engineer,1,,0
-2024-03-01,Data Analyst,2,,0
-2024-03-01,Data Engineer,6,,0
-2024-04-01,Data Analyst,4,,0
-2024-04-01,Data Engineer,3,,0
-2024-06-01,Consultant Data & IA,1,,0
-2024-07-01,Consultant Data & IA,1,,0
-2024-07-01,Data Analyst,2,,0
-2024-07-01,Data Engineer,4,46000.0,0
-2024-09-01,Data Analyst,1,,0
-2024-09-01,Data Scientist,1,,0
-2024-11-01,Data Scientist,1,,0
-2025-01-01,Consultant Data & IA,2,,0
-2025-01-01,Data Analyst,1,,0
-2025-01-01,Data Engineer,1,,0
-2025-01-01,Data Scientist,1,,0
-2025-02-01,AI / LLM Engineer,2,113750.0,0
-2025-02-01,Consultant Data & IA,3,,0
-2025-02-01,Data Analyst,2,,0
-2025-02-01,Data Engineer,2,,0
-2025-03-01,Consultant Data & IA,1,54500.0,0
-2025-03-01,Data Analyst,8,,0
-2025-03-01,Data Engineer,1,,0
-2025-04-01,AI / LLM Engineer,1,,0
-2025-04-01,Data Analyst,1,,0
-2025-05-01,Consultant Data & IA,1,,0
-2025-05-01,Recherche / R&D IA,1,,0
-2025-06-01,Machine Learning Engineer,1,70000.0,0
-2025-07-01,AI / LLM Engineer,2,,0
-2025-07-01,Autre métier data,2,,0
-2025-07-01,Consultant Data & IA,2,,0
-2025-07-01,Data Analyst,1,,0
-2025-07-01,Data Engineer,1,40000.0,0
-2025-07-01,Data Scientist,2,40000.0,0
-2025-07-01,Recherche / R&D IA,1,,0
-2025-08-01,Consultant Data & IA,1,,0
-2025-08-01,Data Scientist,2,,0
-2025-09-01,Chef de projet / Lead Data & IA,1,,0
 2025-10-01,AI / LLM Engineer,1,,0
 2025-10-01,Consultant Data & IA,1,,0
-2025-10-01,Data Scientist,3,72500.0,0
+2025-10-01,Data Scientist,1,,0
 2025-11-01,AI / LLM Engineer,9,,0
 2025-11-01,Consultant Data & IA,4,,0
 2025-11-01,Data Analyst,4,,0

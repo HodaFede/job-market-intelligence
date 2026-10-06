@@ -36,7 +36,8 @@ def run_pipeline(settings: Settings) -> RunSummary:
     offers = clean_records(selected,
                            salary_bounds=(clean_cfg.get("salary_min_plausible", 18000),
                                           clean_cfg.get("salary_max_plausible", 200000)),
-                           hours_per_year=clean_cfg.get("hours_per_year", 1607))
+                           hours_per_year=clean_cfg.get("hours_per_year", 1607),
+                           max_age_days=clean_cfg.get("max_age_days"))
     processed = settings.path("processed")
     processed.mkdir(parents=True, exist_ok=True)
     offers.to_csv(processed / "offers_clean.csv", index=False, encoding="utf-8")

@@ -1,44 +1,43 @@
 metier,seniorite,ordre_seniorite,nb_offres,part_offres_pct
-AI / LLM Engineer,Confirmé,3,4,3.7
-AI / LLM Engineer,Junior,2,4,3.7
-AI / LLM Engineer,Non précisé,5,51,47.2
-AI / LLM Engineer,Senior,4,15,13.9
-AI / LLM Engineer,Stage / Alternance,1,34,31.5
+AI / LLM Engineer,Confirmé,3,4,3.9
+AI / LLM Engineer,Junior,2,4,3.9
+AI / LLM Engineer,Non précisé,5,48,46.6
+AI / LLM Engineer,Senior,4,13,12.6
+AI / LLM Engineer,Stage / Alternance,1,34,33.0
 Analytics Engineer / BI,Confirmé,3,8,15.4
 Analytics Engineer / BI,Non précisé,5,29,55.8
 Analytics Engineer / BI,Senior,4,15,28.8
-Autre métier data,Junior,2,1,1.0
-Autre métier data,Non précisé,5,40,41.7
-Autre métier data,Senior,4,10,10.4
-Autre métier data,Stage / Alternance,1,45,46.9
-Chef de projet / Lead Data & IA,Non précisé,5,19,47.5
-Chef de projet / Lead Data & IA,Senior,4,18,45.0
-Chef de projet / Lead Data & IA,Stage / Alternance,1,3,7.5
-Consultant Data & IA,Confirmé,3,21,10.2
-Consultant Data & IA,Junior,2,9,4.4
-Consultant Data & IA,Non précisé,5,117,56.8
-Consultant Data & IA,Senior,4,38,18.4
-Consultant Data & IA,Stage / Alternance,1,21,10.2
-Data Analyst,Confirmé,3,6,2.0
-Data Analyst,Junior,2,7,2.4
-Data Analyst,Non précisé,5,161,54.4
-Data Analyst,Senior,4,44,14.9
-Data Analyst,Stage / Alternance,1,78,26.4
-Data Engineer,Confirmé,3,17,5.8
-Data Engineer,Junior,2,6,2.0
-Data Engineer,Non précisé,5,202,68.7
-Data Engineer,Senior,4,54,18.4
-Data Engineer,Stage / Alternance,1,15,5.1
+Autre métier data,Junior,2,1,1.1
+Autre métier data,Non précisé,5,40,42.6
+Autre métier data,Senior,4,8,8.5
+Autre métier data,Stage / Alternance,1,45,47.9
+Chef de projet / Lead Data & IA,Non précisé,5,18,46.2
+Chef de projet / Lead Data & IA,Senior,4,18,46.2
+Chef de projet / Lead Data & IA,Stage / Alternance,1,3,7.7
+Consultant Data & IA,Confirmé,3,19,9.9
+Consultant Data & IA,Junior,2,7,3.6
+Consultant Data & IA,Non précisé,5,112,58.3
+Consultant Data & IA,Senior,4,34,17.7
+Consultant Data & IA,Stage / Alternance,1,20,10.4
+Data Analyst,Confirmé,3,6,2.2
+Data Analyst,Junior,2,7,2.6
+Data Analyst,Non précisé,5,145,53.5
+Data Analyst,Senior,4,41,15.1
+Data Analyst,Stage / Alternance,1,72,26.6
+Data Engineer,Confirmé,3,15,5.5
+Data Engineer,Junior,2,5,1.8
+Data Engineer,Non précisé,5,191,69.5
+Data Engineer,Senior,4,51,18.5
+Data Engineer,Stage / Alternance,1,13,4.7
 Data Manager / Gouvernance,Non précisé,5,6,75.0
 Data Manager / Gouvernance,Senior,4,2,25.0
-Data Scientist,Confirmé,3,14,5.3
-Data Scientist,Junior,2,4,1.5
-Data Scientist,Non précisé,5,145,55.3
-Data Scientist,Senior,4,49,18.7
-Data Scientist,Stage / Alternance,1,50,19.1
-Machine Learning Engineer,Confirmé,3,3,5.7
-Machine Learning Engineer,Non précisé,5,28,52.8
-Machine Learning Engineer,Senior,4,14,26.4
-Machine Learning Engineer,Stage / Alternance,1,8,15.1
-Recherche / R&D IA,Non précisé,5,9,90.0
-Recherche / R&D IA,Senior,4,1,10.0
+Data Scientist,Confirmé,3,14,5.5
+Data Scientist,Junior,2,4,1.6
+Data Scientist,Non précisé,5,141,55.7
+Data Scientist,Senior,4,46,18.2
+Data Scientist,Stage / Alternance,1,48,19.0
+Machine Learning Engineer,Confirmé,3,2,3.9
+Machine Learning Engineer,Non précisé,5,27,52.9
+Machine Learning Engineer,Senior,4,14,27.5
+Machine Learning Engineer,Stage / Alternance,1,8,15.7
+Recherche / R&D IA,Non précisé,5,8,100.0

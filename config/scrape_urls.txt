@@ -1,0 +1,10 @@
+# Une URL de page d'offre par ligne (les lignes commençant par # sont ignorées).
+#
+# Le scraper JSON-LD lit le bloc <script type="application/ld+json"> de type
+# schema.org/JobPosting que la plupart des pages carrières publient pour Google Jobs.
+# Il vérifie robots.txt avant chaque domaine et attend `delay_seconds` entre deux requêtes.
+#
+# Ajoute ici des pages d'offres publiques (sites carrières d'entreprises, ATS type
+# Lever / Greenhouse / SmartRecruiters / Workday) dont les CGU autorisent la consultation automatisée.
+#
+# https://careers.exemple-entreprise.fr/offres/data-analyst-123

@@ -1,0 +1,105 @@
+# Dictionnaire de compétences utilisé par l'extraction NLP (src/jmi/nlp/skills.py).
+#
+# Chaque compétence a :
+#   name      : libellé canonique affiché dans Tableau
+#   category  : famille de compétence (filtre Tableau)
+#   type      : "tech" (technologie / outil) ou "skill" (méthode, savoir-être)
+#   patterns  : expressions régulières (sans les bornes de mot, ajoutées automatiquement)
+#   case_sensitive (optionnel) : utile pour les noms courts ambigus comme "R"
+#
+# Remarque : les offres citent des outils concurrents de Tableau (Power BI, Looker, Qlik).
+# Ils sont mesurés ici en tant que compétences demandées par le marché ; le projet lui-même
+# n'utilise que Tableau Public pour la visualisation.
+
+skills:
+  # --- Langages -----------------------------------------------------------
+  - {name: Python, category: Langages, type: tech, patterns: ['python']}
+  - {name: SQL, category: Langages, type: tech, patterns: ['sql', 't-sql', 'pl/sql', 'plsql']}
+  - {name: R, category: Langages, type: tech, case_sensitive: true, patterns: ['R(?!&D| ?& ?D)', 'RStudio', 'langage R']}
+  - {name: Scala, category: Langages, type: tech, patterns: ['scala']}
+  - {name: Java, category: Langages, type: tech, patterns: ['java(?!script)']}
+  - {name: SAS, category: Langages, type: tech, case_sensitive: true, patterns: ['SAS']}
+  - {name: VBA, category: Langages, type: tech, patterns: ['vba']}
+  - {name: JavaScript, category: Langages, type: tech, patterns: ['javascript', 'typescript']}
+
+  # --- Bases de données ---------------------------------------------------
+  - {name: PostgreSQL, category: Bases de données, type: tech, patterns: ['postgres(?:ql)?']}
+  - {name: MySQL, category: Bases de données, type: tech, patterns: ['mysql']}
+  - {name: Oracle, category: Bases de données, type: tech, patterns: ['oracle']}
+  - {name: SQL Server, category: Bases de données, type: tech, patterns: ['sql server', 'mssql']}
+  - {name: MongoDB, category: Bases de données, type: tech, patterns: ['mongo(?:db)?']}
+  - {name: Elasticsearch, category: Bases de données, type: tech, patterns: ['elastic ?search']}
+  - {name: Snowflake, category: Bases de données, type: tech, patterns: ['snowflake']}
+  - {name: BigQuery, category: Bases de données, type: tech, patterns: ['big ?query']}
+  - {name: Redshift, category: Bases de données, type: tech, patterns: ['redshift']}
+
+  # --- BI & Dataviz -------------------------------------------------------
+  # "tableau de bord" est exclu pour éviter les faux positifs en français.
+  - {name: Tableau, category: BI & Dataviz, type: tech, patterns: ['tableau(?! ?de ?bord)(?! croisé)(?!x)', 'tableau software']}
+  - {name: Power BI, category: BI & Dataviz, type: tech, patterns: ['power ?bi', 'dax']}
+  - {name: Looker, category: BI & Dataviz, type: tech, patterns: ['looker(?: studio)?', 'data studio']}
+  - {name: Qlik, category: BI & Dataviz, type: tech, patterns: ['qlik(?: ?sense| ?view)?']}
+  - {name: Excel, category: BI & Dataviz, type: tech, patterns: ['excel']}
+  - {name: Matplotlib/Seaborn, category: BI & Dataviz, type: tech, patterns: ['matplotlib', 'seaborn', 'plotly']}
+  - {name: Streamlit/Dash, category: BI & Dataviz, type: tech, patterns: ['streamlit', 'dash']}
+
+  # --- Data engineering & Big Data ---------------------------------------
+  - {name: Pandas/NumPy, category: Data engineering, type: tech, patterns: ['pandas', 'numpy']}
+  - {name: Spark, category: Data engineering, type: tech, patterns: ['spark', 'pyspark']}
+  - {name: Hadoop, category: Data engineering, type: tech, patterns: ['hadoop', 'hive', 'hdfs']}
+  - {name: Airflow, category: Data engineering, type: tech, patterns: ['airflow']}
+  - {name: dbt, category: Data engineering, type: tech, patterns: ['dbt']}
+  - {name: Kafka, category: Data engineering, type: tech, patterns: ['kafka']}
+  - {name: Databricks, category: Data engineering, type: tech, patterns: ['databricks']}
+  - {name: ETL/ELT, category: Data engineering, type: skill, patterns: ['etl', 'elt', "pipelines? de données", 'data pipelines?']}
+  - {name: Talend, category: Data engineering, type: tech, patterns: ['talend']}
+  - {name: Web scraping, category: Data engineering, type: skill, patterns: ['web ?scraping', 'scrapy', 'beautiful ?soup', 'selenium']}
+
+  # --- Cloud --------------------------------------------------------------
+  - {name: AWS, category: Cloud, type: tech, patterns: ['aws', 'amazon web services', 's3', 'sagemaker']}
+  - {name: Azure, category: Cloud, type: tech, patterns: ['azure']}
+  - {name: GCP, category: Cloud, type: tech, patterns: ['gcp', 'google cloud']}
+
+  # --- MLOps & DevOps -----------------------------------------------------
+  - {name: Git, category: MLOps & DevOps, type: tech, patterns: ['git', 'github', 'gitlab']}
+  - {name: Docker, category: MLOps & DevOps, type: tech, patterns: ['docker']}
+  - {name: Kubernetes, category: MLOps & DevOps, type: tech, patterns: ['kubernetes', 'k8s']}
+  - {name: MLflow, category: MLOps & DevOps, type: tech, patterns: ['mlflow']}
+  - {name: CI/CD, category: MLOps & DevOps, type: skill, patterns: ['ci ?/ ?cd', 'intégration continue']}
+  - {name: API REST, category: MLOps & DevOps, type: tech, patterns: ['api rest', 'rest api', 'fastapi', 'flask']}
+  - {name: Linux, category: MLOps & DevOps, type: tech, patterns: ['linux', 'bash']}
+
+  # --- Machine learning & IA ---------------------------------------------
+  - {name: Machine Learning, category: ML & IA, type: skill, patterns: ['machine learning', 'apprentissage automatique', 'ml']}
+  - {name: Deep Learning, category: ML & IA, type: skill, patterns: ['deep learning', 'apprentissage profond', 'réseaux de neurones']}
+  - {name: Scikit-learn, category: ML & IA, type: tech, patterns: ['scikit[- ]learn', 'sklearn']}
+  - {name: TensorFlow, category: ML & IA, type: tech, patterns: ['tensorflow', 'keras']}
+  - {name: PyTorch, category: ML & IA, type: tech, patterns: ['pytorch', 'torch']}
+  - {name: NLP, category: ML & IA, type: skill, patterns: ['nlp', 'traitement (?:automatique )?du langage', 'natural language processing']}
+  - {name: Computer Vision, category: ML & IA, type: skill, patterns: ['computer vision', 'vision par ordinateur']}
+  - {name: Statistiques, category: ML & IA, type: skill, patterns: ['statistiques?', 'statistics', 'économétrie']}
+  - {name: Séries temporelles, category: ML & IA, type: skill, patterns: ['séries temporelles', 'time series', 'forecasting', 'prévision']}
+
+  # --- IA générative ------------------------------------------------------
+  - {name: IA générative, category: IA générative, type: skill, patterns: ['ia générative', 'genai', 'generative ai', 'gen ai']}
+  - {name: LLM, category: IA générative, type: tech, patterns: ['llms?', 'large language models?', 'gpt', 'mistral', 'openai']}
+  - {name: RAG, category: IA générative, type: skill, patterns: ['rag', 'retrieval[- ]augmented']}
+  - {name: LangChain, category: IA générative, type: tech, patterns: ['langchain', 'llamaindex']}
+  - {name: Hugging Face, category: IA générative, type: tech, patterns: ['hugging ?face', 'transformers']}
+
+  # --- Méthodes & gouvernance --------------------------------------------
+  - {name: Data gouvernance, category: Méthodes & gouvernance, type: skill, patterns: ['gouvernance (?:des )?données', 'data governance', 'qualité des données', 'data quality']}
+  - {name: RGPD, category: Méthodes & gouvernance, type: skill, patterns: ['rgpd', 'gdpr']}
+  - {name: Agile/Scrum, category: Méthodes & gouvernance, type: skill, patterns: ['agile', 'scrum', 'kanban']}
+  - {name: Modélisation de données, category: Méthodes & gouvernance, type: skill, patterns: ['modélisation (?:de |des )?données', 'data modeling', 'data warehouse', 'entrepôt de données', 'schéma en étoile']}
+  - {name: A/B testing, category: Méthodes & gouvernance, type: skill, patterns: ['a/b ?test(?:ing)?', 'ab test(?:ing)?']}
+  - {name: KPI & reporting, category: Méthodes & gouvernance, type: skill, patterns: ['kpis?', 'reporting', 'tableaux? de bord', 'dashboards?']}
+
+  # --- Soft skills --------------------------------------------------------
+  - {name: Communication, category: Soft skills, type: skill, patterns: ['communication', 'vulgariser', 'vulgarisation', 'storytelling']}
+  - {name: Esprit d'analyse, category: Soft skills, type: skill, patterns: ["esprit d'analyse", 'esprit analytique', 'analytical']}
+  - {name: Autonomie, category: Soft skills, type: skill, patterns: ['autonomie', 'autonome']}
+  - {name: Travail en équipe, category: Soft skills, type: skill, patterns: ['travail en équipe', "esprit d'équipe", 'teamwork']}
+  - {name: Anglais, category: Soft skills, type: skill, patterns: ['anglais', 'english']}
+  - {name: Gestion de projet, category: Soft skills, type: skill, patterns: ['gestion de projets?', 'project management', 'pilotage de projets?']}
+  - {name: Relation client, category: Soft skills, type: skill, patterns: ['relation client', 'sens du client', 'client-facing', 'parties prenantes', 'stakeholders?']}

@@ -1,0 +1,55 @@
+# Paramètres du pipeline Job Market Intelligence.
+# Les chemins sont relatifs à la racine du projet.
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  warehouse: data/warehouse/jobs.db
+  exports: exports/tableau
+  reports: reports
+  sql_schema: sql/schema.sql
+  sql_views: sql/views
+
+# Mots-clés interrogés sur chaque source.
+keywords:
+  - data analyst
+  - data scientist
+  - data engineer
+  - analytics engineer
+  - machine learning engineer
+  - consultant data
+  - business intelligence
+  - intelligence artificielle
+
+collect:
+  france_travail:
+    enabled: true
+    max_results_per_keyword: 450   # l'API renvoie 150 offres max par appel
+  adzuna:
+    enabled: true
+    country: fr
+    results_per_page: 50
+    max_pages_per_keyword: 5
+  jsonld:
+    enabled: true
+    urls_file: config/scrape_urls.txt
+    delay_seconds: 2.0
+  http:
+    timeout_seconds: 20
+    max_retries: 3
+    user_agent: "JobMarketIntelligence/1.0 (projet portfolio; contact via GitHub HodaFede)"
+
+clean:
+  # "auto" : données réelles si elles existent, sinon jeu de démonstration.
+  # "real" : uniquement les données réelles. "all" : réelles + démo.
+  data_mode: auto
+  # Fourchette de salaires annuels bruts plausibles (EUR) ; hors fourchette => salaire ignoré.
+  salary_min_plausible: 18000
+  salary_max_plausible: 200000
+  # Heures annuelles légales (35h) pour convertir un taux horaire.
+  hours_per_year: 1607
+
+nlp:
+  skills_dictionary: config/skills_dictionary.yaml
+  top_terms_per_role: 25
+  min_skill_pair_count: 5

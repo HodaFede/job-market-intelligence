@@ -167,4 +167,4 @@ tests/           tests pytest + fixtures
 
 ## Auteure
 
-**Hoda Fede Ndinge** — Data Analyst, Mastère Data & IA (IPSSI Paris). GitHub : [HodaFede](https://github.com/HodaFede)
+**Hoda Fede Ndinge** — Data Analyst, Mastère Data & IA (IPSSI Paris)

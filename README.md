@@ -8,8 +8,6 @@ Que demandent vraiment les recruteurs Data et IA en France ? Ce projet collecte 
 
 > **Données figées au 6 octobre 2026.** Les chiffres ci-dessous viennent de 1 346 offres réelles collectées via l'API Adzuna (publications d'octobre 2025 à octobre 2026). La collecte automatique est désactivée en attendant la prochaine mise à jour.
 
-![D1 — Vue d'ensemble](docs/img/d1_vue_ensemble.png)
-
 ## Ce que montrent les données
 
 - **1 346 offres** Data & IA, **51 %** en CDI, avec un **salaire médian annuel brut de 49 000 €** (calculé sur les seules offres qui affichent un salaire, soit environ 20 % d'entre elles).
@@ -26,6 +24,8 @@ Le classeur contient 18 feuilles Tableau (F01 à F18), assemblées en quatre tab
 ### D1 — Vue d'ensemble
 
 Quatre indicateurs (offres collectées, salaire médian, part de CDI, part d'offres avec salaire), la carte des offres, le nombre d'offres par métier et par région.
+
+![D1 — Vue d'ensemble](docs/img/d1_vue_ensemble.png)
 
 ### D2 — Profil des offres
 
